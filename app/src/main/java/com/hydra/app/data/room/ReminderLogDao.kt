@@ -25,4 +25,7 @@ interface ReminderLogDao {
 
     @Query("SELECT COUNT(*) FROM reminder_log WHERE action = 'ACCEPTED' AND timestamp >= :startOfDay AND timestamp < :endOfDay")
     fun getRemindersAcceptedForDay(startOfDay: Long, endOfDay: Long): Flow<Int>
+
+    @Query("SELECT * FROM reminder_log WHERE id = :id LIMIT 1")
+    suspend fun getById(id: Long): ReminderLog?
 }

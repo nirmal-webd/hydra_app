@@ -18,10 +18,12 @@ import com.hydra.app.viewmodel.DashboardViewModel
 @Composable
 fun DashboardScreen(
     modifier: Modifier = Modifier,
-    viewModel: DashboardViewModel = viewModel()
+    viewModel: DashboardViewModel = viewModel(),
+    initialShowCustomDialog: Boolean = false,
+    onCustomDialogDismiss: () -> Unit = {}
 ) {
     val state by viewModel.dashboardState.collectAsState()
-    var showCustomDialog by remember { mutableStateOf(false) }
+    var showCustomDialog by remember(initialShowCustomDialog) { mutableStateOf(initialShowCustomDialog) }
 
     Column(
         modifier = modifier
@@ -94,10 +96,14 @@ fun DashboardScreen(
 
     if (showCustomDialog) {
         CustomAmountDialog(
-            onDismiss = { showCustomDialog = false },
+            onDismiss = {
+                showCustomDialog = false
+                onCustomDialogDismiss()
+            },
             onConfirm = { amount ->
                 viewModel.logWater(amount)
                 showCustomDialog = false
+                onCustomDialogDismiss()
             }
         )
     }

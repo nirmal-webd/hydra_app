@@ -31,4 +31,8 @@ class ReminderRepository(private val reminderLogDao: ReminderLogDao) {
             ReminderWaterLog(reminderId = reminderId, waterLogId = waterLogId)
         )
     }
+
+    suspend fun getReminderById(id: Long): ReminderLog? {
+        return reminderLogDao.getById(id)
+    }
 }

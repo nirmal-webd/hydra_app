@@ -18,7 +18,9 @@ enum class HydraRoute(val route: String) {
 @Composable
 fun HydraNavGraph(
     navController: NavHostController,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    showCustomDialog: Boolean = false,
+    onCustomDialogDismiss: () -> Unit = {}
 ) {
     NavHost(
         navController = navController,
@@ -26,7 +28,10 @@ fun HydraNavGraph(
         modifier = modifier
     ) {
         composable(HydraRoute.DASHBOARD.route) {
-            DashboardScreen()
+            DashboardScreen(
+                initialShowCustomDialog = showCustomDialog,
+                onCustomDialogDismiss = onCustomDialogDismiss
+            )
         }
         composable(HydraRoute.HISTORY.route) {
             HistoryScreen()

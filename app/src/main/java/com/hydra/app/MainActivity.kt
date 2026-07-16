@@ -1,7 +1,10 @@
 package com.hydra.app
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
@@ -59,19 +62,41 @@ private val bottomNavItems = listOf(
 )
 
 class MainActivity : ComponentActivity() {
+    private var showCustomDialog by mutableStateOf(false)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        handleIntent(intent)
         enableEdgeToEdge()
         setContent {
             HydraTheme {
-                HydraMainContent()
+                HydraMainContent(
+                    showCustomDialog = showCustomDialog,
+                    onCustomDialogDismiss = { showCustomDialog = false }
+                )
             }
         }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        handleIntent(intent)
+    }
+
+    private fun handleIntent(intent: Intent) {
+        showCustomDialog = intent.getBooleanExtra(EXTRA_SHOW_CUSTOM_DIALOG, false)
+    }
+
+    companion object {
+        const val EXTRA_SHOW_CUSTOM_DIALOG = "extra_show_custom_dialog"
     }
 }
 
 @Composable
-private fun HydraMainContent() {
+private fun HydraMainContent(
+    showCustomDialog: Boolean = false,
+    onCustomDialogDismiss: () -> Unit = {}
+) {
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
@@ -110,7 +135,9 @@ private fun HydraMainContent() {
     ) { innerPadding ->
         HydraNavGraph(
             navController = navController,
-            modifier = Modifier.padding(innerPadding)
+            modifier = Modifier.padding(innerPadding),
+            showCustomDialog = showCustomDialog,
+            onCustomDialogDismiss = onCustomDialogDismiss
         )
     }
 }
