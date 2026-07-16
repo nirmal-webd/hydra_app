@@ -22,6 +22,7 @@ data class ReminderMetadata(
     // Pending reminder
     val pendingReminder: Boolean = false,
     val reminderReason: ReminderReason = ReminderReason.COOLDOWN_COMPLETE,
+    val appPackage: String? = null,
 
     // Audit
     val lastReminderShownAt: Long = 0L

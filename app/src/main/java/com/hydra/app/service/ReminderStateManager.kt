@@ -214,10 +214,23 @@ class ReminderStateManager(
 
     private fun buildReminderMessage(metadata: com.hydra.app.model.ReminderMetadata): String {
         val remaining = (metadata.dailyGoal - metadata.dailyWaterConsumed).coerceAtLeast(0)
+        
+        var prefix = ""
+        if (metadata.reminderReason == ReminderReason.SOCIAL_APP_USAGE && metadata.appPackage != null) {
+            val appName = try {
+                val pm = context.packageManager
+                val info = pm.getApplicationInfo(metadata.appPackage, 0)
+                pm.getApplicationLabel(info).toString()
+            } catch (e: Exception) {
+                "that app"
+            }
+            prefix = "You've been using $appName for a while. "
+        }
+
         return if (remaining > 0) {
-            "You need $remaining ml more to reach your daily goal."
+            "${prefix}You need $remaining ml more to reach your daily goal."
         } else {
-            "Great job! You've hit your goal. Keep drinking! 🎉"
+            "${prefix}Great job! You've hit your goal. Keep drinking! 🎉"
         }
     }
 

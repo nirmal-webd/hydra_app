@@ -194,6 +194,32 @@ object ReminderReducer {
                     }
                 }
             }
+            is ReminderEvent.AppUsageDetected -> {
+                when {
+                    metadata.goalReached -> {
+                        TransitionResult(
+                            state = ReminderState.COOLDOWN,
+                            metadata = metadata.copy(
+                                pendingReminder = false,
+                                cooldownEndsAt = now + cooldownDurationMs
+                            ),
+                            effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
+                        )
+                    }
+                    else -> {
+                        TransitionResult(
+                            state = ReminderState.SHOWING,
+                            metadata = metadata.copy(
+                                pendingReminder = false,
+                                reminderReason = ReminderReason.SOCIAL_APP_USAGE,
+                                appPackage = event.appPackage,
+                                lastReminderShownAt = now
+                            ),
+                            effects = listOf(ReminderEffect.ShowNotification)
+                        )
+                    }
+                }
+            }
             else -> noOp(ReminderState.PENDING, metadata)
         }
     }

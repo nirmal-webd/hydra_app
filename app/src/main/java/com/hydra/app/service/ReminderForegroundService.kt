@@ -41,6 +41,7 @@ class ReminderForegroundService : Service() {
                 startForeground(NOTIFICATION_ID_FOREGROUND, buildForegroundNotification())
                 registerUnlockReceiver()
                 val app = applicationContext as HydraApp
+                startUsageMonitor(app)
                 app.reminderStateManager.restoreTimersIfNeeded()
             }
         }
@@ -52,6 +53,7 @@ class ReminderForegroundService : Service() {
     override fun onDestroy() {
         super.onDestroy()
         unregisterUnlockReceiver()
+        stopUsageMonitor()
     }
 
     private fun registerUnlockReceiver() {
@@ -66,6 +68,25 @@ class ReminderForegroundService : Service() {
             try { unregisterReceiver(it) } catch (_: Exception) {}
             unlockReceiver = null
         }
+    }
+
+    private var usageMonitor: UsageMonitor? = null
+
+    private fun startUsageMonitor(app: HydraApp) {
+        if (usageMonitor == null) {
+            usageMonitor = UsageMonitor(
+                context = this,
+                preferencesManager = app.preferencesManager,
+                reminderStateManager = app.reminderStateManager,
+                scope = kotlinx.coroutines.CoroutineScope(kotlinx.coroutines.SupervisorJob() + kotlinx.coroutines.Dispatchers.IO)
+            )
+        }
+        usageMonitor?.start()
+    }
+
+    private fun stopUsageMonitor() {
+        usageMonitor?.stop()
+        usageMonitor = null
     }
 
     private fun buildForegroundNotification(): Notification {

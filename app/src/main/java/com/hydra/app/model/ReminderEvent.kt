@@ -15,6 +15,7 @@ sealed class ReminderEvent {
 
     // Device events
     object PhoneUnlocked : ReminderEvent()
+    data class AppUsageDetected(val appPackage: String) : ReminderEvent()
 
     // Notification actions (user response)
     object ReminderAccepted : ReminderEvent()     // "Drank Water"
