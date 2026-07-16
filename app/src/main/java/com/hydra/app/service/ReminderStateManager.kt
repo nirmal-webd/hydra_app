@@ -59,6 +59,7 @@ class ReminderStateManager(
 
         const val ALARM_REQUEST_COOLDOWN = 1001
         const val ALARM_REQUEST_SNOOZE = 1002
+        const val ALARM_REQUEST_DAY_RESET = 1003
     }
 
     /**
@@ -190,7 +191,27 @@ class ReminderStateManager(
                     )
                 }
             }
+
+            scheduleMidnightReset()
         }
+    }
+
+    private fun scheduleMidnightReset() {
+        val calendar = java.util.Calendar.getInstance().apply {
+            timeInMillis = System.currentTimeMillis()
+            add(java.util.Calendar.DAY_OF_YEAR, 1)
+            set(java.util.Calendar.HOUR_OF_DAY, 0)
+            set(java.util.Calendar.MINUTE, 0)
+            set(java.util.Calendar.SECOND, 0)
+            set(java.util.Calendar.MILLISECOND, 0)
+        }
+        
+        cancelAlarm(ALARM_REQUEST_DAY_RESET)
+        scheduleAlarm(
+            action = ACTION_DAY_RESET,
+            triggerAtMs = calendar.timeInMillis,
+            requestCode = ALARM_REQUEST_DAY_RESET
+        )
     }
 
     private fun isDeviceUnlocked(): Boolean {
