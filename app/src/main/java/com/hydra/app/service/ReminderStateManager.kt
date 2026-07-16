@@ -6,6 +6,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import com.hydra.app.data.datastore.PreferencesManager
 import com.hydra.app.data.datastore.ReminderStateStore
 import com.hydra.app.data.repository.ReminderRepository
 import com.hydra.app.data.repository.WaterRepository
@@ -19,6 +20,7 @@ import com.hydra.app.utils.NotificationHelper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -39,6 +41,7 @@ class ReminderStateManager(
     private val stateStore: ReminderStateStore,
     private val waterRepository: WaterRepository,
     private val reminderRepository: ReminderRepository,
+    private val preferencesManager: PreferencesManager,
     private val cooldownDurationMs: Long = DEFAULT_COOLDOWN_MS
 ) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
@@ -73,6 +76,7 @@ class ReminderStateManager(
                     metadata = currentMeta,
                     event = event,
                     isDeviceUnlocked = isUnlocked,
+                    inQuietHours = isQuietHoursNow(),
                     cooldownDurationMs = cooldownDurationMs
                 )
 
@@ -86,6 +90,12 @@ class ReminderStateManager(
                 logTransition(event, result.state, result.metadata)
             }
         }
+    }
+
+    private suspend fun isQuietHoursNow(): Boolean {
+        val qStart = kotlinx.coroutines.flow.first(preferencesManager.quietHoursStart)
+        val qEnd = kotlinx.coroutines.flow.first(preferencesManager.quietHoursEnd)
+        return com.hydra.app.utils.DateUtils.isInQuietHours(qStart, qEnd)
     }
 
     private suspend fun executeEffect(effect: ReminderEffect, metadata: com.hydra.app.model.ReminderMetadata) {

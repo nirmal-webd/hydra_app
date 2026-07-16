@@ -49,6 +49,7 @@ object ReminderReducer {
         metadata: ReminderMetadata,
         event: ReminderEvent,
         isDeviceUnlocked: Boolean,
+        inQuietHours: Boolean,
         cooldownDurationMs: Long,
         now: Long = System.currentTimeMillis()
     ): TransitionResult {
@@ -100,13 +101,13 @@ object ReminderReducer {
 
         return when (state) {
 
-            ReminderState.COOLDOWN -> reduceCooldown(metadata, event, isDeviceUnlocked, cooldownDurationMs, now)
+            ReminderState.COOLDOWN -> reduceCooldown(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, now)
 
-            ReminderState.PENDING -> reducePending(metadata, event, isDeviceUnlocked, cooldownDurationMs, now)
+            ReminderState.PENDING -> reducePending(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, now)
 
-            ReminderState.SHOWING -> reduceShowing(metadata, event, isDeviceUnlocked, cooldownDurationMs, now)
+            ReminderState.SHOWING -> reduceShowing(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, now)
 
-            ReminderState.SNOOZED -> reduceSnoozed(metadata, event, isDeviceUnlocked, now)
+            ReminderState.SNOOZED -> reduceSnoozed(metadata, event, isDeviceUnlocked, inQuietHours, now)
         }
     }
 
@@ -116,6 +117,7 @@ object ReminderReducer {
         metadata: ReminderMetadata,
         event: ReminderEvent,
         isDeviceUnlocked: Boolean,
+        inQuietHours: Boolean,
         cooldownDurationMs: Long,
         now: Long
     ): TransitionResult {
@@ -130,7 +132,7 @@ object ReminderReducer {
                             effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
                         )
                     }
-                    isDeviceUnlocked -> {
+                    isDeviceUnlocked && !inQuietHours -> {
                         // Unlocked → show immediately
                         TransitionResult(
                             state = ReminderState.SHOWING,
@@ -165,6 +167,7 @@ object ReminderReducer {
         metadata: ReminderMetadata,
         event: ReminderEvent,
         isDeviceUnlocked: Boolean,
+        inQuietHours: Boolean,
         cooldownDurationMs: Long,
         now: Long
     ): TransitionResult {
@@ -181,6 +184,10 @@ object ReminderReducer {
                             ),
                             effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
                         )
+                    }
+                    inQuietHours -> {
+                        // Phone unlocked but it's quiet hours — stay in PENDING
+                        noOp(ReminderState.PENDING, metadata)
                     }
                     else -> {
                         // Unlocked with pending reminder → show it
@@ -207,6 +214,10 @@ object ReminderReducer {
                             effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
                         )
                     }
+                    inQuietHours -> {
+                        // Suppress app usage reminder during quiet hours (no-op)
+                        noOp(ReminderState.PENDING, metadata)
+                    }
                     else -> {
                         TransitionResult(
                             state = ReminderState.SHOWING,
@@ -231,6 +242,7 @@ object ReminderReducer {
         metadata: ReminderMetadata,
         event: ReminderEvent,
         isDeviceUnlocked: Boolean,
+        inQuietHours: Boolean,
         cooldownDurationMs: Long,
         now: Long
     ): TransitionResult {
@@ -309,11 +321,12 @@ object ReminderReducer {
         metadata: ReminderMetadata,
         event: ReminderEvent,
         isDeviceUnlocked: Boolean,
+        inQuietHours: Boolean,
         now: Long
     ): TransitionResult {
         return when (event) {
             is ReminderEvent.SnoozeExpired -> {
-                if (isDeviceUnlocked) {
+                if (isDeviceUnlocked && !inQuietHours) {
                     TransitionResult(
                         state = ReminderState.SHOWING,
                         metadata = metadata.copy(

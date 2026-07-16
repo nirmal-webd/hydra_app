@@ -29,7 +29,8 @@ class HydraApp : Application() {
             context = this,
             stateStore = reminderStateStore,
             waterRepository = waterRepository,
-            reminderRepository = reminderRepository
+            reminderRepository = reminderRepository,
+            preferencesManager = preferencesManager
         )
     }
 
