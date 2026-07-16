@@ -39,6 +39,7 @@ class ReminderStateStore(private val context: Context) {
         val PENDING_REMINDER = booleanPreferencesKey("pending_reminder")
         val REMINDER_REASON = stringPreferencesKey("reminder_reason")
         val LAST_REMINDER_SHOWN_AT = longPreferencesKey("last_reminder_shown_at")
+        val APP_PACKAGE = stringPreferencesKey("app_package")
     }
 
     val fsmState: Flow<ReminderState> = context.reminderDataStore.data.map { prefs ->
@@ -60,6 +61,7 @@ class ReminderStateStore(private val context: Context) {
             reminderReason = prefs[Keys.REMINDER_REASON]?.let {
                 runCatching { ReminderReason.valueOf(it) }.getOrDefault(ReminderReason.COOLDOWN_COMPLETE)
             } ?: ReminderReason.COOLDOWN_COMPLETE,
+            appPackage = prefs[Keys.APP_PACKAGE],
             lastReminderShownAt = prefs[Keys.LAST_REMINDER_SHOWN_AT] ?: 0L
         )
     }
@@ -76,6 +78,13 @@ class ReminderStateStore(private val context: Context) {
             prefs[Keys.SNOOZE_COUNT] = meta.snoozeCount
             prefs[Keys.PENDING_REMINDER] = meta.pendingReminder
             prefs[Keys.REMINDER_REASON] = meta.reminderReason.name
+            
+            if (meta.appPackage != null) {
+                prefs[Keys.APP_PACKAGE] = meta.appPackage
+            } else {
+                prefs.remove(Keys.APP_PACKAGE)
+            }
+            
             prefs[Keys.LAST_REMINDER_SHOWN_AT] = meta.lastReminderShownAt
         }
     }
