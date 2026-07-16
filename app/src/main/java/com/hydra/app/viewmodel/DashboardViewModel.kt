@@ -91,10 +91,11 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
     }
 
     fun logWater(amountMl: Int, source: String = WaterLogSource.MANUAL) {
-        viewModelScope.launch {
-            waterRepository.logWater(amountMl, source)
-            // Streak will auto-recompute via the collect above
-        }
+        // Route through the FSM — WaterLogged is a global transition that
+        // resets cooldown, cancels pending reminders, and logs to Room via effect.
+        app.reminderStateManager.dispatch(
+            com.hydra.app.model.ReminderEvent.WaterLogged(amountMl, source)
+        )
     }
 
     fun deleteLog(waterLog: WaterLog) {

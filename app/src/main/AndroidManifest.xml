@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"
+        tools:ignore="ExactAlarm" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:name=".HydraApp"
@@ -14,15 +23,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hydra">
-        
+
+        <!-- Reminder engine: foreground service -->
+        <service
+            android:name=".service.ReminderForegroundService"
+            android:foregroundServiceType="dataSync"
+            android:exported="false" />
+
+        <!-- Alarm receiver for cooldown/snooze expiry and day reset -->
+        <receiver
+            android:name=".service.ReminderAlarmReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.hydra.app.ACTION_COOLDOWN_EXPIRED" />
+                <action android:name="com.hydra.app.ACTION_SNOOZE_EXPIRED" />
+                <action android:name="com.hydra.app.ACTION_DAY_RESET" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Notification action receiver -->
         <receiver
             android:name=".service.NotificationActionReceiver"
-            android:exported="false" />
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.hydra.app.ACTION_ADD_250ML" />
+                <action android:name="com.hydra.app.ACTION_SNOOZE_5" />
+                <action android:name="com.hydra.app.ACTION_SNOOZE_10" />
+                <action android:name="com.hydra.app.ACTION_SNOOZE_15" />
+                <action android:name="com.hydra.app.ACTION_SNOOZE_30" />
+                <action android:name="com.hydra.app.ACTION_DISMISS" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
+            android:launchMode="singleTop"
             android:theme="@style/Theme.Hydra"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

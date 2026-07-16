@@ -11,7 +11,8 @@ import com.hydra.app.service.NotificationActionReceiver
 
 class NotificationHelper(private val context: Context) {
 
-    private val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+    private val notificationManager =
+        context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
     init {
         createChannels()
@@ -23,72 +24,63 @@ class NotificationHelper(private val context: Context) {
             "Hydration Reminders",
             NotificationManager.IMPORTANCE_HIGH
         ).apply {
-            description = "Reminders to drink water"
+            description = "Context-aware hydration reminders"
         }
         notificationManager.createNotificationChannel(channel)
     }
 
     fun showReminderNotification(reminderId: Long, title: String, message: String) {
-        val activityIntent = Intent(context, MainActivity::class.java)
         val contentIntent = PendingIntent.getActivity(
-            context,
-            0,
-            activityIntent,
+            context, 0,
+            Intent(context, MainActivity::class.java),
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        // Action: 250ml
-        val add250Intent = Intent(context, NotificationActionReceiver::class.java).apply {
-            action = NotificationActionReceiver.ACTION_ADD_250ML
-            putExtra(NotificationActionReceiver.EXTRA_REMINDER_ID, reminderId)
-        }
-        val add250PendingIntent = PendingIntent.getBroadcast(
-            context,
-            1,
-            add250Intent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-        )
+        // "Drank Water" action
+        val drankIntent = broadcastPendingIntent(NotificationActionReceiver.ACTION_ADD_250ML, 10)
 
-        // Action: Custom (Launch MainActivity)
+        // Snooze 10 min action (shown in notification, more via expanded)
+        val snooze10Intent = broadcastPendingIntent(NotificationActionReceiver.ACTION_SNOOZE_10, 11)
+
+        // "Not Now" / Dismiss
+        val dismissIntent = broadcastPendingIntent(NotificationActionReceiver.ACTION_DISMISS, 12)
+
+        // Custom amount (opens app)
         val customIntent = Intent(context, MainActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP
             putExtra(MainActivity.EXTRA_SHOW_CUSTOM_DIALOG, true)
-            putExtra(NotificationActionReceiver.EXTRA_REMINDER_ID, reminderId)
         }
         val customPendingIntent = PendingIntent.getActivity(
-            context,
-            2,
-            customIntent,
+            context, 13, customIntent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        // Action: Snooze / Later
-        val snoozeIntent = Intent(context, NotificationActionReceiver::class.java).apply {
-            action = NotificationActionReceiver.ACTION_SNOOZE
-            putExtra(NotificationActionReceiver.EXTRA_REMINDER_ID, reminderId)
-        }
-        val snoozePendingIntent = PendingIntent.getBroadcast(
-            context,
-            3,
-            snoozeIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-        )
-
-        val builder = NotificationCompat.Builder(context, CHANNEL_REMINDERS)
-            .setSmallIcon(android.R.drawable.ic_dialog_info) // Basic icon for now
+        val notification = NotificationCompat.Builder(context, CHANNEL_REMINDERS)
+            .setSmallIcon(android.R.drawable.ic_dialog_info)
             .setContentTitle(title)
             .setContentText(message)
             .setContentIntent(contentIntent)
-            .setAutoCancel(true)
-            .addAction(0, "\uD83D\uDCA7 250 ml", add250PendingIntent)
-            .addAction(0, "\u2615 Custom", customPendingIntent)
-            .addAction(0, "\u23F0 Later", snoozePendingIntent)
+            .setAutoCancel(false)  // Don't dismiss on tap — user must respond
+            .addAction(0, "💧 Drank!", drankIntent)
+            .addAction(0, "⏰ 10 min", snooze10Intent)
+            .addAction(0, "🚫 Not Now", dismissIntent)
+            .build()
 
-        notificationManager.notify(NOTIFICATION_ID_REMINDER, builder.build())
+        notificationManager.notify(NOTIFICATION_ID_REMINDER, notification)
     }
 
     fun cancelReminderNotification() {
         notificationManager.cancel(NOTIFICATION_ID_REMINDER)
+    }
+
+    private fun broadcastPendingIntent(action: String, requestCode: Int): PendingIntent {
+        val intent = Intent(context, NotificationActionReceiver::class.java).apply {
+            this.action = action
+        }
+        return PendingIntent.getBroadcast(
+            context, requestCode, intent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
     }
 
     companion object {
