@@ -70,6 +70,7 @@ object ReminderReducer {
                     cooldownEndsAt = now + cooldownDurationMs
                 ),
                 effects = listOf(
+                    ReminderEffect.LogWater(event.amountMl, event.source),
                     ReminderEffect.CancelAllTimers,
                     ReminderEffect.CancelNotification,
                     ReminderEffect.StartCooldownTimer(cooldownDurationMs)
