@@ -93,8 +93,8 @@ class ReminderStateManager(
     }
 
     private suspend fun isQuietHoursNow(): Boolean {
-        val qStart = kotlinx.coroutines.flow.first(preferencesManager.quietHoursStart)
-        val qEnd = kotlinx.coroutines.flow.first(preferencesManager.quietHoursEnd)
+        val qStart = preferencesManager.quietHoursStart.first()
+        val qEnd = preferencesManager.quietHoursEnd.first()
         return com.hydra.app.utils.DateUtils.isInQuietHours(qStart, qEnd)
     }
 
