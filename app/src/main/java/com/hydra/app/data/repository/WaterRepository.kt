@@ -21,6 +21,10 @@ class WaterRepository(private val waterLogDao: WaterLogDao) {
         return waterLogDao.getAllLogs()
     }
 
+    suspend fun getAllLogsSnapshot(): List<WaterLog> {
+        return waterLogDao.getAllLogsSnapshot()
+    }
+
     suspend fun logWater(amountMl: Int, source: String = "MANUAL"): Long {
         return waterLogDao.insert(
             WaterLog(

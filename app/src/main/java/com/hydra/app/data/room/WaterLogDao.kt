@@ -25,11 +25,6 @@ interface WaterLogDao {
     @Query("SELECT * FROM water_log ORDER BY timestamp DESC")
     fun getAllLogs(): Flow<List<WaterLog>>
 
-    @Query("SELECT COALESCE(SUM(amount_ml), 0) as total, timestamp / :dayMillis as day_index FROM water_log GROUP BY day_index ORDER BY day_index DESC")
-    fun getDailyTotals(dayMillis: Long = 86_400_000L): Flow<List<DailyTotal>>
+    @Query("SELECT * FROM water_log ORDER BY timestamp DESC")
+    suspend fun getAllLogsSnapshot(): List<WaterLog>
 }
-
-data class DailyTotal(
-    val total: Int,
-    @androidx.room.ColumnInfo(name = "day_index") val dayIndex: Long
-)
