@@ -1,12 +1,14 @@
 package com.hydra.app
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.setValue
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -23,14 +25,18 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.core.content.ContextCompat
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.hydra.app.navigation.HydraNavGraph
 import com.hydra.app.navigation.HydraRoute
+import com.hydra.app.service.ReminderForegroundService
 import com.hydra.app.ui.theme.HydraTheme
 
 private data class BottomNavItem(
@@ -62,12 +68,24 @@ private val bottomNavItems = listOf(
 )
 
 class MainActivity : ComponentActivity() {
+
     private var showCustomDialog by mutableStateOf(false)
+
+    // Runtime permission launcher for POST_NOTIFICATIONS (Android 13+)
+    private val notificationPermissionLauncher = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) { /* Result handled passively — service already started regardless */ }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         handleIntent(intent)
         enableEdgeToEdge()
+
+        // Step A: Request notification permission, start service, arm FSM
+        requestNotificationPermissionIfNeeded()
+        startReminderService()
+        (application as HydraApp).bootstrapEngineIfNeeded()
+
         setContent {
             HydraTheme {
                 HydraMainContent(
@@ -85,6 +103,23 @@ class MainActivity : ComponentActivity() {
 
     private fun handleIntent(intent: Intent) {
         showCustomDialog = intent.getBooleanExtra(EXTRA_SHOW_CUSTOM_DIALOG, false)
+    }
+
+    private fun requestNotificationPermissionIfNeeded() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)
+                != PackageManager.PERMISSION_GRANTED
+            ) {
+                notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+            }
+        }
+    }
+
+    private fun startReminderService() {
+        val intent = Intent(this, ReminderForegroundService::class.java).apply {
+            action = ReminderForegroundService.ACTION_START
+        }
+        ContextCompat.startForegroundService(this, intent)
     }
 
     companion object {

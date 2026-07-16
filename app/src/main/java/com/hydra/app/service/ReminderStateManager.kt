@@ -132,7 +132,10 @@ class ReminderStateManager(
             }
 
             is ReminderEffect.LogWater -> {
-                waterRepository.logWater(effect.amountMl, effect.source)
+                // Guard: bootstrap fires WaterLogged(0) to arm the engine — skip DB write
+                if (effect.amountMl > 0) {
+                    waterRepository.logWater(effect.amountMl, effect.source)
+                }
             }
         }
     }

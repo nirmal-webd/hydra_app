@@ -27,4 +27,7 @@ interface WaterLogDao {
 
     @Query("SELECT * FROM water_log ORDER BY timestamp DESC")
     suspend fun getAllLogsSnapshot(): List<WaterLog>
+
+    @Query("SELECT * FROM water_log WHERE timestamp >= :startMs ORDER BY timestamp DESC")
+    fun getLogsSince(startMs: Long): Flow<List<WaterLog>>
 }
