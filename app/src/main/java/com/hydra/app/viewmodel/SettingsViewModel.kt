@@ -66,4 +66,16 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     fun setRemindersEnabled(enabled: Boolean) {
         viewModelScope.launch { prefs.setUnlockRemindersEnabled(enabled) }
     }
+
+    val fsmState = app.reminderStateStore.fsmState.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5_000),
+        initialValue = com.hydra.app.model.ReminderState.COOLDOWN
+    )
+
+    val fsmMetadata = app.reminderStateStore.metadata.stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5_000),
+        initialValue = com.hydra.app.model.ReminderMetadata()
+    )
 }
