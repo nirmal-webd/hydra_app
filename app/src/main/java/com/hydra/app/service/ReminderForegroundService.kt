@@ -9,6 +9,7 @@ import android.content.IntentFilter
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
 import com.hydra.app.HydraApp
+import kotlinx.coroutines.launch
 
 /**
  * Long-running foreground service that hosts the reminder engine.
@@ -43,6 +44,7 @@ class ReminderForegroundService : Service() {
                 val app = applicationContext as HydraApp
                 startUsageMonitor(app)
                 app.reminderStateManager.restoreTimersIfNeeded()
+                startNotificationUpdater(app)
             }
         }
         return START_STICKY
@@ -54,6 +56,7 @@ class ReminderForegroundService : Service() {
         super.onDestroy()
         unregisterUnlockReceiver()
         stopUsageMonitor()
+        notificationJob?.cancel()
     }
 
     private fun registerUnlockReceiver() {
@@ -71,6 +74,7 @@ class ReminderForegroundService : Service() {
     }
 
     private var usageMonitor: UsageMonitor? = null
+    private var notificationJob: kotlinx.coroutines.Job? = null
 
     private fun startUsageMonitor(app: HydraApp) {
         if (usageMonitor == null) {
@@ -89,7 +93,17 @@ class ReminderForegroundService : Service() {
         usageMonitor = null
     }
 
-    private fun buildForegroundNotification(): Notification {
+    private fun startNotificationUpdater(app: HydraApp) {
+        notificationJob?.cancel()
+        notificationJob = kotlinx.coroutines.CoroutineScope(kotlinx.coroutines.Dispatchers.Main).launch {
+            app.reminderStateStore.metadata.collect { meta ->
+                val nm = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+                nm.notify(NOTIFICATION_ID_FOREGROUND, buildForegroundNotification(meta))
+            }
+        }
+    }
+
+    private fun buildForegroundNotification(meta: com.hydra.app.model.ReminderMetadata? = null): Notification {
         val nm = getSystemService(NOTIFICATION_SERVICE) as NotificationManager
         if (nm.getNotificationChannel(CHANNEL_ID_FOREGROUND) == null) {
             nm.createNotificationChannel(
@@ -100,10 +114,21 @@ class ReminderForegroundService : Service() {
                 ).apply { description = "Keeps hydration tracking active" }
             )
         }
+        
+        val contentText = if (meta != null) {
+            if (meta.goalReached) {
+                "Daily goal reached! 🎉 (${meta.dailyWaterConsumed}/${meta.dailyGoal} ml)"
+            } else {
+                "${meta.dailyWaterConsumed} / ${meta.dailyGoal} ml consumed today"
+            }
+        } else {
+            "Hydration tracking active"
+        }
+
         return NotificationCompat.Builder(this, CHANNEL_ID_FOREGROUND)
             .setSmallIcon(android.R.drawable.ic_dialog_info)
             .setContentTitle("Hydra")
-            .setContentText("Hydration tracking active")
+            .setContentText(contentText)
             .setOngoing(true)
             .setSilent(true)
             .setPriority(NotificationCompat.PRIORITY_MIN)
