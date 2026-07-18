@@ -62,6 +62,25 @@ class ReminderStateManager(
         const val ALARM_REQUEST_DAY_RESET = 1003
     }
 
+    init {
+        // Fallback ticker: AlarmManager can sometimes be delayed by the OS Doze mode or OEM restrictions.
+        // Since we are running in a Foreground Service, this coroutine will tick reliably.
+        scope.launch {
+            while (true) {
+                kotlinx.coroutines.delay(1000)
+                val state = stateStore.getCurrentState()
+                val meta = stateStore.getCurrentMetadata()
+                val now = System.currentTimeMillis()
+                
+                if (state == ReminderState.COOLDOWN && meta.cooldownEndsAt in 1..now) {
+                    dispatch(ReminderEvent.CooldownExpired)
+                } else if (state == ReminderState.SNOOZED && meta.snoozeEndsAt in 1..now) {
+                    dispatch(ReminderEvent.SnoozeExpired(0))
+                }
+            }
+        }
+    }
+
     /**
      * The main entry point. All transitions flow through here.
      */
