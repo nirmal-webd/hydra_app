@@ -99,4 +99,12 @@ class ReminderStateStore(private val context: Context) {
             prefs[Keys.GOAL_REACHED] = consumed >= goalMl
         }
     }
+
+    suspend fun syncDailyWater(totalMl: Int) {
+        context.reminderDataStore.edit { prefs ->
+            prefs[Keys.DAILY_WATER_CONSUMED] = totalMl
+            val goal = prefs[Keys.DAILY_GOAL] ?: 2000
+            prefs[Keys.GOAL_REACHED] = totalMl >= goal
+        }
+    }
 }

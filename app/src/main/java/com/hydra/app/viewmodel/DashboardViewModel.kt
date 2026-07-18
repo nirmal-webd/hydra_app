@@ -88,6 +88,14 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
             ) { _, goal -> goal }
                 .collect { goal -> computeStreak(goal) }
         }
+        
+        // Ensure Reminder Engine stays in perfect sync with the database,
+        // particularly to recover from stale states or UI deletions.
+        viewModelScope.launch {
+            waterRepository.getTodayTotal().collect { total ->
+                app.reminderStateStore.syncDailyWater(total)
+            }
+        }
     }
 
     fun logWater(amountMl: Int, source: String = WaterLogSource.MANUAL) {
