@@ -13,7 +13,7 @@ import com.hydra.app.model.ReminderEvent
  */
 class UnlockReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent.action == Intent.ACTION_USER_PRESENT) {
+        if (intent.action == Intent.ACTION_USER_PRESENT || intent.action == Intent.ACTION_SCREEN_ON) {
             val app = context.applicationContext as HydraApp
             app.reminderStateManager.dispatch(ReminderEvent.PhoneUnlocked)
         }

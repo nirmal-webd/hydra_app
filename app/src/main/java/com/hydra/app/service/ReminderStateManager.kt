@@ -229,7 +229,8 @@ class ReminderStateManager(
 
     private fun isDeviceUnlocked(): Boolean {
         val km = context.getSystemService(Context.KEYGUARD_SERVICE) as KeyguardManager
-        return !km.isKeyguardLocked
+        val pm = context.getSystemService(Context.POWER_SERVICE) as android.os.PowerManager
+        return pm.isInteractive && !km.isKeyguardLocked
     }
 
     private fun scheduleAlarm(action: String, triggerAtMs: Long, requestCode: Int) {
