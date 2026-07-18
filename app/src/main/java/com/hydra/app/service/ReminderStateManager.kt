@@ -71,6 +71,8 @@ class ReminderStateManager(
                 val currentState = stateStore.getCurrentState()
                 val currentMeta = stateStore.getCurrentMetadata()
                 val isUnlocked = isDeviceUnlocked()
+                val cooldownMinutes = preferencesManager.cooldownMinutes.first()
+                val dynamicCooldownMs = cooldownMinutes * 60 * 1000L
 
                 val result = ReminderReducer.reduce(
                     state = currentState,
@@ -78,7 +80,7 @@ class ReminderStateManager(
                     event = event,
                     isDeviceUnlocked = isUnlocked,
                     inQuietHours = isQuietHoursNow(),
-                    cooldownDurationMs = cooldownDurationMs
+                    cooldownDurationMs = dynamicCooldownMs
                 )
 
                 // 1. Persist new state + metadata
