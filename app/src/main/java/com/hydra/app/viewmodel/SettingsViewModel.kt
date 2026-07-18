@@ -56,11 +56,17 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     }
 
     fun setQuietHoursStart(time: String) {
-        viewModelScope.launch { prefs.setQuietHoursStart(time) }
+        viewModelScope.launch { 
+            prefs.setQuietHoursStart(time)
+            app.reminderStateManager.dispatch(com.hydra.app.model.ReminderEvent.SettingsChanged)
+        }
     }
 
     fun setQuietHoursEnd(time: String) {
-        viewModelScope.launch { prefs.setQuietHoursEnd(time) }
+        viewModelScope.launch { 
+            prefs.setQuietHoursEnd(time)
+            app.reminderStateManager.dispatch(com.hydra.app.model.ReminderEvent.SettingsChanged)
+        }
     }
 
     fun setRemindersEnabled(enabled: Boolean) {

@@ -8,6 +8,7 @@ sealed class ReminderEvent {
     // Global — handled from ANY state
     data class WaterLogged(val amountMl: Int, val source: String = WaterLogSource.MANUAL) : ReminderEvent()
     data class WaterLogDeleted(val amountMl: Int) : ReminderEvent()
+    object SettingsChanged : ReminderEvent()
     object DayReset : ReminderEvent()
 
     // Timer callbacks

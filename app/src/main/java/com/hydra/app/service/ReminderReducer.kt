@@ -246,6 +246,31 @@ object ReminderReducer {
                     }
                 }
             }
+            is ReminderEvent.SettingsChanged -> {
+                when {
+                    metadata.goalReached -> {
+                        TransitionResult(
+                            state = ReminderState.COOLDOWN,
+                            metadata = metadata.copy(
+                                pendingReminder = false,
+                                cooldownEndsAt = now + cooldownDurationMs
+                            ),
+                            effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
+                        )
+                    }
+                    isDeviceUnlocked && !inQuietHours -> {
+                        TransitionResult(
+                            state = ReminderState.SHOWING,
+                            metadata = metadata.copy(
+                                pendingReminder = false,
+                                lastReminderShownAt = now
+                            ),
+                            effects = listOf(ReminderEffect.ShowNotification)
+                        )
+                    }
+                    else -> noOp(ReminderState.PENDING, metadata)
+                }
+            }
             else -> noOp(ReminderState.PENDING, metadata)
         }
     }
