@@ -95,6 +95,8 @@ class ReminderStateStore(private val context: Context) {
     suspend fun updateDailyGoal(goalMl: Int) {
         context.reminderDataStore.edit { prefs ->
             prefs[Keys.DAILY_GOAL] = goalMl
+            val consumed = prefs[Keys.DAILY_WATER_CONSUMED] ?: 0
+            prefs[Keys.GOAL_REACHED] = consumed >= goalMl
         }
     }
 }
