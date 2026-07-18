@@ -79,6 +79,20 @@ object ReminderReducer {
             )
         }
 
+        if (event is ReminderEvent.WaterLogDeleted) {
+            val newConsumed = (metadata.dailyWaterConsumed - event.amountMl).coerceAtLeast(0)
+            val goalReached = newConsumed >= metadata.dailyGoal
+            return TransitionResult(
+                state = state, // preserve current state
+                metadata = metadata.copy(
+                    dailyWaterConsumed = newConsumed,
+                    goalReached = goalReached
+                ),
+                // No effect needed, DashboardViewModel already deleted it from Room
+                effects = emptyList()
+            )
+        }
+
         if (event is ReminderEvent.DayReset) {
             return TransitionResult(
                 state = ReminderState.COOLDOWN,

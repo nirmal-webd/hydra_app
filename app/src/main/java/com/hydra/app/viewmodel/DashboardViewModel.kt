@@ -101,6 +101,9 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
     fun deleteLog(waterLog: WaterLog) {
         viewModelScope.launch {
             waterRepository.deleteLog(waterLog)
+            app.reminderStateManager.dispatch(
+                com.hydra.app.model.ReminderEvent.WaterLogDeleted(waterLog.amountMl)
+            )
         }
     }
 
