@@ -60,6 +60,20 @@ object ReminderReducer {
         if (event is ReminderEvent.WaterLogged) {
             val newConsumed = metadata.dailyWaterConsumed + event.amountMl
             val goalReached = newConsumed >= metadata.dailyGoal
+            
+            val effects = mutableListOf<ReminderEffect>(
+                ReminderEffect.LogWater(event.amountMl, event.source),
+                ReminderEffect.CancelAllTimers,
+                ReminderEffect.CancelNotification
+            )
+            
+            val newCooldownEndsAt = if (goalReached) {
+                0L // Goal reached, no more cooldown timers today
+            } else {
+                effects.add(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
+                now + cooldownDurationMs
+            }
+            
             return TransitionResult(
                 state = ReminderState.COOLDOWN,
                 metadata = metadata.copy(
@@ -68,14 +82,9 @@ object ReminderReducer {
                     goalReached = goalReached,
                     snoozeCount = 0,
                     pendingReminder = false,
-                    cooldownEndsAt = now + cooldownDurationMs
+                    cooldownEndsAt = newCooldownEndsAt
                 ),
-                effects = listOf(
-                    ReminderEffect.LogWater(event.amountMl, event.source),
-                    ReminderEffect.CancelAllTimers,
-                    ReminderEffect.CancelNotification,
-                    ReminderEffect.StartCooldownTimer(cooldownDurationMs)
-                )
+                effects = effects
             )
         }
 
@@ -139,11 +148,12 @@ object ReminderReducer {
             is ReminderEvent.CooldownExpired -> {
                 when {
                     metadata.goalReached -> {
-                        // Goal reached — suppress and restart cooldown quietly
+                        // Goal reached — suppress reminder and let the timer die quietly
+                        // Zero out cooldownEndsAt so the ticker doesn't infinitely dispatch CooldownExpired
                         TransitionResult(
                             state = ReminderState.COOLDOWN,
-                            metadata = metadata.copy(cooldownEndsAt = now + cooldownDurationMs),
-                            effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
+                            metadata = metadata.copy(cooldownEndsAt = 0L),
+                            effects = emptyList()
                         )
                     }
                     isDeviceUnlocked && !inQuietHours -> {
@@ -289,21 +299,31 @@ object ReminderReducer {
             is ReminderEvent.ReminderAccepted -> {
                 // "Drank Water" tapped on notification — log 250ml quick add
                 val newConsumed = metadata.dailyWaterConsumed + 250
+                val goalReached = newConsumed >= metadata.dailyGoal
+                
+                val effects = mutableListOf<ReminderEffect>(
+                    ReminderEffect.LogWater(250, WaterLogSource.NOTIFICATION_QUICK),
+                    ReminderEffect.CancelNotification
+                )
+                
+                val newCooldownEndsAt = if (goalReached) {
+                    0L
+                } else {
+                    effects.add(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
+                    now + cooldownDurationMs
+                }
+                
                 TransitionResult(
                     state = ReminderState.COOLDOWN,
                     metadata = metadata.copy(
                         lastDrinkTimestamp = now,
                         dailyWaterConsumed = newConsumed,
-                        goalReached = newConsumed >= metadata.dailyGoal,
+                        goalReached = goalReached,
                         snoozeCount = 0,
                         pendingReminder = false,
-                        cooldownEndsAt = now + cooldownDurationMs
+                        cooldownEndsAt = newCooldownEndsAt
                     ),
-                    effects = listOf(
-                        ReminderEffect.LogWater(250, WaterLogSource.NOTIFICATION_QUICK),
-                        ReminderEffect.CancelNotification,
-                        ReminderEffect.StartCooldownTimer(cooldownDurationMs)
-                    )
+                    effects = effects
                 )
             }
 
