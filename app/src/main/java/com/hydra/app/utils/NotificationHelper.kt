@@ -60,6 +60,7 @@ class NotificationHelper(private val context: Context) {
             .setContentTitle(title)
             .setContentText(message)
             .setContentIntent(contentIntent)
+            .setFullScreenIntent(contentIntent, true)
             .setAutoCancel(false)  // Don't dismiss on tap — user must respond
             .addAction(0, "💧 Drank!", drankIntent)
             .addAction(0, "⏰ 10 min", snooze10Intent)
