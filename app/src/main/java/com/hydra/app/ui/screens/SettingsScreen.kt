@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -44,8 +45,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hydra.app.viewmodel.SettingsViewModel
 import kotlin.math.roundToInt
 
-private val cooldownOptions = listOf(30, 60, 90, 120)
-private val cooldownLabels = listOf("30 min", "1 hour", "1.5 hr", "2 hr")
+private val cooldownOptions = listOf(1, 30, 60, 90, 120)
+private val cooldownLabels = listOf("1 min", "30 min", "1 hour", "1.5 hr", "2 hr")
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -123,14 +124,15 @@ fun SettingsScreen(
             Spacer(Modifier.height(12.dp))
             Row(
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .horizontalScroll(rememberScrollState())
             ) {
                 cooldownOptions.forEachIndexed { index, minutes ->
                     FilterChip(
                         selected = state.cooldownMinutes == minutes,
                         onClick = { viewModel.setCooldown(minutes) },
-                        label = { Text(cooldownLabels[index]) },
-                        modifier = Modifier.weight(1f)
+                        label = { Text(cooldownLabels[index]) }
                     )
                 }
             }
