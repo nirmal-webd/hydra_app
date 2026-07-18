@@ -91,14 +91,21 @@ object ReminderReducer {
         if (event is ReminderEvent.WaterLogDeleted) {
             val newConsumed = (metadata.dailyWaterConsumed - event.amountMl).coerceAtLeast(0)
             val goalReached = newConsumed >= metadata.dailyGoal
+            
+            // If they fell below the goal, the timer might be dead (cooldownEndsAt == 0). Restart it.
+            val lostGoal = metadata.goalReached && !goalReached
+            val newCooldownEndsAt = if (lostGoal) now + cooldownDurationMs else metadata.cooldownEndsAt
+            val effects = if (lostGoal) listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs)) else emptyList()
+            
             return TransitionResult(
                 state = state, // preserve current state
                 metadata = metadata.copy(
                     dailyWaterConsumed = newConsumed,
-                    goalReached = goalReached
+                    goalReached = goalReached,
+                    cooldownEndsAt = newCooldownEndsAt
                 ),
-                // No effect needed, DashboardViewModel already deleted it from Room
-                effects = emptyList()
+                // DashboardViewModel already deleted it from Room
+                effects = effects
             )
         }
 

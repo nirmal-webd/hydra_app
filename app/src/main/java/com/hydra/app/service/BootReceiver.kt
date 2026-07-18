@@ -10,8 +10,14 @@ import androidx.core.content.ContextCompat
  */
 class BootReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent.action == Intent.ACTION_BOOT_COMPLETED || 
-            intent.action == Intent.ACTION_MY_PACKAGE_REPLACED) {
+        val validActions = listOf(
+            Intent.ACTION_BOOT_COMPLETED,
+            Intent.ACTION_MY_PACKAGE_REPLACED,
+            Intent.ACTION_TIMEZONE_CHANGED,
+            Intent.ACTION_TIME_CHANGED
+        )
+
+        if (intent.action in validActions) {
             val serviceIntent = Intent(context, ReminderForegroundService::class.java).apply {
                 action = ReminderForegroundService.ACTION_START
             }
