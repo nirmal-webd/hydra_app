@@ -1,47 +1,51 @@
-# Hydra Development & Architecture Log
+# The Story of Hydra: How We Built It
 
-This document serves as the historical track record and decision log for Hydra's development. Going forward, all major architectural changes, refactors, and feature pivots (including undo operations) will be logged here with the logic and reasoning behind them.
+This document is the story of how we built the Hydra app. Whenever we make a big change, try a new idea, or throw away an old one, we will write it down here. We use plain, simple language so anyone can understand why we made the choices we did.
 
 ---
 
 ## 1. How We Started
-Hydra began as a smart hydration tracker built on a modern Android tech stack:
-- **UI:** Jetpack Compose & Material 3
-- **Architecture:** MVVM, Coroutines, Flow
-- **Local Storage:** Room Database (for water logs) & DataStore (for settings)
-- **Background Work:** Foreground Services and BroadcastReceivers for screen-unlock detection.
+We set out to build a smart water-drinking assistant. Most water apps buzz your phone while it's in your pocket, which is annoying. 
 
-The initial goal was simple: remind the user to drink water only when they actually unlock their phone, avoiding annoying spam when the device is in their pocket.
+Our core idea was simple: **Hydra should only remind you to drink water at the exact moment you unlock your phone.**
 
-## 2. The Core Logic Problem
-As we built the reminder engine, the logic quickly became tangled. Tracking whether the screen was locked, if a timer had expired, if the user had snoozed the app, or if they just drank water resulted in a chaotic web of overlapping booleans and race conditions. The app was unpredictable.
+## 2. The "Too Many Sticky Notes" Problem
+At first, we tried to build the brain of the app by leaving little "sticky notes" for it to remember things. One note said "is the screen locked?", another said "has the timer finished?", and another said "did they snooze?". 
 
-## 3. The Pivot to a Finite State Machine (FSM)
-**Why we did it:** To resolve the chaos, we completely re-architected the reminder engine into an **Event-Driven Finite State Machine**. 
-By explicitly defining the states the app could be in (`IDLE`, `COOLDOWN`, `PENDING_UNLOCK`, `SNOOZED`) and the events that could trigger transitions (`ScreenUnlocked`, `WaterLogged`, `TimerExpired`, `ReminderSnoozed`), the system became 100% deterministic and predictable.
+Very quickly, the app's brain became covered in too many sticky notes. It started getting confused, reading the wrong notes at the wrong time, and behaving unpredictably.
 
-All side-effects (like launching a notification or setting an alarm) were isolated as outputs of these transitions.
+## 3. The "Traffic Light" Solution (Finite State Machine)
+**Why we changed things:** To fix the confusion, we threw away the sticky notes and replaced the app's brain with a simple **Traffic Light System** (in programming, this is called a Finite State Machine).
 
-## 4. Key Refinements and "Undos" (The Pivot History)
+Just like a real traffic light can only ever be Green, Yellow, or Red, we made a strict rule: the app can only ever be in one single "State" at a time. For example:
+- **Cooldown (Red Light):** The app is silently waiting. Do nothing.
+- **Ready (Yellow Light):** The timer is done. Wait for the user to unlock their phone.
+- **Snoozing (Flashing Light):** The user asked for 10 more minutes of peace.
 
-### 4.1. Undoing `GoalReached` as an FSM State
-- **What we did:** Initially, we had a `GOAL_REACHED` state in the FSM to stop reminders once the daily goal was met.
-- **Why we undid it:** Achieving a goal is *business logic*, not a structural engine state. By making it a rigid state, we accidentally locked the engine and prevented users from logging extra water or resetting properly. We removed the state and instead let the engine check the `Metadata.goalReached` flag to decide if it should suppress the notification during standard transitions.
+Because the app can only be in one state at a time, it is impossible for it to get confused. It always knows exactly what it is supposed to be doing.
 
-### 4.2. Undoing the `ForcePending` Bootstrap Logic
-- **What we did:** When the app was opened or the service restarted, we forced a `ForcePending` event to immediately trigger a reminder on the next unlock.
-- **Why we undid it:** This bypassed the user's explicitly chosen cooldown timer in the settings. If a user wanted a reminder every 2 hours, restarting the app would instantly nag them. We removed this and reverted to starting a standard `COOLDOWN` timer on bootstrap.
+## 4. Learning from Mistakes (Our "Undos")
 
-### 4.3. The Overlay vs. Sticky Notification Pivot
-- **What we did:** We built a highly advanced, full-screen `WindowManager` overlay (`TYPE_APPLICATION_OVERLAY`) to aggressively but elegantly prompt the user to drink water.
-- **Why we undid it:** The overlay required the "Display over other apps" permission. This permission is notoriously scary for average users during onboarding and causes high drop-off rates. 
-- **The Solution:** We deleted the overlay code entirely and pivoted to a **Sticky Notification**. By using `.setOngoing(true)`, the notification pins itself to the drawer and cannot be swiped away, forcing interaction via action buttons. This achieved the aggressive reminder goal without the intrusive permission.
+Sometimes we built a feature, realized it was a bad idea, and deleted it. Here is why we undid certain things:
 
-### 4.4. Notification Button Text Shortening
-- **What we did:** Initially, the sticky notification action buttons read `"💧 Drank!"`, `"⏰ 10 min"`, and `"🚫 Not Now"`.
-- **Why we changed it:** Android OS does not allow developers to change the font size of notification action buttons. On smaller screens, the text was truncating and looked unpolished. We shortened them to `"💧 250ml"`, `"⏰ 10 min"`, and `"🚫 Skip"` to ensure perfect visibility.
+### 4.1. Undoing the "Goal Reached" Traffic Light
+- **What we tried:** We added a special traffic light just for when you reach your daily water goal (e.g., 2 liters). When this light turned on, the app stopped doing anything.
+- **Why we deleted it:** We realized that reaching your goal shouldn't break the traffic light system! What if you wanted to drink more water than your goal? By making it a rigid traffic light, we broke the app. We deleted that light. Now, the system keeps running normally, but if you've hit your goal, it just chooses to stay quiet instead of buzzing you.
+
+### 4.2. Undoing the "Instant Nag" 
+- **What we tried:** When you first opened the app or restarted your phone, we forced the app to instantly jump to the "Ready" state. This meant the very next time you unlocked your phone, it would nag you to drink water.
+- **Why we deleted it:** If a user specifically told the settings, "Only bother me every 2 hours," they would get very annoyed if the app nagged them instantly after turning their phone on. We deleted the instant nag. Now, when the app starts up, it respects the user and politely waits for the 2-hour timer to finish first.
+
+### 4.3. The Billboard vs. The Sticky Note
+- **What we tried:** We built a massive, beautiful "Billboard" (a full-screen pop-up) that would take over your entire screen to remind you to drink water.
+- **Why we deleted it:** To show a billboard over other apps, Android forces us to ask the user for a very scary-sounding security permission ("Display over other apps"). When users see this, they get worried we are spying on them, and they delete the app. 
+- **The Solution:** We tore down the billboard. Instead, we created a **Sticky Notification**. It sits in your notification drawer and physically cannot be swiped away. You *must* click a button on it (like "Drank" or "Skip") to get rid of it. It accomplishes the exact same goal—making sure you don't ignore it—but without asking for scary permissions!
+
+### 4.4. Making the Buttons Fit
+- **What we tried:** The buttons on our Sticky Notification used to say `"💧 Drank!"`, `"⏰ 10 min"`, and `"🚫 Not Now"`.
+- **Why we changed it:** On smaller phones, those words were too long and got chopped off in the middle. Since Android doesn't let us shrink the text size, we had to shrink the words themselves. We changed them to `"💧 250ml"`, `"⏰ 10 min"`, and `"🚫 Skip"` so they look perfect on every phone.
 
 ---
 
 ## 5. Going Forward
-Every major decision, feature addition, or logic reversal must be appended to this document. The rationale is just as important as the code. 
+Whenever we add a big new feature, change our minds, or delete something important, we will come back to this document and explain the story of *why* we did it in plain, simple English.
