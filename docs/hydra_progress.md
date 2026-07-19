@@ -48,10 +48,11 @@
     
 ## Recent Feature & UX Updates
     
-### 1. Advanced Full-Screen Overlay Experience
-- Created `ReminderOverlayManager` using pure `WindowManager` with `TYPE_APPLICATION_OVERLAY`.
-- Replaced the previous `ReminderActivity` implementation.
-- This creates a true floating view over other apps that never pauses the underlying activity, isn't tracked in Recents, and dismisses instantly to return context directly to the user.
+### 1. Simplified Reminder Experience (Sticky Notification)
+- Pivoted from an overlay system to a simpler, less intrusive **Sticky Notification** system.
+- Eliminated the need for the scary "Display over other apps" permission, significantly improving the onboarding flow.
+- The reminder notification is set to `Ongoing` (`.setOngoing(true)`), pinning it to the notification drawer until the user interacts with it.
+- Action buttons are highly optimized for narrow screens: **"💧 250ml"**, **"⏰ 10 min"**, and **"🚫 Skip"**.
     
 ### 2. Streamlined Onboarding & Permissions Flow
 - Implemented `OnboardingScreen` with rationale pages for Notifications and "Display over other apps" permissions.
