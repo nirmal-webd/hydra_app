@@ -21,6 +21,7 @@ import com.hydra.app.viewmodel.DailyStatus
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 
 @Composable
 fun DashboardScreen(
@@ -97,17 +98,25 @@ fun DashboardScreen(
                     Text(
                         text = dayStatus.label,
                         style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        color = if (dayStatus.isToday) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                        fontWeight = if (dayStatus.isToday) FontWeight.Bold else FontWeight.Normal,
                         modifier = Modifier.padding(bottom = 8.dp)
                     )
                     Box(
                         modifier = Modifier
                             .size(32.dp)
+                            .border(
+                                width = if (dayStatus.isToday) 2.dp else 0.dp,
+                                color = if (dayStatus.isToday) MaterialTheme.colorScheme.primary else androidx.compose.ui.graphics.Color.Transparent,
+                                shape = CircleShape
+                            )
+                            .padding(if (dayStatus.isToday) 2.dp else 0.dp) // Space between border and colored background
                             .background(
                                 color = when (dayStatus.status) {
                                     DailyStatus.MET -> androidx.compose.ui.graphics.Color(0xFF4CAF50)
                                     DailyStatus.NOT_MET -> androidx.compose.ui.graphics.Color(0xFFE53935)
                                     DailyStatus.NO_DATA -> MaterialTheme.colorScheme.surfaceVariant
+                                    DailyStatus.IN_PROGRESS -> androidx.compose.ui.graphics.Color(0xFFFFB74D) // Orange
                                 },
                                 shape = CircleShape
                             ),
@@ -118,6 +127,7 @@ fun DashboardScreen(
                                 DailyStatus.MET -> Icons.Filled.Check
                                 DailyStatus.NOT_MET -> Icons.Filled.Close
                                 DailyStatus.NO_DATA -> Icons.Filled.Remove
+                                DailyStatus.IN_PROGRESS -> Icons.Filled.Remove
                             },
                             contentDescription = null,
                             tint = if (dayStatus.status == DailyStatus.NO_DATA) 

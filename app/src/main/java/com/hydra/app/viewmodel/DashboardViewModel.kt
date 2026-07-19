@@ -17,12 +17,13 @@ import kotlinx.coroutines.launch
 import java.time.LocalDate
 
 enum class DailyStatus {
-    MET, NOT_MET, NO_DATA
+    MET, NOT_MET, NO_DATA, IN_PROGRESS
 }
 
 data class WeeklyDayStatus(
     val label: String,
-    val status: DailyStatus
+    val status: DailyStatus,
+    val isToday: Boolean
 )
 
 data class DashboardState(
@@ -136,9 +137,12 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
             for (i in 6 downTo 0) {
                 val date = today.minusDays(i.toLong())
                 val dayTotal = dailyTotals[date] ?: 0
+                val isToday = (i == 0)
                 
                 val status = if (dayTotal >= goalMl) {
                     DailyStatus.MET
+                } else if (isToday) {
+                    DailyStatus.IN_PROGRESS
                 } else if (dayTotal > 0) {
                     DailyStatus.NOT_MET
                 } else {
@@ -147,7 +151,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
                 
                 // M, T, W, T, F, S, S
                 val label = date.dayOfWeek.name.take(1)
-                weekly.add(WeeklyDayStatus(label, status))
+                weekly.add(WeeklyDayStatus(label, status, isToday))
             }
             _weeklyStatus.value = weekly
 

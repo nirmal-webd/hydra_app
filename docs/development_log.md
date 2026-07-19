@@ -49,6 +49,7 @@ Sometimes we built a feature, realized it was a bad idea, and deleted it. Here i
 - **What we tried:** At first, the main screen had a "Stats Card" that showed your current streak, milliliters remaining, and how many times the app reminded you today.
 - **Why we changed it:** The card was confusing. The "remaining ml" was already shown in the big circular progress ring, and users didn't care about the "reminders shown" number.
 - **The Solution:** We deleted the stats card. Instead, we added a clear **Weekly Tracker**. It shows a row of 7 days with simple icons: a green check (goal met), a red X (goal missed), or a grey dash (no data). Below that, we show a large "Fire" 🔥 streak number to motivate you. This makes it instantly obvious how well you are doing this week without needing to read numbers.
+  - *Refinement:* We later highlighted the *current* day with a bold text color and a circular border so it stands out. We also changed the logic so the current day doesn't show a discouraging red 'X' in the morning—it shows a forgiving orange 'in progress' dash until the day is actually over!
 
 ---
 
