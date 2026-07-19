@@ -129,22 +129,13 @@ class ReminderStateManager(
                         action = ReminderAction.SHOWN
                     )
                 )
+
+                // Launch sticky notification
                 notificationHelper.showReminderNotification(
                     reminderId = reminderId,
                     title = "Time to hydrate! 💧",
                     message = buildReminderMessage(metadata)
                 )
-                
-                // Launch MainActivity as an overriding full-screen experience
-                try {
-                    val intent = android.content.Intent(context, com.hydra.app.MainActivity::class.java).apply {
-                        flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP
-                        putExtra("SHOW_REMINDER_FULLSCREEN", true)
-                    }
-                    context.startActivity(intent)
-                } catch (e: Exception) {
-                    e.printStackTrace()
-                }
             }
 
             is ReminderEffect.CancelNotification -> {

@@ -1,0 +1,8 @@
+com.hydra.app-pngs-0 /home/nirmal/AndroidStudioProjects/Hydra/app/build/generated/res/pngs/debug
+com.hydra.app-updated_navigation_xml-1 /home/nirmal/AndroidStudioProjects/Hydra/app/build/generated/updated_navigation_xml/debug
+com.hydra.app-packageDebugResources-2 /home/nirmal/AndroidStudioProjects/Hydra/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.hydra.app-packageDebugResources-3 /home/nirmal/AndroidStudioProjects/Hydra/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.hydra.app-debug-4 /home/nirmal/AndroidStudioProjects/Hydra/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.hydra.app-debug-5 /home/nirmal/AndroidStudioProjects/Hydra/app/src/debug/res
+com.hydra.app-main-6 /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/res
+gradleHome-0 /home/nirmal/.gradle

@@ -1,0 +1,762 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:2:1-86:12
+MERGED from [androidx.work:work-runtime-ktx:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/289ca0f3561e68d807aff01abb1995c0/transformed/work-runtime-ktx-2.10.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:17:1-145:12
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0880402da7caf48233049eb317a9a3a3/transformed/navigation-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/a6c92fe7ccd5496315116c26cb857f8f/transformed/navigation-common-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-compose-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f82cad44a8ef058970c8fd2cf951def1/transformed/navigation-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/342c016472175fde34e13819578473a4/transformed/material3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation-core-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/ce3dc7c38968d319f80d723767f5f78b/transformed/animation-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/8fd8f73d46041ce24c7f76c69906a1b1/transformed/material-ripple/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/10568f08a42239427e1dc1612e59cd19/transformed/animation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/08498169b1baa6d8a300a93c2edfff40/transformed/foundation-layout/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/3d78b5ad0975a6625fef0dff2a839b39/transformed/foundation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/d89c6eda2badf81786f079006a0af7cd/transformed/ui-unit/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/1f045e1ee01ef5f3259a4ef20c935afa/transformed/ui-geometry/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/fb9a3bdf12d254195b20e335c29639ba/transformed/ui-util/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/0e2f6ee307395d050deb171c9f833de7/transformed/ui-text/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/840f7a3e025881c293835a8f2a7b1a15/transformed/ui-tooling-preview/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/18c9316ab2ba51710dfda841823a6f2d/transformed/ui-graphics/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/f09e21a900525f0d1fd81fee0fcebd83/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/50f388827760da8e6fd9f7ff244f59a2/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/4e96483786718a29433be850deaa00b7/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] /home/nirmal/.gradle/caches/9.4.1/transforms/75bd60814288bff2b76a9d29aed960eb/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] /home/nirmal/.gradle/caches/9.4.1/transforms/32e89003ad6275c7e052794dade26784/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/59cc0a6a3505598498ad9d7af6e99643/transformed/runtime-annotation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/6b73dc57c3b2116aa5877bec6ef2f8e9/transformed/runtime-retain/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.transition:transition:1.6.0] /home/nirmal/.gradle/caches/9.4.1/transforms/514dae9e3e72a4e670875c918fb653d0/transformed/transition-1.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/3a8d302cad68ac4fdab47e06cebed98a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8923705417e7cc9ffb530152e820fbf7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/6a4574cbd4c7bc07ab005786dd8984af/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/026d432d39bc5ab6046855fac6eb325c/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/44d7376112933c9c3bab8eee7a00d4c4/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/210d0fc52d8ba168c908c850ae71377e/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/4bfbf50fb280045a7970ba6e409caf60/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/f2933178ce3e8e642e13f721b6d93a1f/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/f629d8d4bcd18d1e8970a075fed603fe/transformed/lifecycle-service-2.9.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/1113b92cfe794bf454ae5b147001f1df/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/104800d8b16502e4e3c8c8efb6970ba9/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/0b9115a539fc9925f39bec9c63ce51b4/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/167a003c3898d3582f6d6e0893a1a403/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-android:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/d73c1a3f4b14a8fc36d93c4096dd57c7/transformed/savedstate-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/830a0791cc51557ffb458a2142167be7/transformed/savedstate-ktx-1.3.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/8abcb4204365fbacec7e738e7fe3546d/transformed/savedstate-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/a838e35616ef18204779dbb2050d14e2/transformed/runtime/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/65344087578035d605f6b4fd928c0d74/transformed/runtime-saveable/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7aaff23c95f0b656ae81e65b2bd3384c/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/3fa0872f81cd6bf6d46c2852b9ce69bb/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/b6e1a7468317812c7587741603b01def/transformed/ui/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/776be35f0f5510bb3bef2ff29b5b46f5/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window-core-android:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/26d868b4698c2262bd4f025d8eef8dd9/transformed/window-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/nirmal/.gradle/caches/9.4.1/transforms/a27b662cc48f3eee1296e2f648916901/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/60b57a1fcaf90ee4fee8f84db4ac8271/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0c33277fed2dc575fc5117a0d7a173fd/transformed/core-ktx-1.16.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/1d9774bcc24fce1f03212317754483db/transformed/room-ktx-2.7.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/2e7a3a106303fa7c43372d7e90d3bc96/transformed/datastore-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/3630b8921cb713d6ad0f40baa61dbf11/transformed/datastore-preferences-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.datastore:datastore-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/4189468ef2220a6f873fc4fa93ce32e2/transformed/datastore-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/b77f73847fe0573634e9a14beb9a45de/transformed/datastore-preferences-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/nirmal/.gradle/caches/9.4.1/transforms/6629da1eafb5c93ca4ee18b66d5d1dfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f7bedc5cdef3153ba7272f3e8ba566e2/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/9bcf47d3e708da4c323c392337c7ea5c/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f99e8bf6761c632889fa720f5e6bd8fd/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/215ae16179f16b1024e4fa7936f18a77/transformed/sqlite-framework-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c0a49a87aa03173be59c6c83f40a9cca/transformed/sqlite-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/822b36060f9024fe0a9fc2b72d477b06/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/7f37772218e92e484e2f638244154791/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/af8d5baf115d14aa8330c7f5b9f2189b/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/34028e1c5437fab47261a0be34493f74/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c053740b7680d4288c1086df66db5d0c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c5774e96f54aac41b76abf38437afd12/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:7:5-77
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:26:5-77
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:7:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_DATA_SYNC
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:8:5-87
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:8:22-84
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:9:5-81
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:25:5-81
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:10:5-11:37
+	tools:ignore
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:11:9-34
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.USE_EXACT_ALARM
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:12:22-71
+uses-permission#android.permission.PACKAGE_USAGE_STATS
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:13:5-14:47
+	tools:ignore
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:14:9-44
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:13:22-75
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:15:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:16:5-78
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:16:22-75
+application
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:18:5-84:19
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:18:5-84:19
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/822b36060f9024fe0a9fc2b72d477b06/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/822b36060f9024fe0a9fc2b72d477b06/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:26:9-35
+	android:label
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:24:9-41
+	android:fullBackupContent
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:22:9-54
+	android:roundIcon
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:25:9-54
+	android:icon
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:23:9-43
+	android:allowBackup
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:20:9-35
+	android:theme
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:27:9-43
+	android:dataExtractionRules
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:21:9-65
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:19:9-33
+service#com.hydra.app.service.ReminderForegroundService
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:30:9-33:40
+	android:exported
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:33:13-37
+	android:foregroundServiceType
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:32:13-53
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:31:13-62
+receiver#com.hydra.app.service.ReminderAlarmReceiver
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:36:9-44:20
+	android:exported
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:37:13-58
+intent-filter#action:name:com.hydra.app.ACTION_COOLDOWN_EXPIRED+action:name:com.hydra.app.ACTION_DAY_RESET+action:name:com.hydra.app.ACTION_SNOOZE_EXPIRED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:39:13-43:29
+action#com.hydra.app.ACTION_COOLDOWN_EXPIRED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:40:17-80
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:40:25-77
+action#com.hydra.app.ACTION_SNOOZE_EXPIRED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:41:17-78
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:41:25-75
+action#com.hydra.app.ACTION_DAY_RESET
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:42:17-73
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:42:25-70
+receiver#com.hydra.app.service.BootReceiver
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:47:9-56:20
+	android:exported
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:49:13-36
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:48:13-49
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:50:13-55:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:51:17-79
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:51:25-76
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:52:17-84
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:52:25-81
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:53:17-81
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:53:25-78
+action#android.intent.action.TIME_SET
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:54:17-73
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:54:25-70
+receiver#com.hydra.app.service.NotificationActionReceiver
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:59:9-70:20
+	android:exported
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:61:13-37
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:60:13-63
+intent-filter#action:name:com.hydra.app.ACTION_ADD_250ML+action:name:com.hydra.app.ACTION_DISMISS+action:name:com.hydra.app.ACTION_SNOOZE_10+action:name:com.hydra.app.ACTION_SNOOZE_15+action:name:com.hydra.app.ACTION_SNOOZE_30+action:name:com.hydra.app.ACTION_SNOOZE_5
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:62:13-69:29
+action#com.hydra.app.ACTION_ADD_250ML
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:63:17-73
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:63:25-70
+action#com.hydra.app.ACTION_SNOOZE_5
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:64:17-72
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:64:25-69
+action#com.hydra.app.ACTION_SNOOZE_10
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:65:17-73
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:65:25-70
+action#com.hydra.app.ACTION_SNOOZE_15
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:66:17-73
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:66:25-70
+action#com.hydra.app.ACTION_SNOOZE_30
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:67:17-73
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:67:25-70
+action#com.hydra.app.ACTION_DISMISS
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:68:17-71
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:68:25-68
+activity#com.hydra.app.MainActivity
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:72:9-83:20
+	android:label
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:75:13-45
+	android:launchMode
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:76:13-43
+	android:windowSoftInputMode
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:78:13-55
+	android:exported
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:74:13-36
+	android:theme
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:77:13-47
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:73:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:79:13-82:29
+action#android.intent.action.MAIN
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:80:17-69
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:80:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:81:17-77
+	android:name
+		ADDED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml:81:27-74
+uses-sdk
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+MERGED from [androidx.work:work-runtime-ktx:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/289ca0f3561e68d807aff01abb1995c0/transformed/work-runtime-ktx-2.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/289ca0f3561e68d807aff01abb1995c0/transformed/work-runtime-ktx-2.10.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0880402da7caf48233049eb317a9a3a3/transformed/navigation-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0880402da7caf48233049eb317a9a3a3/transformed/navigation-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/a6c92fe7ccd5496315116c26cb857f8f/transformed/navigation-common-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/a6c92fe7ccd5496315116c26cb857f8f/transformed/navigation-common-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-compose-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f82cad44a8ef058970c8fd2cf951def1/transformed/navigation-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose-android:2.9.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f82cad44a8ef058970c8fd2cf951def1/transformed/navigation-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/342c016472175fde34e13819578473a4/transformed/material3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/342c016472175fde34e13819578473a4/transformed/material3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/ce3dc7c38968d319f80d723767f5f78b/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/ce3dc7c38968d319f80d723767f5f78b/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/8fd8f73d46041ce24c7f76c69906a1b1/transformed/material-ripple/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/8fd8f73d46041ce24c7f76c69906a1b1/transformed/material-ripple/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/10568f08a42239427e1dc1612e59cd19/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/10568f08a42239427e1dc1612e59cd19/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/08498169b1baa6d8a300a93c2edfff40/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/08498169b1baa6d8a300a93c2edfff40/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/3d78b5ad0975a6625fef0dff2a839b39/transformed/foundation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/3d78b5ad0975a6625fef0dff2a839b39/transformed/foundation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/d89c6eda2badf81786f079006a0af7cd/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/d89c6eda2badf81786f079006a0af7cd/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/1f045e1ee01ef5f3259a4ef20c935afa/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/1f045e1ee01ef5f3259a4ef20c935afa/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/fb9a3bdf12d254195b20e335c29639ba/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/fb9a3bdf12d254195b20e335c29639ba/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/0e2f6ee307395d050deb171c9f833de7/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/0e2f6ee307395d050deb171c9f833de7/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/840f7a3e025881c293835a8f2a7b1a15/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/840f7a3e025881c293835a8f2a7b1a15/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/18c9316ab2ba51710dfda841823a6f2d/transformed/ui-graphics/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/18c9316ab2ba51710dfda841823a6f2d/transformed/ui-graphics/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/f09e21a900525f0d1fd81fee0fcebd83/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/f09e21a900525f0d1fd81fee0fcebd83/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/50f388827760da8e6fd9f7ff244f59a2/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/50f388827760da8e6fd9f7ff244f59a2/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/4e96483786718a29433be850deaa00b7/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/nirmal/.gradle/caches/9.4.1/transforms/4e96483786718a29433be850deaa00b7/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] /home/nirmal/.gradle/caches/9.4.1/transforms/75bd60814288bff2b76a9d29aed960eb/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] /home/nirmal/.gradle/caches/9.4.1/transforms/75bd60814288bff2b76a9d29aed960eb/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] /home/nirmal/.gradle/caches/9.4.1/transforms/32e89003ad6275c7e052794dade26784/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] /home/nirmal/.gradle/caches/9.4.1/transforms/32e89003ad6275c7e052794dade26784/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/59cc0a6a3505598498ad9d7af6e99643/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/59cc0a6a3505598498ad9d7af6e99643/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/6b73dc57c3b2116aa5877bec6ef2f8e9/transformed/runtime-retain/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/6b73dc57c3b2116aa5877bec6ef2f8e9/transformed/runtime-retain/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.transition:transition:1.6.0] /home/nirmal/.gradle/caches/9.4.1/transforms/514dae9e3e72a4e670875c918fb653d0/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.6.0] /home/nirmal/.gradle/caches/9.4.1/transforms/514dae9e3e72a4e670875c918fb653d0/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/3a8d302cad68ac4fdab47e06cebed98a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/3a8d302cad68ac4fdab47e06cebed98a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8923705417e7cc9ffb530152e820fbf7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8923705417e7cc9ffb530152e820fbf7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/6a4574cbd4c7bc07ab005786dd8984af/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/6a4574cbd4c7bc07ab005786dd8984af/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/026d432d39bc5ab6046855fac6eb325c/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/026d432d39bc5ab6046855fac6eb325c/transformed/lifecycle-viewmodel-2.9.4/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/44d7376112933c9c3bab8eee7a00d4c4/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/44d7376112933c9c3bab8eee7a00d4c4/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/210d0fc52d8ba168c908c850ae71377e/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/210d0fc52d8ba168c908c850ae71377e/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/4bfbf50fb280045a7970ba6e409caf60/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/4bfbf50fb280045a7970ba6e409caf60/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/f2933178ce3e8e642e13f721b6d93a1f/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/f2933178ce3e8e642e13f721b6d93a1f/transformed/lifecycle-viewmodel-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/f629d8d4bcd18d1e8970a075fed603fe/transformed/lifecycle-service-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/f629d8d4bcd18d1e8970a075fed603fe/transformed/lifecycle-service-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/1113b92cfe794bf454ae5b147001f1df/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/1113b92cfe794bf454ae5b147001f1df/transformed/lifecycle-livedata-core-ktx-2.9.4/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/104800d8b16502e4e3c8c8efb6970ba9/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/104800d8b16502e4e3c8c8efb6970ba9/transformed/lifecycle-livedata-core-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/0b9115a539fc9925f39bec9c63ce51b4/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/0b9115a539fc9925f39bec9c63ce51b4/transformed/lifecycle-livedata-2.9.4/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/167a003c3898d3582f6d6e0893a1a403/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/167a003c3898d3582f6d6e0893a1a403/transformed/lifecycle-viewmodel-savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/d73c1a3f4b14a8fc36d93c4096dd57c7/transformed/savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/d73c1a3f4b14a8fc36d93c4096dd57c7/transformed/savedstate-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/830a0791cc51557ffb458a2142167be7/transformed/savedstate-ktx-1.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/830a0791cc51557ffb458a2142167be7/transformed/savedstate-ktx-1.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/8abcb4204365fbacec7e738e7fe3546d/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.3.2] /home/nirmal/.gradle/caches/9.4.1/transforms/8abcb4204365fbacec7e738e7fe3546d/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/a838e35616ef18204779dbb2050d14e2/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/a838e35616ef18204779dbb2050d14e2/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/65344087578035d605f6b4fd928c0d74/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/65344087578035d605f6b4fd928c0d74/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7aaff23c95f0b656ae81e65b2bd3384c/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7aaff23c95f0b656ae81e65b2bd3384c/transformed/lifecycle-runtime-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/3fa0872f81cd6bf6d46c2852b9ce69bb/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/3fa0872f81cd6bf6d46c2852b9ce69bb/transformed/lifecycle-viewmodel-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/b6e1a7468317812c7587741603b01def/transformed/ui/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.10.4] /home/nirmal/.gradle/caches/9.4.1/transforms/b6e1a7468317812c7587741603b01def/transformed/ui/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/776be35f0f5510bb3bef2ff29b5b46f5/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/776be35f0f5510bb3bef2ff29b5b46f5/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window-core-android:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/26d868b4698c2262bd4f025d8eef8dd9/transformed/window-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/26d868b4698c2262bd4f025d8eef8dd9/transformed/window-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/nirmal/.gradle/caches/9.4.1/transforms/a27b662cc48f3eee1296e2f648916901/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /home/nirmal/.gradle/caches/9.4.1/transforms/a27b662cc48f3eee1296e2f648916901/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/60b57a1fcaf90ee4fee8f84db4ac8271/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/60b57a1fcaf90ee4fee8f84db4ac8271/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0c33277fed2dc575fc5117a0d7a173fd/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0c33277fed2dc575fc5117a0d7a173fd/transformed/core-ktx-1.16.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/1d9774bcc24fce1f03212317754483db/transformed/room-ktx-2.7.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/1d9774bcc24fce1f03212317754483db/transformed/room-ktx-2.7.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/2e7a3a106303fa7c43372d7e90d3bc96/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-core-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/2e7a3a106303fa7c43372d7e90d3bc96/transformed/datastore-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/3630b8921cb713d6ad0f40baa61dbf11/transformed/datastore-preferences-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-preferences-core-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/3630b8921cb713d6ad0f40baa61dbf11/transformed/datastore-preferences-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/4189468ef2220a6f873fc4fa93ce32e2/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/4189468ef2220a6f873fc4fa93ce32e2/transformed/datastore-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/b77f73847fe0573634e9a14beb9a45de/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.datastore:datastore-preferences-android:1.1.7] /home/nirmal/.gradle/caches/9.4.1/transforms/b77f73847fe0573634e9a14beb9a45de/transformed/datastore-preferences-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/nirmal/.gradle/caches/9.4.1/transforms/6629da1eafb5c93ca4ee18b66d5d1dfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/nirmal/.gradle/caches/9.4.1/transforms/6629da1eafb5c93ca4ee18b66d5d1dfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f7bedc5cdef3153ba7272f3e8ba566e2/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f7bedc5cdef3153ba7272f3e8ba566e2/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/9bcf47d3e708da4c323c392337c7ea5c/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/9bcf47d3e708da4c323c392337c7ea5c/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f99e8bf6761c632889fa720f5e6bd8fd/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing-ktx:1.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/f99e8bf6761c632889fa720f5e6bd8fd/transformed/tracing-ktx-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/215ae16179f16b1024e4fa7936f18a77/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework-android:2.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/215ae16179f16b1024e4fa7936f18a77/transformed/sqlite-framework-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c0a49a87aa03173be59c6c83f40a9cca/transformed/sqlite-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-android:2.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c0a49a87aa03173be59c6c83f40a9cca/transformed/sqlite-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/822b36060f9024fe0a9fc2b72d477b06/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/822b36060f9024fe0a9fc2b72d477b06/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/7f37772218e92e484e2f638244154791/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/7f37772218e92e484e2f638244154791/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/af8d5baf115d14aa8330c7f5b9f2189b/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/nirmal/.gradle/caches/9.4.1/transforms/af8d5baf115d14aa8330c7f5b9f2189b/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/34028e1c5437fab47261a0be34493f74/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/34028e1c5437fab47261a0be34493f74/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c053740b7680d4288c1086df66db5d0c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c053740b7680d4288c1086df66db5d0c/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c5774e96f54aac41b76abf38437afd12/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/nirmal/.gradle/caches/9.4.1/transforms/c5774e96f54aac41b76abf38437afd12/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/nirmal/AndroidStudioProjects/Hydra/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:23:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:24:22-76
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/nirmal/.gradle/caches/9.4.1/transforms/fa3b677470a799ded9e90d974ca54197/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:33:13-31
+	android:authorities
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:31:13-68
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:30:13-67
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:34:13-36:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:36:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:35:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:43:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:49:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:50:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:51:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:47:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:56:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:55:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:54:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:116:13-120:29
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.10.1] /home/nirmal/.gradle/caches/9.4.1/transforms/b9e8985855a439c6c430af8c9350c287/transformed/work-runtime-2.10.1/AndroidManifest.xml:140:25-85
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/0d58ac9338991754607e232d8b4a5c5b/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.9.4] /home/nirmal/.gradle/caches/9.4.1/transforms/7d4640814e3b8c07443f0bfc9b984880/transformed/lifecycle-process-2.9.4/AndroidManifest.xml:30:17-78
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.5.0] /home/nirmal/.gradle/caches/9.4.1/transforms/b0119f8f8b101e1bb54e604497f5ca29/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+permission#com.hydra.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+uses-permission#com.hydra.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.16.0] /home/nirmal/.gradle/caches/9.4.1/transforms/5d03efb4c667f55b6daf4b30c7ce9d84/transformed/core-1.16.0/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime-android:2.7.1] /home/nirmal/.gradle/caches/9.4.1/transforms/5b5f71cde15898639577c887b8e2746a/transformed/room-runtime-release/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /home/nirmal/.gradle/caches/9.4.1/transforms/8492d445e2619246a106049600cfcfab/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92

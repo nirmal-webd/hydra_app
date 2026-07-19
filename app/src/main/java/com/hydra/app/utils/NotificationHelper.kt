@@ -60,11 +60,11 @@ class NotificationHelper(private val context: Context) {
             .setContentTitle(title)
             .setContentText(message)
             .setContentIntent(contentIntent)
-            .setFullScreenIntent(contentIntent, true)
+            .setOngoing(true) // Sticky notification
             .setAutoCancel(false)  // Don't dismiss on tap — user must respond
-            .addAction(0, "💧 Drank!", drankIntent)
+            .addAction(0, "💧 250ml", drankIntent)
             .addAction(0, "⏰ 10 min", snooze10Intent)
-            .addAction(0, "🚫 Not Now", dismissIntent)
+            .addAction(0, "🚫 Skip", dismissIntent)
             .build()
 
         notificationManager.notify(NOTIFICATION_ID_REMINDER, notification)

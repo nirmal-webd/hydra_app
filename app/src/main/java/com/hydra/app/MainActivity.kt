@@ -9,6 +9,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -71,27 +74,46 @@ class MainActivity : ComponentActivity() {
 
     private var showCustomDialog by mutableStateOf(false)
 
-    // Runtime permission launcher for POST_NOTIFICATIONS (Android 13+)
-    private val notificationPermissionLauncher = registerForActivityResult(
-        ActivityResultContracts.RequestPermission()
-    ) { /* Result handled passively — service already started regardless */ }
+    private var startDestination by mutableStateOf<String?>(null)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         handleIntent(intent)
         enableEdgeToEdge()
 
-        // Step A: Request notification permission, start service, arm FSM
-        requestNotificationPermissionIfNeeded()
-        startReminderService()
-        (application as HydraApp).bootstrapEngineIfNeeded()
+        // Initialize state
+        lifecycleScope.launch {
+            val isCompleted = (application as HydraApp).preferencesManager.onboardingCompleted.first()
+            startDestination = if (isCompleted) HydraRoute.DASHBOARD.route else HydraRoute.ONBOARDING.route
+            
+            // Only start service and FSM if onboarding is complete
+            if (isCompleted) {
+                startReminderService()
+                (application as HydraApp).bootstrapEngineIfNeeded()
+            }
+        }
 
         setContent {
+            if (startDestination == null) return@setContent
+            
             HydraTheme {
                 HydraMainContent(
+                    startDestination = startDestination!!,
                     showCustomDialog = showCustomDialog,
                     onCustomDialogDismiss = { showCustomDialog = false }
                 )
+            }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        lifecycleScope.launch {
+            val style = (application as HydraApp).preferencesManager.reminderStyle.first()
+            if (style == "FULLSCREEN" && Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                if (!android.provider.Settings.canDrawOverlays(this@MainActivity)) {
+                    (application as HydraApp).preferencesManager.setReminderStyle("NOTIFICATION")
+                }
             }
         }
     }
@@ -103,16 +125,6 @@ class MainActivity : ComponentActivity() {
 
     private fun handleIntent(intent: Intent) {
         showCustomDialog = intent.getBooleanExtra(EXTRA_SHOW_CUSTOM_DIALOG, false)
-    }
-
-    private fun requestNotificationPermissionIfNeeded() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)
-                != PackageManager.PERMISSION_GRANTED
-            ) {
-                notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
-            }
-        }
     }
 
     private fun startReminderService() {
@@ -129,17 +141,21 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 private fun HydraMainContent(
+    startDestination: String,
     showCustomDialog: Boolean = false,
     onCustomDialogDismiss: () -> Unit = {}
 ) {
     val navController = rememberNavController()
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentDestination = navBackStackEntry?.destination
+    
+    val showBottomBar = currentDestination?.route != HydraRoute.ONBOARDING.route
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         bottomBar = {
-            NavigationBar {
+            if (showBottomBar) {
+                NavigationBar {
                 bottomNavItems.forEach { item ->
                     val selected = currentDestination?.hierarchy?.any {
                         it.route == item.route.route
@@ -165,11 +181,13 @@ private fun HydraMainContent(
                         label = { Text(item.label) }
                     )
                 }
-            }
+                } // NavigationBar
+            } // if (showBottomBar)
         }
     ) { innerPadding ->
         HydraNavGraph(
             navController = navController,
+            startDestination = startDestination,
             modifier = Modifier.padding(innerPadding),
             showCustomDialog = showCustomDialog,
             onCustomDialogDismiss = onCustomDialogDismiss

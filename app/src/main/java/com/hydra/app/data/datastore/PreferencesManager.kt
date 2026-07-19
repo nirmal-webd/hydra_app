@@ -26,6 +26,7 @@ class PreferencesManager(private val context: Context) {
         val APP_REMINDERS_ENABLED = booleanPreferencesKey("app_reminders_enabled")
         val MONITORED_APPS = stringSetPreferencesKey("monitored_apps")
         val ONBOARDING_COMPLETED = booleanPreferencesKey("onboarding_completed")
+        val REMINDER_STYLE = stringPreferencesKey("reminder_style")
     }
 
     object Defaults {
@@ -38,6 +39,7 @@ class PreferencesManager(private val context: Context) {
         const val APP_REMINDERS_ENABLED = true
         val MONITORED_APPS: Set<String> = emptySet()
         const val ONBOARDING_COMPLETED = false
+        const val REMINDER_STYLE = "FULLSCREEN"
     }
 
     val dailyGoalMl: Flow<Int> = context.dataStore.data.map { prefs ->
@@ -76,6 +78,10 @@ class PreferencesManager(private val context: Context) {
         prefs[Keys.ONBOARDING_COMPLETED] ?: Defaults.ONBOARDING_COMPLETED
     }
 
+    val reminderStyle: Flow<String> = context.dataStore.data.map { prefs ->
+        prefs[Keys.REMINDER_STYLE] ?: Defaults.REMINDER_STYLE
+    }
+
     suspend fun setDailyGoalMl(value: Int) {
         context.dataStore.edit { it[Keys.DAILY_GOAL_ML] = value }
     }
@@ -110,5 +116,9 @@ class PreferencesManager(private val context: Context) {
 
     suspend fun setOnboardingCompleted(value: Boolean) {
         context.dataStore.edit { it[Keys.ONBOARDING_COMPLETED] = value }
+    }
+
+    suspend fun setReminderStyle(value: String) {
+        context.dataStore.edit { it[Keys.REMINDER_STYLE] = value }
     }
 }

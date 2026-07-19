@@ -1,8 +1,15 @@
 package com.hydra.app.ui.screens
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -19,6 +26,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.LocalDrink
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.RadioButtonUnchecked
@@ -39,11 +47,15 @@ import androidx.compose.material3.rememberSwipeToDismissBoxState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
@@ -75,37 +87,24 @@ fun HistoryScreen(
                 modifier = Modifier.fillMaxSize(),
                 verticalArrangement = Arrangement.spacedBy(0.dp)
             ) {
-                dayGroups.forEach { group ->
-                    // Day group header
-                    item(key = group.date.toString()) {
-                        DayGroupHeader(group = group)
-                    }
-
-                    // Log entries with swipe to delete
-                    items(
-                        items = group.logs,
-                        key = { it.id }
-                    ) { log ->
-                        SwipeToDismissLogItem(
-                            log = log,
-                            onDismissed = {
-                                viewModel.deleteLog(log)
-                                scope.launch {
-                                    val result = snackbarHostState.showSnackbar(
-                                        message = "Entry removed",
-                                        actionLabel = "Undo",
-                                        duration = SnackbarDuration.Short
-                                    )
-                                    // Undo not implemented for MVP — would require
-                                    // re-inserting with original timestamp/id
-                                }
+                items(
+                    items = dayGroups,
+                    key = { it.date.toString() }
+                ) { group ->
+                    ExpandableDayGroup(
+                        group = group,
+                        onDeleteLog = { log ->
+                            viewModel.deleteLog(log)
+                            scope.launch {
+                                snackbarHostState.showSnackbar(
+                                    message = "Entry removed",
+                                    actionLabel = "Undo",
+                                    duration = SnackbarDuration.Short
+                                )
+                                // Undo not implemented for MVP
                             }
-                        )
-                    }
-
-                    item(key = "${group.date}_spacer") {
-                        Spacer(modifier = Modifier.height(8.dp))
-                    }
+                        }
+                    )
                 }
                 // Bottom padding
                 item { Spacer(modifier = Modifier.height(16.dp)) }
@@ -122,10 +121,49 @@ fun HistoryScreen(
 }
 
 @Composable
-private fun DayGroupHeader(group: DayGroup) {
+private fun ExpandableDayGroup(
+    group: DayGroup,
+    onDeleteLog: (WaterLog) -> Unit
+) {
+    var expanded by rememberSaveable { mutableStateOf(group.label == "Today") }
+
+    Column {
+        DayGroupHeader(
+            group = group,
+            expanded = expanded,
+            onToggle = { expanded = !expanded }
+        )
+
+        AnimatedVisibility(
+            visible = expanded,
+            enter = expandVertically() + fadeIn(),
+            exit = shrinkVertically() + fadeOut()
+        ) {
+            Column {
+                group.logs.forEach { log ->
+                    SwipeToDismissLogItem(
+                        log = log,
+                        onDismissed = { onDeleteLog(log) }
+                    )
+                }
+                Spacer(modifier = Modifier.height(8.dp))
+            }
+        }
+    }
+}
+
+@Composable
+private fun DayGroupHeader(
+    group: DayGroup,
+    expanded: Boolean,
+    onToggle: () -> Unit
+) {
+    val rotation by animateFloatAsState(targetValue = if (expanded) 180f else 0f, label = "expand_icon_rotation")
+
     Column(
         modifier = Modifier
             .fillMaxWidth()
+            .clickable { onToggle() }
             .padding(horizontal = 16.dp, vertical = 12.dp)
     ) {
         Row(
@@ -133,12 +171,19 @@ private fun DayGroupHeader(group: DayGroup) {
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(
-                text = group.label,
-                style = MaterialTheme.typography.titleMedium,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.onSurface
-            )
+            Column {
+                Text(
+                    text = group.label,
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.Bold,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+                Text(
+                    text = "${group.logs.size} entries",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
             Row(verticalAlignment = Alignment.CenterVertically) {
                 if (group.goalReached) {
                     Icon(
@@ -156,6 +201,13 @@ private fun DayGroupHeader(group: DayGroup) {
                         MaterialTheme.colorScheme.tertiary
                     else
                         MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Spacer(Modifier.width(8.dp))
+                Icon(
+                    imageVector = Icons.Filled.ExpandMore,
+                    contentDescription = if (expanded) "Collapse" else "Expand",
+                    modifier = Modifier.rotate(rotation),
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant
                 )
             }
         }

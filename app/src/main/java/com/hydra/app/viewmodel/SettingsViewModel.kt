@@ -15,7 +15,8 @@ data class SettingsState(
     val cooldownMinutes: Int = 60,
     val quietHoursStart: String = "22:00",
     val quietHoursEnd: String = "07:00",
-    val remindersEnabled: Boolean = true
+    val remindersEnabled: Boolean = true,
+    val reminderStyle: String = "FULLSCREEN"
 )
 
 class SettingsViewModel(application: Application) : AndroidViewModel(application) {
@@ -24,18 +25,17 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     private val prefs = app.preferencesManager
 
     val settingsState: StateFlow<SettingsState> = combine(
-        prefs.dailyGoalMl,
-        prefs.cooldownMinutes,
-        prefs.quietHoursStart,
-        prefs.quietHoursEnd,
-        prefs.unlockRemindersEnabled
-    ) { goal, cooldown, qStart, qEnd, reminders ->
+        combine(prefs.dailyGoalMl, prefs.cooldownMinutes, ::Pair),
+        combine(prefs.quietHoursStart, prefs.quietHoursEnd, ::Pair),
+        combine(prefs.unlockRemindersEnabled, prefs.reminderStyle, ::Pair)
+    ) { (goal, cooldown), (qStart, qEnd), (reminders, style) ->
         SettingsState(
             dailyGoalMl = goal,
             cooldownMinutes = cooldown,
             quietHoursStart = qStart,
             quietHoursEnd = qEnd,
-            remindersEnabled = reminders
+            remindersEnabled = reminders,
+            reminderStyle = style
         )
     }.stateIn(
         scope = viewModelScope,
@@ -71,6 +71,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun setRemindersEnabled(enabled: Boolean) {
         viewModelScope.launch { prefs.setUnlockRemindersEnabled(enabled) }
+    }
+
+    fun setReminderStyle(style: String) {
+        viewModelScope.launch { prefs.setReminderStyle(style) }
     }
 
     val fsmState = app.reminderStateStore.fsmState.stateIn(
