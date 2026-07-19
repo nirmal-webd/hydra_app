@@ -45,6 +45,11 @@ Sometimes we built a feature, realized it was a bad idea, and deleted it. Here i
 - **What we tried:** The buttons on our Sticky Notification used to say `"💧 Drank!"`, `"⏰ 10 min"`, and `"🚫 Not Now"`.
 - **Why we changed it:** On smaller phones, those words were too long and got chopped off in the middle. Since Android doesn't let us shrink the text size, we had to shrink the words themselves. We changed them to `"💧 250ml"`, `"⏰ 10 min"`, and `"🚫 Skip"` so they look perfect on every phone.
 
+### 4.5. The Dashboard Redesign (Removing the Clutter)
+- **What we tried:** At first, the main screen had a "Stats Card" that showed your current streak, milliliters remaining, and how many times the app reminded you today.
+- **Why we changed it:** The card was confusing. The "remaining ml" was already shown in the big circular progress ring, and users didn't care about the "reminders shown" number.
+- **The Solution:** We deleted the stats card. Instead, we added a clear **Weekly Tracker**. It shows a row of 7 days with simple icons: a green check (goal met), a red X (goal missed), or a grey dash (no data). Below that, we show a large "Fire" 🔥 streak number to motivate you. This makes it instantly obvious how well you are doing this week without needing to read numbers.
+
 ---
 
 ## 5. Going Forward

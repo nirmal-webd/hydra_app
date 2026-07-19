@@ -16,14 +16,22 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import java.time.LocalDate
 
+enum class DailyStatus {
+    MET, NOT_MET, NO_DATA
+}
+
+data class WeeklyDayStatus(
+    val label: String,
+    val status: DailyStatus
+)
+
 data class DashboardState(
     val todayTotal: Int = 0,
     val dailyGoal: Int = 2000,
     val todayLogs: List<WaterLog> = emptyList(),
-    val remindersShown: Int = 0,
-    val remindersAccepted: Int = 0,
     val streak: Int = 0,
-    val isGoalReached: Boolean = false
+    val isGoalReached: Boolean = false,
+    val weeklyStatus: List<WeeklyDayStatus> = emptyList()
 ) {
     val progress: Float
         get() = if (dailyGoal > 0) (todayTotal.toFloat() / dailyGoal).coerceIn(0f, 1f) else 0f
@@ -43,6 +51,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
     private val preferencesManager = app.preferencesManager
 
     private val _streak = MutableStateFlow(0)
+    private val _weeklyStatus = MutableStateFlow<List<WeeklyDayStatus>>(emptyList())
 
     private val waterState = combine(
         waterRepository.getTodayTotal(),
@@ -52,26 +61,20 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
         Triple(total, logs, goal)
     }
 
-    private val reminderState = combine(
-        reminderRepository.getTodayRemindersShown(),
-        reminderRepository.getTodayRemindersAccepted()
-    ) { shown, accepted ->
-        Pair(shown, accepted)
-    }
+    // Removed reminderState since we no longer display remindersShown or remindersAccepted
 
     val dashboardState: StateFlow<DashboardState> = combine(
         waterState,
-        reminderState,
-        _streak.asStateFlow()
-    ) { water, reminder, streak ->
+        _streak.asStateFlow(),
+        _weeklyStatus.asStateFlow()
+    ) { water, streak, weekly ->
         DashboardState(
             todayTotal = water.first,
             todayLogs = water.second,
             dailyGoal = water.third,
-            remindersShown = reminder.first,
-            remindersAccepted = reminder.second,
             streak = streak,
-            isGoalReached = water.first >= water.third
+            isGoalReached = water.first >= water.third,
+            weeklyStatus = weekly
         )
     }.stateIn(
         scope = viewModelScope,
@@ -86,7 +89,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
                 waterRepository.getTodayTotal(),
                 preferencesManager.dailyGoalMl
             ) { _, goal -> goal }
-                .collect { goal -> computeStreak(goal) }
+                .collect { goal -> computeHistoricalStats(goal) }
         }
         
         // Ensure Reminder Engine stays in perfect sync with the database,
@@ -115,7 +118,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
         }
     }
 
-    private suspend fun computeStreak(goalMl: Int) {
+    private suspend fun computeHistoricalStats(goalMl: Int) {
         try {
             val allLogs = waterRepository.getAllLogsSnapshot()
 
@@ -127,6 +130,28 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
             }
 
             val today = LocalDate.now()
+            
+            // 1. Compute Weekly Status (Last 7 days, ending today)
+            val weekly = mutableListOf<WeeklyDayStatus>()
+            for (i in 6 downTo 0) {
+                val date = today.minusDays(i.toLong())
+                val dayTotal = dailyTotals[date] ?: 0
+                
+                val status = if (dayTotal >= goalMl) {
+                    DailyStatus.MET
+                } else if (dayTotal > 0) {
+                    DailyStatus.NOT_MET
+                } else {
+                    DailyStatus.NO_DATA
+                }
+                
+                // M, T, W, T, F, S, S
+                val label = date.dayOfWeek.name.take(1)
+                weekly.add(WeeklyDayStatus(label, status))
+            }
+            _weeklyStatus.value = weekly
+
+            // 2. Compute Streak
             var streak = 0
 
             // Check if today's goal is met — include today in streak
@@ -150,6 +175,7 @@ class DashboardViewModel(application: Application) : AndroidViewModel(applicatio
             _streak.value = streak
         } catch (_: Exception) {
             _streak.value = 0
+            _weeklyStatus.value = emptyList()
         }
     }
 }

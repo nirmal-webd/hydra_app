@@ -4,7 +4,10 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.LocalDrink
+import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -14,6 +17,10 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hydra.app.ui.components.CircularProgressRing
 import com.hydra.app.viewmodel.DashboardViewModel
+import com.hydra.app.viewmodel.DailyStatus
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.background
 
 @Composable
 fun DashboardScreen(
@@ -72,26 +79,79 @@ fun DashboardScreen(
             }
         }
 
-        Spacer(modifier = Modifier.weight(1f))
+        Spacer(modifier = Modifier.height(32.dp))
 
-        // Stats Card
-        Card(
+        // Weekly Tracker
+        Text(
+            text = "This Week",
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier.padding(bottom = 16.dp)
+        )
+        Row(
             modifier = Modifier.fillMaxWidth(),
-            colors = CardDefaults.cardColors(
-                containerColor = MaterialTheme.colorScheme.surfaceVariant
-            )
+            horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp),
-                horizontalArrangement = Arrangement.SpaceEvenly
-            ) {
-                StatItem(label = "Streak", value = "${state.streak} days")
-                StatItem(label = "Remaining", value = "${state.remaining} ml")
-                StatItem(label = "Reminders", value = "${state.remindersShown}")
+            state.weeklyStatus.forEach { dayStatus ->
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text(
+                        text = dayStatus.label,
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(bottom = 8.dp)
+                    )
+                    Box(
+                        modifier = Modifier
+                            .size(32.dp)
+                            .background(
+                                color = when (dayStatus.status) {
+                                    DailyStatus.MET -> androidx.compose.ui.graphics.Color(0xFF4CAF50)
+                                    DailyStatus.NOT_MET -> androidx.compose.ui.graphics.Color(0xFFE53935)
+                                    DailyStatus.NO_DATA -> MaterialTheme.colorScheme.surfaceVariant
+                                },
+                                shape = CircleShape
+                            ),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        Icon(
+                            imageVector = when (dayStatus.status) {
+                                DailyStatus.MET -> Icons.Filled.Check
+                                DailyStatus.NOT_MET -> Icons.Filled.Close
+                                DailyStatus.NO_DATA -> Icons.Filled.Remove
+                            },
+                            contentDescription = null,
+                            tint = if (dayStatus.status == DailyStatus.NO_DATA) 
+                                MaterialTheme.colorScheme.onSurfaceVariant 
+                            else 
+                                androidx.compose.ui.graphics.Color.White,
+                            modifier = Modifier.size(16.dp)
+                        )
+                    }
+                }
             }
         }
+        
+        Spacer(modifier = Modifier.height(24.dp))
+        
+        // Streak Info
+        if (state.streak > 0) {
+            Text(
+                text = "🔥 ${state.streak} Day Streak!",
+                style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.primary
+            )
+        } else {
+            Text(
+                text = "Every drop counts! Start your hydration streak today. 💧",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                modifier = Modifier.padding(horizontal = 32.dp)
+            )
+        }
+        
+        Spacer(modifier = Modifier.weight(1f))
     }
 
     if (showCustomDialog) {
@@ -109,21 +169,7 @@ fun DashboardScreen(
     }
 }
 
-@Composable
-fun StatItem(label: String, value: String) {
-    Column(horizontalAlignment = Alignment.CenterHorizontally) {
-        Text(
-            text = value,
-            style = MaterialTheme.typography.titleLarge,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-        Text(
-            text = label,
-            style = MaterialTheme.typography.labelMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant
-        )
-    }
-}
+
 
 @Composable
 fun CustomAmountDialog(
