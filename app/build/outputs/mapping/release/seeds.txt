@@ -1,894 +1,896 @@
-androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
-com.hydra.app.service.BootReceiver
-androidx.compose.ui.layout.OnSizeChangedModifier
-androidx.navigation.compose.ComposeNavigator
-androidx.compose.ui.input.pointer.PointerHoverIconModifierElement
-android.support.v4.app.RemoteActionCompatParcelizer
-androidx.compose.ui.focus.FocusOwnerImpl$modifier$1
-androidx.compose.foundation.BorderModifierNodeElement
-androidx.work.impl.WorkDatabase
-androidx.compose.ui.draw.DrawWithContentElement
-androidx.compose.foundation.text.modifiers.TextStringSimpleElement
-androidx.graphics.path.PathIteratorPreApi34Impl
-androidx.compose.foundation.ScrollableAreaElement
-androidx.work.Worker
-androidx.lifecycle.ReportFragment
-androidx.compose.ui.input.pointer.StylusHoverIconModifierElement
-androidx.versionedparcelable.CustomVersionedParcelable
-androidx.navigation.NavGraphNavigator
-androidx.compose.ui.draw.DrawWithCacheElement
-androidx.compose.foundation.text.handwriting.StylusHandwritingElement
-androidx.compose.foundation.text.modifiers.SelectableTextAnnotatedStringElement
-androidx.emoji2.text.EmojiCompatInitializer
-androidx.work.impl.WorkDatabase_Impl
-com.hydra.app.service.NotificationActionReceiver
-androidx.compose.ui.layout.OnGloballyPositionedElement
-androidx.work.WorkManagerInitializer
-androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
-androidx.navigation.compose.ComposeNavGraphNavigator
-androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
-androidx.compose.ui.input.key.KeyInputElement
-androidx.window.reflection.JFunction2
-androidx.window.area.reflectionguard.ExtensionWindowAreaStatusRequirements
-androidx.compose.foundation.IndicationModifierElement
-androidx.work.impl.diagnostics.DiagnosticsReceiver
-androidx.compose.foundation.text.contextmenu.modifier.TextContextMenuGestureElement
-androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
-androidx.compose.foundation.lazy.layout.LazyLayoutBeyondBoundsModifierElement
-androidx.work.impl.background.systemjob.SystemJobService
-androidx.startup.InitializationProvider
-androidx.compose.ui.platform.AndroidCompositionLocals_androidKt
-androidx.compose.material3.MinimumInteractiveModifier
-androidx.compose.foundation.layout.FillElement
-androidx.compose.foundation.FocusableElement
-androidx.compose.foundation.text.modifiers.TextAnnotatedStringElement
-androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner
-androidx.compose.foundation.text.input.internal.LegacyAdaptingPlatformTextInputModifier
-androidx.compose.foundation.gestures.AnchoredDraggableElement
-androidx.compose.ui.draw.ShadowGraphicsLayerElement
-androidx.window.reflection.Predicate2
-com.hydra.app.data.room.HydraDatabase
-androidx.compose.ui.semantics.ClearAndSetSemanticsElement
-androidx.compose.foundation.layout.IntrinsicWidthElement
-androidx.compose.foundation.BackgroundElement
-androidx.room.MultiInstanceInvalidationService
-androidx.compose.foundation.layout.LayoutWeightElement
-androidx.compose.foundation.ScrollingLayoutElement
-androidx.compose.ui.graphics.BlockGraphicsLayerElement
-androidx.window.reflection.Consumer2
-androidx.core.app.RemoteActionCompatParcelizer
-androidx.profileinstaller.ProfileInstallReceiver
-androidx.work.impl.background.systemalarm.RescheduleReceiver
-androidx.compose.animation.VeilModifierElement
-androidx.compose.foundation.text.contextmenu.modifier.TextContextMenuToolbarHandlerElement
-androidx.work.impl.foreground.SystemForegroundService
-androidx.compose.foundation.lazy.layout.LazyLayoutSemanticsModifier
-androidx.compose.foundation.lazy.layout.LazyLayoutItemAnimator$DisplayingDisappearingItemsElement
-androidx.lifecycle.ProcessLifecycleOwner$attach$1
-androidx.compose.foundation.gestures.DraggableElement
-androidx.graphics.path.ConicConverter
-androidx.core.app.CoreComponentFactory
-androidx.compose.foundation.text.input.internal.CoreTextFieldSemanticsModifier
-androidx.compose.foundation.relocation.BringIntoViewRequesterElement
 androidx.profileinstaller.ProfileInstallerInitializer
-androidx.compose.ui.platform.AndroidComposeView$root$1$1
-androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback
+androidx.compose.animation.VeilModifierElement
+androidx.work.WorkerParameters
+androidx.compose.foundation.ScrollingLayoutElement
+androidx.compose.foundation.text.contextmenu.modifier.TextContextMenuGestureElement
+androidx.compose.foundation.ScrollableAreaElement
+androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
 androidx.compose.ui.layout.LayoutElement
-androidx.compose.animation.AnimatedContentTransitionScopeImpl$SizeModifierElement
-androidx.compose.ui.draw.DrawBehindElement
-androidx.compose.material3.internal.DraggableAnchorsElementV2
-androidx.navigation.internal.NavBackStackEntryImpl$SavedStateViewModel
-androidx.work.impl.background.systemalarm.SystemAlarmService
-androidx.compose.foundation.HoverableElement
-androidx.core.graphics.drawable.IconCompat
-androidx.compose.material3.internal.ChildSemanticsNodeElement
-androidx.compose.foundation.ClickableElement
-androidx.compose.foundation.selection.SelectableElement
-androidx.compose.material3.ThumbElement
-androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
-androidx.compose.foundation.text.contextmenu.modifier.AddTextContextMenuDataComponentsWithContextElement
-android.support.v4.graphics.drawable.IconCompatParcelizer
-com.hydra.app.service.ReminderForegroundService
-androidx.compose.ui.focus.FocusRequesterElement
-androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
-androidx.versionedparcelable.ParcelImpl
-androidx.compose.ui.draganddrop.AndroidDragAndDropManager$modifier$1
-androidx.compose.foundation.lazy.layout.AwaitFirstLayoutModifier
-com.hydra.app.viewmodel.SettingsViewModel
-androidx.compose.foundation.layout.AlignmentLineOffsetDpElement
-androidx.compose.ui.layout.LayoutIdElement
-androidx.navigation.compose.BackStackEntryIdViewModel
-androidx.annotation.Keep
-kotlinx.coroutines.internal.StackTraceRecoveryKt
-androidx.compose.ui.input.pointer.PointerInputEventHandler
-com.hydra.app.MainActivity
-androidx.work.OverwritingInputMerger
-com.hydra.app.viewmodel.DashboardViewModel
-androidx.compose.foundation.layout.ConsumedInsetsModifierElement
-androidx.navigation.NavControllerViewModel
+androidx.work.impl.WorkDatabase
+com.hydra.app.data.room.HydraDatabase
+androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
 androidx.lifecycle.ReportFragment$LifecycleCallbacks
-androidx.compose.foundation.layout.WrapContentElement
-androidx.compose.foundation.MagnifierElement
-androidx.lifecycle.ProcessLifecycleInitializer
-androidx.compose.foundation.layout.InsetsPaddingModifierElement
-androidx.compose.foundation.layout.HorizontalAlignElement
-androidx.compose.foundation.gestures.ScrollableElement
-androidx.compose.foundation.selection.ToggleableElement
-androidx.lifecycle.LegacySavedStateHandleController$OnRecreation
+androidx.work.impl.background.systemalarm.SystemAlarmService
+androidx.versionedparcelable.CustomVersionedParcelable
+androidx.compose.ui.platform.AndroidComposeView$root$1$1
+androidx.navigation.internal.NavBackStackEntryImpl$SavedStateViewModel
+androidx.core.app.CoreComponentFactory
+androidx.compose.ui.draw.DrawWithCacheElement
+androidx.compose.ui.draw.ShadowGraphicsLayerElement
+androidx.annotation.Keep
+androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+androidx.core.graphics.drawable.IconCompat
+androidx.compose.foundation.layout.SizeElement
+com.hydra.app.service.BootReceiver
+com.hydra.app.service.ReminderForegroundService
+kotlinx.coroutines.internal.StackTraceRecoveryKt
 androidx.core.app.RemoteActionCompat
-androidx.compose.material3.ClockDialModifier
+androidx.compose.foundation.BorderModifierNodeElement
+androidx.room.MultiInstanceInvalidationService
+androidx.compose.foundation.FocusableElement
+androidx.compose.foundation.lazy.layout.LazyLayoutSemanticsModifier
+androidx.compose.ui.draw.DrawBehindElement
+androidx.versionedparcelable.ParcelImpl
+androidx.compose.ui.graphics.GraphicsLayerElement
+androidx.core.app.RemoteActionCompatParcelizer
+androidx.compose.material3.ThumbElement
+androidx.window.reflection.Consumer2
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1
+androidx.compose.foundation.selection.ToggleableElement
+androidx.compose.animation.AnimatedContentTransitionScopeImpl$SizeModifierElement
+androidx.work.impl.workers.DiagnosticsWorker
+androidx.compose.foundation.IndicationModifierElement
+androidx.compose.foundation.layout.AlignmentLineOffsetDpElement
+androidx.window.area.reflectionguard.ExtensionWindowAreaPresentationRequirements
+androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+com.hydra.app.viewmodel.SettingsViewModel
+androidx.window.reflection.Predicate2
+androidx.compose.ui.draw.PainterElement
+androidx.compose.foundation.MagnifierElement
+androidx.compose.ui.input.pointer.PointerHoverIconModifierElement
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation
+androidx.compose.foundation.layout.FillElement
+androidx.compose.ui.focus.FocusRequesterElement
+androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+androidx.navigation.compose.BackStackEntryIdViewModel
+androidx.lifecycle.ReportFragment
+androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+androidx.lifecycle.ProcessLifecycleInitializer
+androidx.compose.foundation.layout.ConsumedInsetsModifierElement
+com.hydra.app.MainActivity
+androidx.compose.foundation.layout.LayoutWeightElement
+androidx.compose.foundation.layout.HorizontalAlignElement
+androidx.compose.ui.layout.LayoutIdElement
+androidx.compose.material3.MinimumInteractiveModifier
+com.hydra.app.HydraApp
+androidx.compose.ui.input.pointer.SuspendPointerInputElement
+androidx.compose.foundation.layout.InsetsPaddingModifierElement
+androidx.navigation.compose.ComposeNavGraphNavigator
+androidx.work.WorkManagerInitializer
+androidx.work.impl.WorkDatabase_Impl
+androidx.compose.ui.semantics.AppendedSemanticsElement
+androidx.compose.ui.input.key.KeyInputElement
+com.hydra.app.viewmodel.HistoryViewModel
+androidx.compose.material3.internal.ChildSemanticsNodeElement
+androidx.compose.foundation.HoverableElement
+androidx.work.impl.background.systemjob.SystemJobService
+androidx.compose.foundation.ClickableElement
+androidx.work.impl.foreground.SystemForegroundService
+androidx.compose.foundation.text.input.internal.CoreTextFieldSemanticsModifier
+androidx.emoji2.text.EmojiCompatInitializer
+androidx.compose.foundation.BackgroundElement
+androidx.compose.foundation.text.input.internal.LegacyAdaptingPlatformTextInputModifier
+androidx.lifecycle.ProcessLifecycleOwner$attach$1
+android.support.v4.app.RemoteActionCompatParcelizer
+androidx.startup.InitializationProvider
+androidx.compose.foundation.text.modifiers.SelectableTextAnnotatedStringElement
+androidx.compose.foundation.lazy.layout.TraversablePrefetchStateModifierElement
+androidx.work.impl.diagnostics.DiagnosticsReceiver
+androidx.compose.foundation.gestures.AnchoredDraggableElement
+androidx.navigation.NavGraphNavigator
+androidx.compose.foundation.layout.PaddingValuesElement
 androidx.compose.ui.focus.FocusChangedElement
+androidx.compose.animation.EnterExitTransitionElement
+com.hydra.app.data.room.HydraDatabase_Impl
 androidx.lifecycle.SavedStateHandlesVM
+androidx.compose.foundation.text.modifiers.TextStringSimpleElement
+androidx.compose.ui.focus.FocusOwnerImpl$modifier$1
+androidx.navigation.compose.ComposeNavigator
+androidx.compose.foundation.lazy.layout.LazyLayoutItemAnimator$DisplayingDisappearingItemsElement
+androidx.compose.foundation.gestures.DraggableElement
+androidx.compose.foundation.text.modifiers.TextAnnotatedStringElement
+androidx.graphics.path.PathIteratorPreApi34Impl
+androidx.work.OverwritingInputMerger
+androidx.compose.ui.ZIndexElement
+androidx.compose.ui.layout.OnGloballyPositionedElement
+androidx.compose.ui.layout.OnSizeChangedModifier
+androidx.compose.material3.internal.DraggableAnchorsElementV2
+androidx.compose.foundation.layout.IntrinsicWidthElement
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements
+com.hydra.app.service.NotificationActionReceiver
+androidx.compose.ui.input.pointer.PointerInputEventHandler
+androidx.compose.foundation.layout.BoxChildDataElement
+androidx.compose.foundation.text.contextmenu.modifier.TextContextMenuToolbarHandlerElement
+androidx.compose.foundation.lazy.layout.AwaitFirstLayoutModifier
+androidx.window.area.reflectionguard.ExtensionWindowAreaStatusRequirements
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback
+androidx.compose.foundation.gestures.ScrollableElement
+androidx.core.graphics.drawable.IconCompatParcelizer
+androidx.compose.foundation.text.contextmenu.modifier.AddTextContextMenuDataComponentsWithContextElement
+androidx.compose.ui.graphics.BlockGraphicsLayerElement
+androidx.compose.foundation.text.handwriting.StylusHandwritingElement
+androidx.compose.foundation.lazy.layout.LazyLayoutBeyondBoundsModifierElement
+com.hydra.app.viewmodel.DashboardViewModel
+androidx.navigation.ActivityNavigator
+androidx.compose.ui.draganddrop.AndroidDragAndDropManager$modifier$1
+androidx.compose.foundation.selection.SelectableElement
 androidx.compose.foundation.layout.UnspecifiedConstraintsElement
 com.hydra.app.service.ReminderAlarmReceiver
-androidx.compose.ui.semantics.AppendedSemanticsElement
-androidx.compose.ui.input.pointer.SuspendPointerInputElement
-androidx.compose.ui.graphics.GraphicsLayerElement
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements
-androidx.navigation.compose.DialogNavigator
-androidx.compose.foundation.layout.PaddingValuesElement
-com.hydra.app.data.room.HydraDatabase_Impl
-androidx.compose.animation.EnterExitTransitionElement
-androidx.compose.foundation.layout.BoxChildDataElement
-androidx.compose.foundation.lazy.layout.TraversablePrefetchStateModifierElement
-androidx.compose.foundation.layout.SizeElement
-kotlin.coroutines.jvm.internal.BaseContinuationImpl
-androidx.work.WorkerParameters
-com.hydra.app.viewmodel.HistoryViewModel
-androidx.work.impl.workers.DiagnosticsWorker
-androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1
-androidx.compose.ui.ZIndexElement
-androidx.core.graphics.drawable.IconCompatParcelizer
-androidx.window.area.reflectionguard.ExtensionWindowAreaPresentationRequirements
-androidx.navigation.ActivityNavigator
-com.hydra.app.HydraApp
+androidx.navigation.NavControllerViewModel
 androidx.compose.foundation.layout.PaddingElement
-androidx.compose.ui.draw.PainterElement
-kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl$volatile
-kotlinx.coroutines.channels.BufferedChannel: long bufferEnd$volatile
-kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object tail$volatile
-kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment$volatile
-kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state$volatile
-kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
-androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
-androidx.compose.runtime.ParcelableSnapshotMutableLongState: android.os.Parcelable$Creator CREATOR
-kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState$volatile
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
-androidx.datastore.preferences.protobuf.GeneratedMessageLite: androidx.datastore.preferences.protobuf.UnknownFieldSetLite unknownFields
-kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
-kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
-androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.MapFieldLite preferences_
-kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue$volatile
-kotlinx.coroutines.JobSupport: java.lang.Object _state$volatile
-kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed$volatile
-androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Parser PARSER
-kotlinx.coroutines.CancelledContinuation: int _resumed$volatile
-kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus$volatile
-androidx.datastore.preferences.PreferencesProto$Value: java.lang.Object value_
-androidx.compose.runtime.snapshots.SnapshotStateList: android.os.Parcelable$Creator CREATOR
-androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Internal$ProtobufList strings_
-kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation$volatile
-kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause$volatile
-androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
-androidx.datastore.preferences.PreferencesProto$Value: int BOOLEAN_FIELD_NUMBER
-androidx.datastore.preferences.PreferencesProto$StringSet: int STRINGS_FIELD_NUMBER
-kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next$volatile
-androidx.datastore.preferences.PreferencesProto$Value: int valueCase_
-kotlinx.coroutines.DefaultExecutor: int debugStatus
-androidx.activity.result.IntentSenderRequest: android.os.Parcelable$Creator CREATOR
-androidx.compose.runtime.ParcelableSnapshotMutableFloatState: android.os.Parcelable$Creator CREATOR
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
-androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+androidx.compose.ui.semantics.ClearAndSetSemanticsElement
+androidx.compose.foundation.layout.WrapContentElement
+androidx.graphics.path.ConicConverter
+androidx.compose.material3.ClockDialModifier
+androidx.compose.ui.draw.DrawWithContentElement
+androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt
+kotlin.coroutines.jvm.internal.BaseContinuationImpl
+androidx.window.reflection.JFunction2
+androidx.compose.ui.input.pointer.StylusHoverIconModifierElement
+androidx.work.Worker
+androidx.work.impl.background.systemalarm.RescheduleReceiver
+androidx.compose.foundation.relocation.BringIntoViewRequesterElement
+androidx.profileinstaller.ProfileInstallReceiver
+androidx.navigation.compose.DialogNavigator
+android.support.v4.graphics.drawable.IconCompatParcelizer
 kotlinx.coroutines.JobSupport: java.lang.Object _parentHandle$volatile
-kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated$volatile
-androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
-kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state$volatile
-kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex$volatile
 androidx.datastore.preferences.PreferencesProto$Value: int STRING_FIELD_NUMBER
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int MEMOIZED_SERIALIZED_SIZE_MASK
+kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers$volatile
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object tail$volatile
+kotlinx.coroutines.JobSupport: java.lang.Object _state$volatile
+kotlinx.coroutines.CompletedExceptionally: int _handled$volatile
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.MapFieldLite preferences_
+kotlin.SafePublicationLazyImpl: java.lang.Object _value
+kotlinx.coroutines.internal.DispatchedContinuation: java.lang.Object _reusableCancellableContinuation$volatile
+kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
+kotlinx.coroutines.DefaultExecutor: int debugStatus
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev$volatile
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long enqIdx$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_RESUME
+kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _state$volatile
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: int PREFERENCES_FIELD_NUMBER
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_START
+androidx.activity.result.IntentSenderRequest: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.PreferencesProto$StringSet: int STRINGS_FIELD_NUMBER
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: java.lang.Object nextParkedWorker
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: int _availablePermits$volatile
+androidx.concurrent.futures.AbstractResolvableFuture: java.lang.Object value
+kotlinx.coroutines.scheduling.CoroutineScheduler: long controlState$volatile
+kotlinx.coroutines.internal.ThreadSafeHeap: int _size$volatile
+kotlinx.coroutines.DispatchedCoroutine: int _decision$volatile
+kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner$volatile
+androidx.compose.runtime.snapshots.SnapshotStateList: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int workerCtl$volatile
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _rootCause$volatile
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int UNINITIALIZED_HASH_CODE
+kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack$volatile
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+kotlinx.coroutines.InvokeOnCancelling: int _invoked$volatile
+kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
+kotlinx.coroutines.scheduling.WorkQueue: int producerIndex$volatile
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.Parser PARSER
+androidx.datastore.preferences.PreferencesProto$Value: java.lang.Object value_
+kotlinx.coroutines.channels.BufferedChannel: long bufferEnd$volatile
+androidx.compose.runtime.ParcelableSnapshotMutableFloatState: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.channels.BufferedChannel: long receivers$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
+kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
+androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.PreferencesProto$PreferenceMap DEFAULT_INSTANCE
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler$volatile
+kotlinx.coroutines.internal.Segment: int cleanedAndPointers$volatile
+androidx.compose.runtime.ParcelableSnapshotMutableIntState: android.os.Parcelable$Creator CREATOR
 androidx.concurrent.futures.AbstractResolvableFuture$Waiter: androidx.concurrent.futures.AbstractResolvableFuture$Waiter next
 kotlinx.coroutines.channels.BufferedChannel: java.lang.Object bufferEndSegment$volatile
-androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
-androidx.datastore.preferences.protobuf.GeneratedMessageLite: int UNINITIALIZED_HASH_CODE
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: androidx.lifecycle.ReportFragment$LifecycleCallbacks$Companion Companion
-kotlinx.coroutines.scheduling.CoroutineScheduler: long parkedWorkersStack$volatile
-kotlinx.coroutines.JobSupport$Finishing: int _isCompleting$volatile
-androidx.datastore.preferences.PreferencesProto$Value: int LONG_FIELD_NUMBER
-kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag$volatile
-kotlinx.coroutines.scheduling.WorkQueue: int producerIndex$volatile
-androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
-androidx.datastore.preferences.PreferencesProto$PreferenceMap: int PREFERENCES_FIELD_NUMBER
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event$Companion Companion
-kotlinx.coroutines.sync.MutexImpl: java.lang.Object owner$volatile
-androidx.datastore.preferences.PreferencesProto$Value: int INTEGER_FIELD_NUMBER
-kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef$volatile
-androidx.datastore.preferences.protobuf.GeneratedMessageLite: int memoizedSerializedSize
-kotlinx.coroutines.flow.ChannelAsFlow: int consumed$volatile
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
-kotlinx.coroutines.InvokeOnCancelling: int _invoked$volatile
-androidx.datastore.preferences.PreferencesProto$Value: int BYTES_FIELD_NUMBER
-kotlinx.coroutines.android.HandlerDispatcherKt: android.view.Choreographer choreographer
-androidx.datastore.preferences.PreferencesProto$Value: int DOUBLE_FIELD_NUMBER
-kotlinx.coroutines.EventLoopImplBase$DelayedTask: java.lang.Object _heap
-androidx.datastore.preferences.protobuf.GeneratedMessageLite: int MEMOIZED_SERIALIZED_SIZE_MASK
-kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next$volatile
-androidx.datastore.preferences.protobuf.GeneratedMessageLite: int UNINITIALIZED_SERIALIZED_SIZE
-androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
-kotlinx.coroutines.channels.BufferedChannel: java.lang.Object closeHandler$volatile
-androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.PreferencesProto$Value DEFAULT_INSTANCE
-kotlinx.coroutines.internal.Segment: int cleanedAndPointers$volatile
-kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
-kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask$volatile
-kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object head$volatile
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
-kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder$volatile
-androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.protobuf.Parser PARSER
-androidx.compose.foundation.lazy.layout.DefaultLazyKey: android.os.Parcelable$Creator CREATOR
-kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer$volatile
-kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next$volatile
-kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long enqIdx$volatile
-kotlinx.coroutines.internal.LimitedDispatcher: int runningWorkers$volatile
-androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.PreferencesProto$PreferenceMap DEFAULT_INSTANCE
-kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause$volatile
-kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex$volatile
-kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _prev$volatile
-androidx.lifecycle.Lifecycle$Event: kotlin.enums.EnumEntries $ENTRIES
-kotlin.coroutines.SafeContinuation: java.lang.Object result
-kotlinx.coroutines.internal.ResizableAtomicArray: java.util.concurrent.atomic.AtomicReferenceArray array
-androidx.compose.runtime.ParcelableSnapshotMutableState: android.os.Parcelable$Creator CREATOR
-kotlinx.coroutines.channels.BufferedChannel: long receivers$volatile
-kotlinx.coroutines.DispatchedCoroutine: int _decision$volatile
-kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
 androidx.datastore.preferences.PreferencesProto$Value: int FLOAT_FIELD_NUMBER
-androidx.datastore.preferences.PreferencesProto$PreferenceMap: androidx.datastore.preferences.protobuf.Parser PARSER
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_STOP
+kotlinx.coroutines.scheduling.CoroutineScheduler: int _isTerminated$volatile
+kotlinx.coroutines.scheduling.WorkQueue: int consumerIndex$volatile
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _next$volatile
 androidx.datastore.preferences.protobuf.GeneratedMessageLite: int MUTABLE_FLAG_MASK
-androidx.datastore.preferences.protobuf.AbstractMessageLite: int memoizedHashCode
+kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur$volatile
+kotlinx.coroutines.flow.StateFlowImpl: java.lang.Object _state$volatile
+kotlinx.coroutines.android.AndroidExceptionPreHandler: java.lang.Object _preHandler
+androidx.versionedparcelable.ParcelImpl: android.os.Parcelable$Creator CREATOR
+kotlinx.coroutines.CancelledContinuation: int _resumed$volatile
+kotlinx.coroutines.JobSupport$Finishing: java.lang.Object _exceptionsHolder$volatile
+kotlinx.coroutines.channels.BufferedChannel: long sendersAndCloseStatus$volatile
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _queue$volatile
 kotlinx.coroutines.internal.LockFreeTaskQueueCore: long _state$volatile
-kotlinx.coroutines.EventLoopImplBase: int _isCompleted$volatile
-androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
-kotlinx.coroutines.sync.SemaphoreAndMutexImpl: int _availablePermits$volatile
-kotlin.SafePublicationLazyImpl: java.lang.Object _value
-kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _prev$volatile
-androidx.datastore.preferences.PreferencesProto$Value: int STRING_SET_FIELD_NUMBER
-kotlinx.coroutines.internal.ThreadSafeHeap: int _size$volatile
-kotlinx.coroutines.CompletedExceptionally: int _handled$volatile
-androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.PreferencesProto$StringSet DEFAULT_INSTANCE
-androidx.compose.runtime.ParcelableSnapshotMutableIntState: android.os.Parcelable$Creator CREATOR
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] $VALUES
 kotlinx.coroutines.sync.SemaphoreAndMutexImpl: long deqIdx$volatile
+kotlinx.coroutines.JobSupport$Finishing: int _isCompleting$volatile
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_ANY
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object _closeCause$volatile
+androidx.datastore.preferences.PreferencesProto$Value: int BOOLEAN_FIELD_NUMBER
+androidx.datastore.preferences.PreferencesProto$Value: int DOUBLE_FIELD_NUMBER
+kotlinx.coroutines.scheduling.WorkQueue: int blockingTasksInBuffer$volatile
+kotlinx.coroutines.EventLoopImplBase: int _isCompleted$volatile
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Parser PARSER
+kotlinx.coroutines.DefaultExecutor: java.lang.Thread _thread
+kotlinx.coroutines.scheduling.CoroutineScheduler$Worker: int indexInArray
+androidx.datastore.preferences.PreferencesProto$Value: int BYTES_FIELD_NUMBER
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_PAUSE
+androidx.datastore.preferences.PreferencesProto$Value: int LONG_FIELD_NUMBER
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int memoizedSerializedSize
+androidx.datastore.preferences.PreferencesProto$Value: int valueCase_
+kotlinx.coroutines.flow.ChannelAsFlow: int consumed$volatile
+kotlinx.coroutines.channels.BufferedChannel: long completedExpandBuffersAndPauseFlag$volatile
+androidx.compose.foundation.lazy.layout.DefaultLazyKey: android.os.Parcelable$Creator CREATOR
+androidx.activity.result.ActivityResult: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.protobuf.AbstractMessageLite: int memoizedHashCode
+androidx.compose.runtime.ParcelableSnapshotMutableLongState: android.os.Parcelable$Creator CREATOR
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_DESTROY
+kotlinx.coroutines.EventLoopImplBase: java.lang.Object _delayed$volatile
+androidx.concurrent.futures.AbstractResolvableFuture$Waiter: java.lang.Thread thread
+kotlinx.coroutines.sync.SemaphoreAndMutexImpl: java.lang.Object head$volatile
+kotlinx.coroutines.internal.LockFreeLinkedListNode: java.lang.Object _removedRef$volatile
+kotlinx.coroutines.UndispatchedCoroutine: boolean threadLocalIsSet
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: int UNINITIALIZED_SERIALIZED_SIZE
+androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.protobuf.Parser PARSER
+kotlinx.coroutines.internal.LockFreeTaskQueueCore: java.lang.Object _next$volatile
+androidx.lifecycle.Lifecycle$Event: kotlin.enums.EnumEntries $ENTRIES
 kotlinx.coroutines.channels.BufferedChannel: java.lang.Object receiveSegment$volatile
 androidx.datastore.preferences.protobuf.GeneratedMessageLite: java.util.Map defaultInstanceMap
-kotlinx.coroutines.internal.LockFreeTaskQueue: java.lang.Object _cur$volatile
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Listener listeners
+kotlin.coroutines.SafeContinuation: java.lang.Object result
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: androidx.lifecycle.ProcessLifecycleOwner this$0
+androidx.compose.runtime.ParcelableSnapshotMutableState: android.os.Parcelable$Creator CREATOR
+androidx.datastore.preferences.PreferencesProto$Value: androidx.datastore.preferences.PreferencesProto$Value DEFAULT_INSTANCE
+androidx.datastore.preferences.PreferencesProto$Value: int STRING_SET_FIELD_NUMBER
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event ON_CREATE
+kotlinx.coroutines.channels.BufferedChannel: java.lang.Object sendSegment$volatile
+kotlinx.coroutines.internal.ConcurrentLinkedListNode: java.lang.Object _next$volatile
+androidx.datastore.preferences.PreferencesProto$Value: int INTEGER_FIELD_NUMBER
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.PreferencesProto$StringSet DEFAULT_INSTANCE
+androidx.datastore.preferences.protobuf.GeneratedMessageLite: androidx.datastore.preferences.protobuf.UnknownFieldSetLite unknownFields
+androidx.datastore.preferences.PreferencesProto$StringSet: androidx.datastore.preferences.protobuf.Internal$ProtobufList strings_
+androidx.concurrent.futures.AbstractResolvableFuture: androidx.concurrent.futures.AbstractResolvableFuture$Waiter waiters
 kotlinx.coroutines.CancellableContinuationImpl: java.lang.Object _parentHandle$volatile
-androidx.compose.ui.platform.AndroidComposeView: kotlin.coroutines.CoroutineContext getCoroutineContext()
-androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
-androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntSize getPopupContentSize-bOM6tXw()
-androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection valueOf(java.lang.String)
-androidx.compose.ui.internal.InlineClassHelperKt: void throwIndexOutOfBoundsException(java.lang.String)
-androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus[] values()
-kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
-androidx.compose.ui.node.LayoutNode: java.lang.String exceptionMessageForParentingOrOwnership(androidx.compose.ui.node.LayoutNode)
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
-androidx.navigation.internal.NavBackStackEntryImpl$SavedStateViewModel: NavBackStackEntryImpl$SavedStateViewModel(androidx.lifecycle.SavedStateHandle)
-com.hydra.app.HydraApp: HydraApp()
-androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.compose.ui.platform.AndroidComposeView: void setPrimaryDirectionalMotionAxisOverride-r2epLt8$ui(androidx.compose.ui.input.indirect.IndirectPointerEventPrimaryDirectionalMotionAxis)
-androidx.compose.animation.core.PreconditionsKt: void throwIllegalStateException(java.lang.String)
-androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
-androidx.compose.ui.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: void setAccessibilityEventBatchIntervalMillis(long)
-androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder valueOf(java.lang.String)
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: androidx.window.extensions.area.ExtensionWindowAreaPresentation getRearDisplayPresentation()
-android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.compose.ui.platform.AndroidComposeView: void setLastMatrixRecalculationAnimationTime$ui(long)
-androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens[] values()
-androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority[] values()
-androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
-androidx.compose.runtime.PreconditionsKt: void throwIllegalArgumentException(java.lang.String)
-androidx.work.DirectExecutor: androidx.work.DirectExecutor valueOf(java.lang.String)
-androidx.compose.ui.window.PopupLayout: void setPopupContentSize-fhxjrPA(androidx.compose.ui.unit.IntSize)
-androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboard getClipboard()
-androidx.core.view.WindowInsetsCompat$Impl34: androidx.core.graphics.Insets getInsets(int)
-androidx.compose.ui.unit.ConstraintsKt: java.lang.Void throwInvalidConstraintsSizeException(int)
-androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void clearViewTranslationCallback(android.view.View)
-kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode valueOf(java.lang.String)
-androidx.compose.runtime.PausedCompositionState: androidx.compose.runtime.PausedCompositionState valueOf(java.lang.String)
-com.hydra.app.viewmodel.HistoryViewModel: HistoryViewModel(android.app.Application)
-androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.InsetsListener getInsetsListener()
-androidx.activity.OnBackPressedDispatcher$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
-androidx.compose.runtime.ComposerKt: java.lang.Void composeRuntimeError(java.lang.String)
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void startRearDisplayPresentationSession(android.app.Activity,androidx.window.extensions.core.util.function.Consumer)
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
-androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase valueOf(java.lang.String)
-androidx.compose.ui.node.Invalidation: androidx.compose.ui.node.Invalidation[] values()
-androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorRawSize(long)
-androidx.activity.ComponentActivity$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
-androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
-androidx.compose.ui.platform.AndroidComposeView: void getTextInputService$annotations()
-androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction[] values()
-androidx.compose.material3.LayoutId: androidx.compose.material3.LayoutId[] values()
-androidx.compose.ui.platform.AndroidComposeView: void setShowLayoutBounds(boolean)
-androidx.work.impl.WorkDatabase_Impl: WorkDatabase_Impl()
-androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor[] values()
-androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNode getRoot()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.DragAndDropManager getDragAndDropManager()
-androidx.core.view.WindowInsetsCompat$Impl34: WindowInsetsCompat$Impl34(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl34)
-androidx.compose.ui.window.PopupLayout: android.view.View getViewRoot()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView getOutOfFrameExecutor()
-androidx.compose.ui.platform.AndroidComposeView: void setUncaughtExceptionHandler(androidx.compose.ui.node.RootForTest$UncaughtExceptionHandler)
-androidx.compose.ui.node.Invalidation: androidx.compose.ui.node.Invalidation valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void startRearDisplaySession(android.app.Activity,androidx.window.extensions.core.util.function.Consumer)
-androidx.compose.ui.window.Api30Impl: void setFitInsetsSides(android.view.WindowManager$LayoutParams,int)
-androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
-androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState valueOf(java.lang.String)
-androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState: androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
-androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
-androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction valueOf(java.lang.String)
-androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
-androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName valueOf(java.lang.String)
-androidx.activity.EdgeToEdgeApi29: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
-androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection[] values()
-androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy[] values()
-androidx.core.view.WindowInsetsCompat$Impl20: boolean isVisible(int)
-androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize valueOf(java.lang.String)
-androidx.work.OverwritingInputMerger: OverwritingInputMerger()
-androidx.activity.OnBackPressedDispatcher$Api33Impl: android.window.OnBackInvokedCallback createOnBackInvokedCallback(kotlin.jvm.functions.Function0)
-androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase[] values()
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
-androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
-androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver: ForceStopRunnable$BroadcastReceiver()
-androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
-androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax valueOf(java.lang.String)
-androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
-androidx.compose.ui.text.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl34: boolean isVisible(int)
-androidx.compose.ui.platform.AndroidComposeView: void setContentCaptureManager$ui(androidx.compose.ui.contentcapture.AndroidContentCaptureManager)
-androidx.core.view.WindowInsetsCompat$BuilderImpl34: WindowInsetsCompat$BuilderImpl34(androidx.core.view.WindowInsetsCompat)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
-androidx.compose.runtime.PausedCompositionState: androidx.compose.runtime.PausedCompositionState[] values()
-androidx.compose.ui.platform.AndroidComposeView: void setOnViewTreeOwnersAvailable(kotlin.jvm.functions.Function1)
-androidx.compose.ui.platform.AbstractComposeView: boolean getShowLayoutBounds()
-androidx.lifecycle.ReportFragment: ReportFragment()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ClipboardManager getClipboardManager()
-androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner: LifecycleRetainedValuesStoreOwner()
-androidx.compose.runtime.ComposerKt: void composeImmediateRuntimeError(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.focus.FocusOwner getFocusOwner()
-androidx.compose.ui.platform.AndroidComposeViewForceDarkModeQ: void disallowForceDark(android.view.View)
-androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
-androidx.compose.material3.tokens.MotionSchemeKeyTokens: androidx.compose.material3.tokens.MotionSchemeKeyTokens[] values()
-androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
-androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType[] values()
-androidx.room.Transactor$SQLiteTransactionType: androidx.room.Transactor$SQLiteTransactionType[] values()
-androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
-androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy: ConstraintProxy$BatteryNotLowProxy()
-androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest$UncaughtExceptionHandler getUncaughtExceptionHandler$ui()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.Clipboard getClipboard()
-androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OutOfFrameExecutor getOutOfFrameExecutor()
-androidx.compose.ui.unit.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
-androidx.work.BackoffPolicy: androidx.work.BackoffPolicy valueOf(java.lang.String)
-androidx.activity.Api34Impl: android.window.BackEvent createOnBackEvent(float,float,float,int)
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
-androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy: ConstraintProxy$BatteryChargingProxy()
-androidx.work.WorkInfo$State: androidx.work.WorkInfo$State[] values()
-androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent[] values()
-androidx.activity.Api34Impl: float touchY(android.window.BackEvent)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
-androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
-androidx.compose.foundation.text.selection.DownResolution: androidx.compose.foundation.text.selection.DownResolution[] values()
-androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
-androidx.compose.ui.platform.AbstractComposeView: void setParentCompositionContext(androidx.compose.runtime.CompositionContext)
-androidx.compose.material3.SnackbarResult: androidx.compose.material3.SnackbarResult[] values()
-androidx.compose.ui.platform.AndroidComposeView: void getPrimaryDirectionalMotionAxisOverride-dqNNBbU$ui$annotations()
-androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
-androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle valueOf(java.lang.String)
-androidx.compose.ui.graphics.layer.view.ViewLayerContainer: void dispatchGetDisplayList()
-androidx.compose.ui.window.Api30Impl: void setFitInsetsTypes(android.view.WindowManager$LayoutParams,int)
-androidx.activity.Api34Impl: int swipeEdge(android.window.BackEvent)
-androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop[] values()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
-androidx.window.reflection.JFunction2: java.lang.Object apply(java.lang.Object)
-androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
-androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners getViewTreeOwners()
-android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
-androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
-androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsO: void focusable(android.view.View,int,boolean)
-kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
-androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
-android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidViewsHandler getAndroidViewsHandler$ui()
-com.hydra.app.model.ReminderReason: com.hydra.app.model.ReminderReason valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
-androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop valueOf(java.lang.String)
-androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority valueOf(java.lang.String)
-androidx.compose.material3.SnackbarResult: androidx.compose.material3.SnackbarResult valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: void setDensity(androidx.compose.ui.unit.Density)
-androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
-androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason valueOf(java.lang.String)
+kotlinx.coroutines.scheduling.WorkQueue: java.lang.Object lastScheduledTask$volatile
+kotlinx.coroutines.CancellableContinuationImpl: int _decisionAndIndex$volatile
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption[] values()
 androidx.work.OutOfQuotaPolicy: androidx.work.OutOfQuotaPolicy valueOf(java.lang.String)
-androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
-androidx.work.impl.background.systemjob.SystemJobService: SystemJobService()
-androidx.activity.Api34Impl: float progress(android.window.BackEvent)
-androidx.compose.ui.platform.AbstractComposeView: int getAutoClearFocusBehavior-4UtRPd4()
-androidx.core.app.NotificationCompat$BubbleMetadata$Api29Impl: android.app.Notification$BubbleMetadata toPlatform(androidx.core.app.NotificationCompat$BubbleMetadata)
-kotlin.time.DurationUnit: kotlin.time.DurationUnit[] values()
-androidx.compose.ui.graphics.layer.view.DrawChildContainer: int getChildCount()
-androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorSize(long)
-androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy valueOf(java.lang.String)
-androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorNext(long,float[],int)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNodeDrawScope getSharedDrawScope()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.runtime.retain.RetainedValuesStore getRetainedValuesStore()
-androidx.compose.ui.platform.AbstractComposeView: void setPreviousAttachedWindowToken(android.os.IBinder)
-androidx.compose.ui.platform.MotionEventVerifierApi29: boolean isValidMotionEvent(android.view.MotionEvent,int)
-androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
-androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType valueOf(java.lang.String)
-androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
-androidx.window.area.reflectionguard.ExtensionWindowAreaPresentationRequirements: android.content.Context getPresentationContext()
-androidx.graphics.path.ConicConverter: int internalConicToQuadratics(float[],int,float[],float,float)
-com.hydra.app.navigation.HydraRoute: com.hydra.app.navigation.HydraRoute[] values()
-androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax[] values()
-androidx.compose.ui.platform.ComposeView: void getShouldCreateCompositionOnAttachedToWindow$annotations()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.contentcapture.AndroidContentCaptureManager getContentCaptureManager$ui()
-androidx.core.view.WindowInsetsCompat$Impl34: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
-androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
-androidx.window.area.reflectionguard.ExtensionWindowAreaStatusRequirements: int getWindowAreaStatus()
-androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.Font$ResourceLoader getFontLoader()
-androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType[] values()
-androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
-androidx.window.area.reflectionguard.ExtensionWindowAreaPresentationRequirements: void setPresentationView(android.view.View)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboardManager getClipboardManager()
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
-androidx.compose.material3.tokens.MotionSchemeKeyTokens: androidx.compose.material3.tokens.MotionSchemeKeyTokens valueOf(java.lang.String)
-androidx.compose.material3.SliderComponents: androidx.compose.material3.SliderComponents valueOf(java.lang.String)
-androidx.room.ObservedTableStates$ObserveOp: androidx.room.ObservedTableStates$ObserveOp valueOf(java.lang.String)
-androidx.compose.ui.window.PopupLayout: void getParams$ui$annotations()
-androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
-androidx.compose.ui.window.PopupLayout: void setPositionProvider(androidx.compose.ui.window.PopupPositionProvider)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
-androidx.compose.foundation.text.selection.SelectedTextType: androidx.compose.foundation.text.selection.SelectedTextType valueOf(java.lang.String)
-com.hydra.app.service.BootReceiver: BootReceiver()
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void addRearDisplayStatusListener(androidx.window.extensions.core.util.function.Consumer)
-androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy: ConstraintProxy$StorageNotLowProxy()
-androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus[] values()
-androidx.compose.ui.text.font.FontWeightAdjustmentHelperApi31: int fontWeightAdjustment(android.content.Context)
-androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
-androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getHolderToLayoutNode()
-com.hydra.app.viewmodel.SettingsViewModel: SettingsViewModel(android.app.Application)
-androidx.compose.ui.util.ListUtilsKt: java.lang.Void throwNoSuchElementException(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AndroidAutofillManager get_autofillManager$ui()
-androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
-androidx.graphics.path.PathIteratorPreApi34Impl: long createInternalPathIterator(android.graphics.Path,int,float)
-androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation[] values()
-androidx.compose.ui.platform.AbstractComposeView: void setAutoClearFocusBehavior-17tfJxM(int)
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
-androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
-androidx.compose.foundation.text.selection.DownResolution: androidx.compose.foundation.text.selection.DownResolution valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void setViewTranslationCallback(android.view.View)
-androidx.navigation.serialization.RouteBuilder$ParamType: androidx.navigation.serialization.RouteBuilder$ParamType valueOf(java.lang.String)
-androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntRect getVisibleDisplayBounds()
-androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl: void setSystemUiVisibility(int)
-androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand[] values()
-androidx.room.Transactor$SQLiteTransactionType: androidx.room.Transactor$SQLiteTransactionType valueOf(java.lang.String)
-androidx.compose.ui.window.PopupLayout: void setContent(kotlin.jvm.functions.Function2)
-androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState valueOf(java.lang.String)
-androidx.core.app.CoreComponentFactory: CoreComponentFactory()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner$FrameEndScheduler getFrameEndScheduler$ui()
-androidx.compose.ui.unit.ConstraintsKt: void throwInvalidConstraintException(int,int)
-androidx.core.view.WindowInsetsCompat$Impl: boolean isVisible(int)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.SoftwareKeyboardController getSoftwareKeyboardController()
-androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
-androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens valueOf(java.lang.String)
-androidx.work.BackoffPolicy: androidx.work.BackoffPolicy[] values()
-androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType[] values()
-androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
+androidx.compose.ui.platform.Api35Impl: void setRequestedFrameRate(android.view.View,float)
 androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State valueOf(java.lang.String)
-androidx.compose.ui.window.PopupLayout: java.lang.String getTestTag()
-androidx.core.app.NotificationCompat$BubbleMetadata$Api30Impl: android.app.Notification$BubbleMetadata toPlatform(androidx.core.app.NotificationCompat$BubbleMetadata)
-androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
-androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
-androidx.compose.ui.platform.AndroidComposeView: void getFontLoader$annotations()
-androidx.compose.ui.graphics.layer.ViewLayer: void setCanUseCompositingLayer$ui_graphics(boolean)
-androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction[] values()
-androidx.compose.ui.window.Api30Impl: int getMaxDialogHeightExcludingSystemBarInsets(android.view.Window)
-androidx.compose.material3.SnackbarDuration: androidx.compose.material3.SnackbarDuration valueOf(java.lang.String)
+androidx.compose.ui.text.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
+androidx.navigation.internal.NavBackStackEntryImpl$SavedStateViewModel: NavBackStackEntryImpl$SavedStateViewModel(androidx.lifecycle.SavedStateHandle)
+androidx.compose.ui.node.Invalidation: androidx.compose.ui.node.Invalidation[] values()
+com.hydra.app.ui.screens.OnboardingStep: com.hydra.app.ui.screens.OnboardingStep valueOf(java.lang.String)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax[] values()
+kotlin.time.DurationUnit: kotlin.time.DurationUnit valueOf(java.lang.String)
+androidx.navigation.serialization.RouteBuilder$ParamType: androidx.navigation.serialization.RouteBuilder$ParamType valueOf(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
+androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase valueOf(java.lang.String)
+androidx.compose.material3.SwipeToDismissBoxValue: androidx.compose.material3.SwipeToDismissBoxValue[] values()
+androidx.compose.ui.platform.AndroidComposeView: void setFrameEndScheduler$ui(androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner$FrameEndScheduler)
+androidx.compose.ui.window.PopupLayout: android.view.View getViewRoot()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.foundation.text.selection.DownResolution: androidx.compose.foundation.text.selection.DownResolution[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
+androidx.work.impl.foreground.SystemForegroundService: SystemForegroundService()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy[] values()
+androidx.compose.ui.text.internal.InlineClassHelperKt: java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean systemBarVisibilityEquals(int,int)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners getViewTreeOwners()
+androidx.core.view.WindowInsetsCompat$Impl: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState: androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl34: void setInsets(int,androidx.core.graphics.Insets)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority[] values()
+androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
+androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType valueOf(java.lang.String)
+androidx.compose.ui.graphics.layer.view.DrawChildContainer: int getChildCount()
+androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType[] values()
+androidx.compose.ui.platform.CalculateMatrixToWindowApi29: void calculateMatrixToWindow-EL8BTi8(android.view.View,float[])
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus[] values()
+androidx.compose.ui.platform.AndroidComposeView: android.view.View getView()
+androidx.core.view.WindowInsetsCompat$Impl30: boolean isVisible(int)
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens[] values()
+androidx.room.ObservedTableStates$ObserveOp: androidx.room.ObservedTableStates$ObserveOp[] values()
+androidx.compose.runtime.collection.MutableVectorKt: void throwOutOfRangeException(int,int)
+androidx.work.NetworkType: androidx.work.NetworkType[] values()
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection[] values()
+androidx.compose.ui.window.PopupLayout: boolean getCanCalculatePosition()
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+androidx.compose.ui.platform.ComposeView: void getShouldCreateCompositionOnAttachedToWindow$annotations()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode[] values()
+androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop[] values()
+androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy: ConstraintProxy$BatteryNotLowProxy()
+androidx.work.impl.workers.DiagnosticsWorker: DiagnosticsWorker(android.content.Context,androidx.work.WorkerParameters)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: android.view.WindowInsets createWindowInsetsInstance()
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.focus.FocusOwner getFocusOwner()
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: androidx.core.view.WindowInsetsCompat build()
+androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy: ConstraintProxy$BatteryChargingProxy()
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void addRearDisplayPresentationStatusListener(androidx.window.extensions.core.util.function.Consumer)
+androidx.compose.ui.platform.AndroidComposeView: void setUncaughtExceptionHandler$ui(androidx.compose.ui.node.RootForTest$UncaughtExceptionHandler)
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void startRearDisplaySession(android.app.Activity,androidx.window.extensions.core.util.function.Consumer)
 androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest getRootForTest()
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow[] values()
+androidx.compose.ui.platform.AndroidComposeViewAssistHelperMethodsO: void setClassName(android.view.ViewStructure,android.view.View)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.graphics.layer.view.ViewLayerContainer: void dispatchGetDisplayList()
+androidx.compose.ui.input.pointer.PointerInputEventHandler: java.lang.Object invoke(androidx.compose.ui.input.pointer.PointerInputScope,kotlin.coroutines.Continuation)
+androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl()
+androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent valueOf(java.lang.String)
+androidx.compose.ui.util.ListUtilsKt: java.lang.Void throwNoSuchElementException(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.compose.material3.LayoutId: androidx.compose.material3.LayoutId[] values()
+androidx.work.WorkInfo$State: androidx.work.WorkInfo$State valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: void getRoot$annotations()
+androidx.compose.ui.platform.AndroidComposeView: kotlin.coroutines.CoroutineContext getCoroutineContext()
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setTappableElementInsets(androidx.core.graphics.Insets)
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand valueOf(java.lang.String)
+com.hydra.app.viewmodel.HistoryViewModel: HistoryViewModel(android.app.Application)
+com.hydra.app.navigation.HydraRoute: com.hydra.app.navigation.HydraRoute valueOf(java.lang.String)
+androidx.graphics.path.PathIteratorPreApi34Impl: boolean internalPathIteratorHasNext(long)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void registerOnBackInvokedCallback(java.lang.Object,int,java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.pointer.PointerIconService getPointerIconService()
+androidx.compose.ui.platform.AndroidComposeView: void setContentCaptureManager$ui(androidx.compose.ui.contentcapture.AndroidContentCaptureManager)
+androidx.compose.ui.platform.AndroidComposeView: androidx.collection.MutableIntObjectMap getLayoutNodes()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
+androidx.compose.ui.internal.InlineClassHelperKt: java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.spatial.RectManager getRectManager()
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl34: WindowInsetsCompat$Impl34(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl34)
+androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent[] values()
+androidx.navigation.compose.BackStackEntryIdViewModel: BackStackEntryIdViewModel(androidx.lifecycle.SavedStateHandle)
+androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus valueOf(java.lang.String)
+androidx.activity.ComponentActivity: void setContentView(android.view.View)
+androidx.compose.ui.platform.AbstractComposeView: void setParentCompositionContext(androidx.compose.runtime.CompositionContext)
+androidx.compose.ui.graphics.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
+androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke valueOf(java.lang.String)
+com.hydra.app.data.room.HydraDatabase: HydraDatabase()
+androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
+androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase valueOf(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: ProcessLifecycleOwner$attach$1$onActivityPreCreated$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
+kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand[] values()
+androidx.compose.material3.SnackbarDuration: androidx.compose.material3.SnackbarDuration valueOf(java.lang.String)
+androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner: LifecycleRetainedValuesStoreOwner()
+androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType valueOf(java.lang.String)
+androidx.lifecycle.ReportFragment: ReportFragment()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction valueOf(java.lang.String)
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.DragAndDropManager getDragAndDropManager()
+androidx.compose.ui.platform.AndroidComposeView: void setConfiguration(android.content.res.Configuration)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getSystemGestureInsets()
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.compose.ui.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityStopped(android.app.Activity)
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent valueOf(java.lang.String)
+androidx.room.MultiInstanceInvalidationService: MultiInstanceInvalidationService()
+androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: boolean equals(java.lang.Object)
+androidx.compose.runtime.PausedCompositionState: androidx.compose.runtime.PausedCompositionState[] values()
+androidx.compose.material3.internal.InputPhase: androidx.compose.material3.internal.InputPhase[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboard getClipboard()
+androidx.core.view.WindowInsetsCompat$Impl34: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.Autofill getAutofill()
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidCompositionLocals_androidKt: androidx.compose.runtime.ProvidableCompositionLocal getLocalLifecycleOwner()
+androidx.window.area.reflectionguard.ExtensionWindowAreaPresentationRequirements: android.content.Context getPresentationContext()
+androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
+androidx.compose.ui.platform.AndroidComposeView: android.view.View findViewByAccessibilityIdTraversal(int)
+androidx.tracing.TraceApi29Impl: boolean isEnabled()
+androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.Font$ResourceLoader getFontLoader()
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus[] values()
+androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+com.hydra.app.service.ReminderAlarmReceiver: ReminderAlarmReceiver()
+android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void setSystemUiVisibility(int)
+androidx.activity.Api34Impl: float touchY(android.window.BackEvent)
+androidx.compose.ui.platform.ComposeView: void setContent(kotlin.jvm.functions.Function2)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isTypeVisible(int)
+androidx.compose.ui.platform.AbstractComposeView: void setParentContext(androidx.compose.runtime.CompositionContext)
+androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
+androidx.work.DirectExecutor: androidx.work.DirectExecutor valueOf(java.lang.String)
+androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority valueOf(java.lang.String)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: void getParams$ui$annotations()
+androidx.core.view.WindowInsetsCompat$Impl34: WindowInsetsCompat$Impl34(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.ui.platform.AndroidComposeView: android.content.res.Configuration getConfiguration()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.SoftwareKeyboardController getSoftwareKeyboardController()
+com.hydra.app.viewmodel.DailyStatus: com.hydra.app.viewmodel.DailyStatus[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.Api30Impl: boolean isShowingLayoutBounds(android.view.View)
+androidx.compose.animation.core.PreconditionsKt: void throwIllegalStateException(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.platform.AndroidComposeView: androidx.collection.IntObjectMap getLayoutNodes()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNode getRoot()
+kotlin.text.RegexOption: kotlin.text.RegexOption[] values()
+androidx.compose.foundation.text.selection.SelectedTextType: androidx.compose.foundation.text.selection.SelectedTextType valueOf(java.lang.String)
+androidx.compose.foundation.text.selection.DownResolution: androidx.compose.foundation.text.selection.DownResolution valueOf(java.lang.String)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle[] values()
+androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType valueOf(java.lang.String)
+androidx.compose.runtime.collection.MutableVectorKt: void throwNegativeIndexException(int)
+androidx.compose.runtime.PreconditionsKt: void throwIllegalArgumentException(java.lang.String)
+androidx.compose.runtime.PreconditionsKt: void throwIllegalStateException(java.lang.String)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens[] values()
+com.hydra.app.ui.screens.OnboardingStep: com.hydra.app.ui.screens.OnboardingStep[] values()
+kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OwnerSnapshotObserver getSnapshotObserver()
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
+androidx.work.ExistingWorkPolicy: androidx.work.ExistingWorkPolicy[] values()
+androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy: ConstraintProxy$NetworkStateProxy()
+kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ClipboardManager getClipboardManager()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.InsetsListener getInsetsListener()
+androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType valueOf(java.lang.String)
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax[] values()
+com.hydra.app.data.room.HydraDatabase_Impl: HydraDatabase_Impl()
+androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.compose.foundation.layout.Direction: androidx.compose.foundation.layout.Direction[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AccessibilityManager getAccessibilityManager()
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass valueOf(java.lang.String)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
+androidx.activity.EdgeToEdgeApi26: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+androidx.compose.material3.tokens.MotionSchemeKeyTokens: androidx.compose.material3.tokens.MotionSchemeKeyTokens[] values()
+androidx.compose.ui.window.Api30Impl: void setFitInsetsTypes(android.view.WindowManager$LayoutParams,int)
+androidx.window.area.reflectionguard.ExtensionWindowAreaStatusRequirements: int getWindowAreaStatus()
+androidx.room.Transactor$SQLiteTransactionType: androidx.room.Transactor$SQLiteTransactionType[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillManager getAutofillManager()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner$FrameEndScheduler getFrameEndScheduler$ui()
+androidx.compose.ui.platform.AndroidComposeView: void getPrimaryDirectionalMotionAxisOverride-dqNNBbU$ui$annotations()
+androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.ui.window.SecureFlagPolicy: androidx.compose.ui.window.SecureFlagPolicy[] values()
+androidx.core.view.ViewCompat$Api20Impl: void requestApplyInsets(android.view.View)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl valueOf(java.lang.String)
+androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.InputModeManager getInputModeManager()
+androidx.work.ExistingWorkPolicy: androidx.work.ExistingWorkPolicy valueOf(java.lang.String)
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState[] values()
+androidx.activity.OnBackPressedDispatcher$Api33Impl: void unregisterOnBackInvokedCallback(java.lang.Object,java.lang.Object)
+androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.compose.ui.window.PopupLayout: void setLayoutDirection(int)
+androidx.compose.foundation.layout.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
+com.hydra.app.model.ReminderState: com.hydra.app.model.ReminderState[] values()
+androidx.core.view.WindowInsetsCompat$Impl28: int hashCode()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: void setViewCompositionStrategy(androidx.compose.ui.platform.ViewCompositionStrategy)
+androidx.compose.ui.platform.AbstractComposeView: boolean getHasComposition()
+androidx.compose.ui.internal.InlineClassHelperKt: void throwIndexOutOfBoundsException(java.lang.String)
+androidx.core.app.CoreComponentFactory: CoreComponentFactory()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
+androidx.work.BackoffPolicy: androidx.work.BackoffPolicy valueOf(java.lang.String)
 androidx.compose.runtime.Recomposer$State: androidx.compose.runtime.Recomposer$State[] values()
+androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.geometry.Rect getEmbeddedViewFocusRect()
+androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl29)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsO: void focusable(android.view.View,int,boolean)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.material3.internal.TextFieldType: androidx.compose.material3.internal.TextFieldType[] values()
+androidx.compose.material3.SwipeToDismissBoxValue: androidx.compose.material3.SwipeToDismissBoxValue valueOf(java.lang.String)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30(androidx.core.view.WindowInsetsCompat)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: boolean getHasPendingMeasureOrLayout()
+androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection[] values()
+androidx.core.view.WindowInsetsCompat$Impl: WindowInsetsCompat$Impl(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
+androidx.activity.ComponentActivity$Api33Impl: android.window.OnBackInvokedDispatcher getOnBackInvokedDispatcher(android.app.Activity)
+androidx.compose.runtime.collection.MutableVectorKt: void throwListIndexOutOfBoundsException(int,int)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsForType(int,boolean)
+androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop valueOf(java.lang.String)
+androidx.graphics.path.ConicConverter: int internalConicToQuadratics(float[],int,float[],float,float)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
+androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.LayoutNodeDrawScope getSharedDrawScope()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
+androidx.compose.ui.node.Invalidation: androidx.compose.ui.node.Invalidation valueOf(java.lang.String)
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason valueOf(java.lang.String)
+androidx.compose.ui.window.Api28Impl: void setLayoutInDisplayCutout(android.view.WindowManager$LayoutParams)
+androidx.compose.ui.platform.AndroidComposeView: void setPrimaryDirectionalMotionAxisOverride-r2epLt8$ui(androidx.compose.ui.input.indirect.IndirectPointerEventPrimaryDirectionalMotionAxis)
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight[] values()
+androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.compose.ui.window.PopupLayout: void setPositionProvider(androidx.compose.ui.window.PopupPositionProvider)
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode valueOf(java.lang.String)
+androidx.work.BackoffPolicy: androidx.work.BackoffPolicy[] values()
+androidx.compose.ui.platform.AndroidComposeView: long getLastMatrixRecalculationAnimationTime$ui()
+androidx.compose.ui.node.LookaheadPassDelegate$PlacedState: androidx.compose.ui.node.LookaheadPassDelegate$PlacedState[] values()
+androidx.compose.ui.text.internal.InlineClassHelperKt: java.lang.Void throwIllegalArgumentExceptionForNullCheck(java.lang.String)
+androidx.activity.OnBackPressedDispatcher$Api34Impl: android.window.OnBackInvokedCallback createOnBackAnimationCallback(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0)
+androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
+androidx.compose.material3.SnackbarResult: androidx.compose.material3.SnackbarResult[] values()
+androidx.compose.foundation.internal.InlineClassHelperKt: void throwIndexOutOfBoundsException(java.lang.String)
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: android.util.DisplayMetrics getRearDisplayMetrics()
+com.hydra.app.service.ReminderForegroundService: ReminderForegroundService()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isVisible(int)
+androidx.compose.foundation.layout.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
+androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver: ConstraintProxyUpdateReceiver()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent[] values()
+androidx.compose.ui.platform.AndroidComposeView: void getFontLoader$annotations()
+androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.LayoutDirection getParentLayoutDirection()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.platform.AndroidComposeView: void set_viewTreeOwners(androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners)
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void endRearDisplaySession()
+androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState valueOf(java.lang.String)
+androidx.work.impl.WorkDatabase_Impl: WorkDatabase_Impl()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isRound()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.material3.SnackbarDuration: androidx.compose.material3.SnackbarDuration[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl34: WindowInsetsCompat$BuilderImpl34()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.FontFamily$Resolver getFontFamilyResolver()
+androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType[] values()
+androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.platform.AbstractComposeView getSubCompositionView()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView getOutOfFrameExecutor()
+com.hydra.app.model.ReminderReason: com.hydra.app.model.ReminderReason valueOf(java.lang.String)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState valueOf(java.lang.String)
+androidx.core.app.NotificationCompat$BubbleMetadata$Api30Impl: android.app.Notification$BubbleMetadata toPlatform(androidx.core.app.NotificationCompat$BubbleMetadata)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setInsets(int,androidx.core.graphics.Insets)
+androidx.compose.ui.graphics.AndroidPath_androidKt: void throwIllegalStateException(java.lang.String)
+androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.compose.ui.window.Api30Impl: int getMaxDialogHeightExcludingSystemBarInsets(android.view.Window)
+androidx.compose.ui.platform.AndroidComposeView: void getShowLayoutBounds$annotations()
+androidx.compose.ui.text.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
+androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass[] values()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
+android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.window.PopupLayout: void setPopupContentSize-fhxjrPA(androidx.compose.ui.unit.IntSize)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidAccessibilityManager getAccessibilityManager()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
+androidx.compose.ui.platform.AbstractComposeView: void setAutoClearFocusBehavior-17tfJxM(int)
+androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode[] values()
+androidx.compose.ui.graphics.layer.ViewLayer: boolean getCanUseCompositingLayer$ui_graphics()
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void addRearDisplayStatusListener(androidx.window.extensions.core.util.function.Consumer)
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorSize(long)
+androidx.window.area.reflectionguard.ExtensionWindowAreaPresentationRequirements: void setPresentationView(android.view.View)
+androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens valueOf(java.lang.String)
+androidx.work.impl.background.systemjob.SystemJobService: SystemJobService()
+androidx.compose.ui.contentcapture.ContentCaptureEventType: androidx.compose.ui.contentcapture.ContentCaptureEventType valueOf(java.lang.String)
+androidx.work.NetworkType: androidx.work.NetworkType valueOf(java.lang.String)
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void removeRearDisplayPresentationStatusListener(androidx.window.extensions.core.util.function.Consumer)
+androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder valueOf(java.lang.String)
+androidx.compose.runtime.PausedCompositionState: androidx.compose.runtime.PausedCompositionState valueOf(java.lang.String)
+androidx.compose.ui.node.LookaheadPassDelegate$PlacedState: androidx.compose.ui.node.LookaheadPassDelegate$PlacedState valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: WindowInsetsCompat$BuilderImpl30()
+androidx.compose.ui.contentcapture.ContentCaptureEventType: androidx.compose.ui.contentcapture.ContentCaptureEventType[] values()
+androidx.compose.ui.platform.AbstractComposeView: void setShowLayoutBounds(boolean)
+androidx.compose.ui.platform.AndroidComposeView: void setFontFamilyResolver(androidx.compose.ui.text.font.FontFamily$Resolver)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
+androidx.core.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.node.LayoutNode: java.lang.String exceptionMessageForParentingOrOwnership(androidx.compose.ui.node.LayoutNode)
+com.hydra.app.service.BootReceiver: BootReceiver()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
+androidx.compose.ui.platform.AndroidComposeView: void setOnViewTreeOwnersAvailable(kotlin.jvm.functions.Function1)
+androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsN: void setPointerIcon(android.view.View,androidx.compose.ui.input.pointer.PointerIcon)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand[] values()
+com.hydra.app.navigation.HydraRoute: com.hydra.app.navigation.HydraRoute[] values()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
+androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState[] values()
+androidx.compose.ui.platform.AndroidComposeView: void setAccessibilityEventBatchIntervalMillis(long)
+com.hydra.app.viewmodel.SettingsViewModel: SettingsViewModel(android.app.Application)
+androidx.compose.ui.platform.AndroidComposeView: long getMeasureIteration()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.semantics.SemanticsOwner getSemanticsOwner()
+androidx.work.WorkInfo$State: androidx.work.WorkInfo$State[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.WindowInfo getWindowInfo()
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
+androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState[] values()
+androidx.navigation.serialization.RouteBuilder$ParamType: androidx.navigation.serialization.RouteBuilder$ParamType[] values()
+androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection[] values()
+androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.Clipboard getClipboard()
+androidx.compose.ui.util.ListUtilsKt: void throwUnsupportedOperationException(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: int getImportantForAutofill()
+androidx.compose.animation.core.PreconditionsKt: void throwIllegalArgumentException(java.lang.String)
+kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
+androidx.work.DirectExecutor: androidx.work.DirectExecutor[] values()
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void endRearDisplayPresentationSession()
+androidx.concurrent.futures.DirectExecutor: androidx.concurrent.futures.DirectExecutor[] values()
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName[] values()
+androidx.compose.ui.unit.ConstraintsKt: java.lang.Void throwInvalidConstraintsSizeException(int)
+androidx.graphics.path.PathIteratorPreApi34Impl: void destroyInternalPathIterator(long)
+androidx.compose.runtime.ComposerKt: void composeImmediateRuntimeError(java.lang.String)
+androidx.startup.InitializationProvider: InitializationProvider()
+androidx.compose.ui.window.PopupLayout: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke[] values()
+kotlin.DeprecationLevel: kotlin.DeprecationLevel[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntRect getVisibleDisplayBounds()
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize[] values()
+androidx.room.ObservedTableStates$ObserveOp: androidx.room.ObservedTableStates$ObserveOp valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: boolean equals(java.lang.Object)
+androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult[] values()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority[] values()
+androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
+androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: boolean getShowLayoutBounds()
+androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: void setDensity(androidx.compose.ui.unit.Density)
+androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems[] values()
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ViewConfiguration getViewConfiguration()
+androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
+androidx.compose.ui.graphics.layer.ViewLayer: android.view.View getOwnerView()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
+kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
+androidx.compose.ui.platform.ComposeView: java.lang.CharSequence getAccessibilityClassName()
+androidx.compose.runtime.retain.impl.PreconditionsKt: void throwIllegalStateException(java.lang.String)
+androidx.compose.ui.platform.ComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.compose.ui.platform.AndroidComposeView: void setCoroutineContext(kotlin.coroutines.CoroutineContext)
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
+androidx.compose.material.ripple.RippleHostView: void setRippleState$lambda$1(androidx.compose.material.ripple.RippleHostView)
+androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: int getAutoClearFocusBehavior-4UtRPd4()
+androidx.compose.ui.unit.ConstraintsKt: void throwInvalidConstraintException(int,int)
+androidx.core.view.WindowInsetsCompat$BuilderImpl34: WindowInsetsCompat$BuilderImpl34(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.platform.AndroidComposeViewForceDarkModeQ: void disallowForceDark(android.view.View)
+androidx.compose.foundation.internal.InlineClassHelperKt: java.lang.Void throwIllegalArgumentExceptionForNullCheck(java.lang.String)
+androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation[] values()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
+com.hydra.app.model.ReminderReason: com.hydra.app.model.ReminderReason[] values()
+androidx.compose.ui.window.PopupLayout: android.view.WindowManager$LayoutParams getParams$ui()
+androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl34: boolean isVisible(int)
+androidx.work.OverwritingInputMerger: OverwritingInputMerger()
+androidx.core.app.NotificationCompat$BubbleMetadata$Api29Impl: android.app.Notification$BubbleMetadata toPlatform(androidx.core.app.NotificationCompat$BubbleMetadata)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
+androidx.compose.ui.text.font.FontWeightAdjustmentHelperApi31: int fontWeightAdjustment(android.content.Context)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: void setLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.compose.ui.platform.AndroidComposeView: void getTextInputService$annotations()
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getHolderToLayoutNode()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPaused(android.app.Activity)
+androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
+androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
+androidx.core.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.foundation.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.graphics.GraphicsContext getGraphicsContext()
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void setViewTranslationCallback(android.view.View)
+androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.Density getDensity()
+androidx.compose.runtime.SlotTableKt: void throwConcurrentModificationException()
+androidx.compose.material3.tokens.ShapeKeyTokens: androidx.compose.material3.tokens.ShapeKeyTokens valueOf(java.lang.String)
+androidx.compose.foundation.text.selection.SelectedTextType: androidx.compose.foundation.text.selection.SelectedTextType[] values()
+kotlin.text.RegexOption: kotlin.text.RegexOption valueOf(java.lang.String)
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
+androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
+androidx.core.view.ViewCompat$Api21Impl$1: android.view.WindowInsets onApplyWindowInsets(android.view.View,android.view.WindowInsets)
+androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
+androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType valueOf(java.lang.String)
+androidx.work.OutOfQuotaPolicy: androidx.work.OutOfQuotaPolicy[] values()
+com.hydra.app.MainActivity: MainActivity()
+kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
+androidx.datastore.preferences.protobuf.FieldType$Collection: androidx.datastore.preferences.protobuf.FieldType$Collection valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: void setTransitionGroup(boolean)
+androidx.work.impl.WorkDatabase: WorkDatabase()
+android.support.v4.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
+androidx.graphics.path.PathIteratorPreApi34Impl: long createInternalPathIterator(android.graphics.Path,int,float)
+kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
+androidx.compose.ui.unit.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: void setSystemUiVisibility(int)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.Placeable$PlacementScope getPlacementScope()
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
+androidx.compose.ui.platform.AndroidComposeView: void setShowLayoutBounds(boolean)
+androidx.compose.ui.graphics.Path$Direction: androidx.compose.ui.graphics.Path$Direction[] values()
+androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy: ConstraintProxy$StorageNotLowProxy()
+androidx.activity.Api34Impl: android.window.BackEvent createOnBackEvent(float,float,float,int)
+android.support.v4.graphics.drawable.IconCompatParcelizer: void write(androidx.core.graphics.drawable.IconCompat,androidx.versionedparcelable.VersionedParcel)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.input.TextInputService getTextInputService()
+androidx.work.impl.background.systemalarm.SystemAlarmService: SystemAlarmService()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
+androidx.compose.material3.tokens.MotionSchemeKeyTokens: androidx.compose.material3.tokens.MotionSchemeKeyTokens valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidClipboardManager getClipboardManager()
+androidx.compose.material3.LayoutId: androidx.compose.material3.LayoutId valueOf(java.lang.String)
+com.hydra.app.viewmodel.DailyStatus: com.hydra.app.viewmodel.DailyStatus valueOf(java.lang.String)
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
+com.hydra.app.viewmodel.DashboardViewModel: DashboardViewModel(android.app.Application)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State valueOf(java.lang.String)
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.window.PopupPositionProvider getPositionProvider()
+com.hydra.app.service.NotificationActionReceiver: NotificationActionReceiver()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
+androidx.emoji2.text.ConcurrencyHelpers$Handler28Impl: android.os.Handler createAsync(android.os.Looper)
+androidx.activity.Api34Impl: int swipeEdge(android.window.BackEvent)
+androidx.activity.EdgeToEdgeApi29: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
+com.hydra.app.model.ReminderState: com.hydra.app.model.ReminderState valueOf(java.lang.String)
+androidx.room.Transactor$SQLiteTransactionType: androidx.room.Transactor$SQLiteTransactionType valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
+androidx.compose.foundation.internal.InlineClassHelperKt: java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
+androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop[] values()
+androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop valueOf(java.lang.String)
+androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getLayoutNodeToHolder()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.modifier.ModifierLocalManager getModifierLocalManager()
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.compose.foundation.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
+androidx.lifecycle.ProcessLifecycleInitializer: ProcessLifecycleInitializer()
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorNext(long,float[],int)
+androidx.compose.material3.SliderComponents: androidx.compose.material3.SliderComponents[] values()
+androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.indirect.IndirectPointerEventPrimaryDirectionalMotionAxis getPrimaryDirectionalMotionAxisOverride-dqNNBbU$ui()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
+androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection valueOf(java.lang.String)
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.layout.LayoutCoordinates getParentLayoutCoordinates()
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void removeRearDisplayStatusListener(androidx.window.extensions.core.util.function.Consumer)
+androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand valueOf(java.lang.String)
+androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens[] values()
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.compose.ui.platform.AndroidComposeViewStartDragAndDropN: boolean startDragAndDrop(android.view.View,androidx.compose.ui.draganddrop.DragAndDropTransferData,androidx.compose.ui.draganddrop.ComposeDragShadowBuilder)
+androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction[] values()
+kotlin.DeprecationLevel: kotlin.DeprecationLevel valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
+androidx.window.reflection.JFunction2: java.lang.Object apply(java.lang.Object)
+androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver: ForceStopRunnable$BroadcastReceiver()
+androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType[] values()
+androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
+androidx.compose.ui.platform.AbstractComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
+androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax[] values()
+androidx.work.WorkManagerInitializer: WorkManagerInitializer()
+androidx.compose.ui.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: void setUncaughtExceptionHandler(androidx.compose.ui.node.RootForTest$UncaughtExceptionHandler)
+androidx.compose.material3.SnackbarResult: androidx.compose.material3.SnackbarResult valueOf(java.lang.String)
+androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl[] values()
+androidx.compose.material.ripple.RippleHostView: void setRippleState(boolean)
+androidx.compose.ui.platform.AndroidComposeView: void getLastMatrixRecalculationAnimationTime$ui$annotations()
+androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
+androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor[] values()
+androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.IntSize getPopupContentSize-bOM6tXw()
+androidx.compose.ui.platform.AndroidComposeView: void setLastMatrixRecalculationAnimationTime$ui(long)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidViewsHandler getAndroidViewsHandler$ui()
+androidx.compose.ui.platform.AbstractComposeView: void getShowLayoutBounds$annotations()
+android.support.v4.app.RemoteActionCompatParcelizer: androidx.core.app.RemoteActionCompat read(androidx.versionedparcelable.VersionedParcel)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPrePaused(android.app.Activity)
+androidx.compose.ui.graphics.layer.ViewLayer: void setCanUseCompositingLayer$ui_graphics(boolean)
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
+androidx.work.Worker: Worker(android.content.Context,androidx.work.WorkerParameters)
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
+androidx.compose.ui.platform.AndroidComposeViewTranslationCallbackS: void clearViewTranslationCallback(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl30: void copyRootViewBounds(android.view.View)
+androidx.core.view.WindowInsetsCompat$Impl21: void setStableInsets(androidx.core.graphics.Insets)
+android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
+androidx.compose.ui.window.Api30Impl: void setFitInsetsSides(android.view.WindowManager$LayoutParams,int)
+androidx.window.area.reflectionguard.ExtensionWindowAreaStatusRequirements: android.util.DisplayMetrics getWindowAreaDisplayMetrics()
+androidx.compose.animation.core.MutatePriority: androidx.compose.animation.core.MutatePriority valueOf(java.lang.String)
+androidx.compose.ui.window.Api21Impl: int getMaxDialogHeightExcludingSystemBarInsets(android.view.Window)
+androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: void setRootViewData(androidx.core.graphics.Insets)
+androidx.concurrent.futures.DirectExecutor: androidx.concurrent.futures.DirectExecutor valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
+androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle valueOf(java.lang.String)
+androidx.activity.Api34Impl: float touchX(android.window.BackEvent)
+androidx.core.view.WindowInsetsCompat$Impl29: androidx.core.graphics.Insets getTappableElementInsets()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: ProcessLifecycleOwner$attach$1(androidx.lifecycle.ProcessLifecycleOwner)
+androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState[] values()
+androidx.compose.ui.platform.AbstractComposeView: boolean getShowLayoutBounds()
+com.hydra.app.HydraApp: HydraApp()
+androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicMinMax[] values()
+androidx.core.view.WindowInsetsCompat$Impl: boolean isConsumed()
+androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.LayoutDirection getLayoutDirection()
+androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState: androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
+androidx.compose.ui.unit.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
+androidx.compose.ui.graphics.layer.ViewLayer: androidx.compose.ui.graphics.CanvasHolder getCanvasHolder()
+androidx.compose.runtime.collection.MutableVectorKt: void throwReversedIndicesException(int,int)
+androidx.compose.material3.SliderComponents: androidx.compose.material3.SliderComponents valueOf(java.lang.String)
+androidx.compose.ui.platform.AbstractComposeView: void setPreviousAttachedWindowToken(android.os.IBinder)
+androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType[] values()
+androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult valueOf(java.lang.String)
+androidx.lifecycle.Lifecycle$State: androidx.lifecycle.Lifecycle$State[] values()
+androidx.compose.ui.platform.AbstractComposeView: void getDisposeViewCompositionStrategy$annotations()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
+androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
+kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
+androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
+androidx.navigation.NavControllerViewModel: NavControllerViewModel()
+androidx.compose.runtime.ComposerKt: java.lang.Void composeRuntimeError(java.lang.String)
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void startRearDisplayPresentationSession(android.app.Activity,androidx.window.extensions.core.util.function.Consumer)
+androidx.emoji2.text.EmojiCompatInitializer: EmojiCompatInitializer()
+androidx.core.view.WindowInsetsCompat$Impl20: boolean isVisible(int)
+androidx.compose.ui.window.PopupLayout: java.lang.String getTestTag()
+androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
+androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: androidx.window.extensions.area.ExtensionWindowAreaPresentation getRearDisplayPresentation()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeStableInsets()
+androidx.compose.ui.platform.AndroidComposeView: boolean getScrollCaptureInProgress$ui()
+androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
+androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityResumed(android.app.Activity)
+androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems valueOf(java.lang.String)
+kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
+androidx.activity.OnBackPressedDispatcher$Api33Impl: android.window.OnBackInvokedCallback createOnBackInvokedCallback(kotlin.jvm.functions.Function0)
+androidx.core.view.WindowInsetsCompat$BuilderImpl: void setTappableElementInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.window.PopupLayout: void setContent(kotlin.jvm.functions.Function2)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OutOfFrameExecutor getOutOfFrameExecutor()
+androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption valueOf(java.lang.String)
+androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
+androidx.compose.ui.window.PopupLayout: void setParentLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
+androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize valueOf(java.lang.String)
 androidx.compose.ui.focus.CustomDestinationResult: androidx.compose.ui.focus.CustomDestinationResult[] values()
 androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorPeek(long)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostResumed(android.app.Activity)
-androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand valueOf(java.lang.String)
-androidx.work.NetworkType: androidx.work.NetworkType valueOf(java.lang.String)
-androidx.datastore.preferences.protobuf.WireFormat$FieldType: androidx.datastore.preferences.protobuf.WireFormat$FieldType[] values()
-androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax[] values()
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void removeRearDisplayStatusListener(androidx.window.extensions.core.util.function.Consumer)
-androidx.core.view.ViewCompat$Api30Impl: java.lang.CharSequence getStateDescription(android.view.View)
-androidx.activity.ComponentActivity: void setContentView(android.view.View)
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getVisibleInsets(android.view.View)
-androidx.core.view.WindowInsetsCompat$BuilderImpl30: void setInsets(int,androidx.core.graphics.Insets)
-androidx.compose.foundation.text.KeyCommand: androidx.compose.foundation.text.KeyCommand valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
-androidx.core.view.WindowInsetsCompat$Impl20: boolean isTypeVisible(int)
-androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.hapticfeedback.HapticFeedback getHapticFeedBack()
-androidx.compose.ui.platform.AbstractComposeView: void getShowLayoutBounds$annotations()
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: android.util.DisplayMetrics getRearDisplayMetrics()
-androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AccessibilityManager getAccessibilityManager()
-kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult valueOf(java.lang.String)
-kotlin.time.DurationUnit: kotlin.time.DurationUnit valueOf(java.lang.String)
-androidx.profileinstaller.ProfileInstallerInitializer: ProfileInstallerInitializer()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: ReportFragment$LifecycleCallbacks()
-androidx.core.view.WindowInsetsCompat$Impl20: WindowInsetsCompat$Impl20(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl20)
-androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent valueOf(java.lang.String)
-androidx.compose.ui.state.ToggleableState: androidx.compose.ui.state.ToggleableState[] values()
-androidx.compose.foundation.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
-androidx.compose.foundation.layout.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
-android.support.v4.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreDestroyed(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void endRearDisplaySession()
-androidx.work.impl.background.systemalarm.SystemAlarmService: SystemAlarmService()
-androidx.compose.runtime.SlotTableKt: void throwConcurrentModificationException()
-androidx.compose.ui.platform.AndroidComposeView: android.content.res.Configuration getConfiguration()
-androidx.room.ObservedTableStates$ObserveOp: androidx.room.ObservedTableStates$ObserveOp[] values()
-androidx.core.view.WindowInsetsCompat$Impl: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
-androidx.compose.ui.platform.AbstractComposeView: void setParentContext(androidx.compose.runtime.CompositionContext)
-com.hydra.app.model.ReminderState: com.hydra.app.model.ReminderState[] values()
-androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection[] values()
-androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
-androidx.lifecycle.LegacySavedStateHandleController$OnRecreation: LegacySavedStateHandleController$OnRecreation()
-androidx.core.view.ViewCompat$Api28Impl: boolean isScreenReaderFocusable(android.view.View)
-androidx.compose.ui.window.PopupLayout: androidx.compose.ui.unit.LayoutDirection getParentLayoutDirection()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStarted(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemGestureInsets()
-androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType valueOf(java.lang.String)
-androidx.compose.foundation.gestures.Orientation: androidx.compose.foundation.gestures.Orientation valueOf(java.lang.String)
-androidx.compose.runtime.collection.MutableVectorKt: void throwListIndexOutOfBoundsException(int,int)
-androidx.room.MultiInstanceInvalidationService: MultiInstanceInvalidationService()
-kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart valueOf(java.lang.String)
-androidx.work.WorkInfo$State: androidx.work.WorkInfo$State valueOf(java.lang.String)
-androidx.compose.ui.platform.CalculateMatrixToWindowApi29: void calculateMatrixToWindow-EL8BTi8(android.view.View,float[])
-androidx.core.view.WindowInsetsCompat$Impl: void setStableInsets(androidx.core.graphics.Insets)
-kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState[] values()
-androidx.compose.foundation.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.collection.MutableIntObjectMap getLayoutNodes()
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityPaused(android.app.Activity)
-androidx.graphics.path.PathIteratorPreApi34Impl: boolean internalPathIteratorHasNext(long)
-androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName: androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$CallbackName[] values()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.pointer.PointerIconService getPointerIconService()
-androidx.compose.ui.platform.actionmodecallback.MenuItemOption: androidx.compose.ui.platform.actionmodecallback.MenuItemOption[] values()
-androidx.compose.ui.window.PopupLayout: void setLayoutDirection(int)
-com.hydra.app.service.NotificationActionReceiver: NotificationActionReceiver()
-androidx.compose.ui.util.ListUtilsKt: void throwUnsupportedOperationException(java.lang.String)
-kotlinx.coroutines.CoroutineStart: kotlinx.coroutines.CoroutineStart[] values()
-androidx.compose.ui.internal.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl29: void setStableInsets(androidx.core.graphics.Insets)
-androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.graphics.Insets getStableInsets()
-androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens valueOf(java.lang.String)
-androidx.compose.runtime.collection.MutableVectorKt: void throwReversedIndicesException(int,int)
-androidx.core.view.ViewCompat$Api23Impl: androidx.core.view.WindowInsetsCompat getRootWindowInsets(android.view.View)
-androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState valueOf(java.lang.String)
-kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState: kotlinx.coroutines.scheduling.CoroutineScheduler$WorkerState valueOf(java.lang.String)
-androidx.emoji2.text.EmojiExclusions$EmojiExclusions_Api34: java.util.Set getExclusions()
-androidx.compose.ui.platform.AndroidComposeView: boolean getShowLayoutBounds()
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getStableInsets()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostStarted(android.app.Activity)
-androidx.compose.ui.platform.AndroidComposeView: void setConfiguration(android.content.res.Configuration)
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
-androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsets(int)
-androidx.compose.ui.platform.AndroidComposeView: void setFrameEndScheduler$ui(androidx.compose.ui.platform.LifecycleRetainedValuesStoreOwner$FrameEndScheduler)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivitySaveInstanceState(android.app.Activity,android.os.Bundle)
-kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeViewAssistHelperMethodsO: void setClassName(android.view.ViewStructure,android.view.View)
-androidx.concurrent.futures.DirectExecutor: androidx.concurrent.futures.DirectExecutor[] values()
-androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20()
-androidx.core.view.WindowInsetsCompat$Impl20: boolean systemBarVisibilityEquals(int,int)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
-androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens[] values()
-androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority valueOf(java.lang.String)
-androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: void getLastMatrixRecalculationAnimationTime$ui$annotations()
-com.hydra.app.service.ReminderAlarmReceiver: ReminderAlarmReceiver()
-androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeSystemWindowInsets()
-androidx.compose.ui.platform.AndroidComposeView: long getLastMatrixRecalculationAnimationTime$ui()
-androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand: androidx.compose.ui.text.input.TextInputServiceAndroid$TextInputCommand[] values()
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event[] values()
-android.support.v4.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.semantics.SemanticsOwner getSemanticsOwner()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.InputModeManager getInputModeManager()
-androidx.datastore.preferences.protobuf.WireFormat$JavaType: androidx.datastore.preferences.protobuf.WireFormat$JavaType[] values()
-androidx.core.view.WindowInsetsCompat$Impl34: WindowInsetsCompat$Impl34(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
-androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus valueOf(java.lang.String)
-androidx.window.area.reflectionguard.ExtensionWindowAreaStatusRequirements: android.util.DisplayMetrics getWindowAreaDisplayMetrics()
-com.hydra.app.data.room.HydraDatabase: HydraDatabase()
-androidx.compose.foundation.text.selection.SelectedTextType: androidx.compose.foundation.text.selection.SelectedTextType[] values()
-androidx.compose.ui.platform.AndroidComposeView: void set_viewTreeOwners(androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners)
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void endRearDisplayPresentationSession()
-com.hydra.app.MainActivity: MainActivity()
-androidx.work.impl.diagnostics.DiagnosticsReceiver: DiagnosticsReceiver()
-androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl20: void loadReflectionField()
-androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode valueOf(java.lang.String)
-com.hydra.app.data.room.HydraDatabase_Impl: HydraDatabase_Impl()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.spatial.RectManager getRectManager()
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29()
-androidx.compose.runtime.PreconditionsKt: void throwIllegalStateException(java.lang.String)
-com.hydra.app.service.ReminderForegroundService: ReminderForegroundService()
-androidx.core.view.WindowInsetsCompat$Impl20: void setRootViewData(androidx.core.graphics.Insets)
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
-androidx.compose.ui.window.Api28Impl: void setLayoutInDisplayCutout(android.view.WindowManager$LayoutParams)
-androidx.profileinstaller.ProfileInstallReceiver: ProfileInstallReceiver()
-androidx.datastore.preferences.protobuf.FieldType: androidx.datastore.preferences.protobuf.FieldType valueOf(java.lang.String)
-androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection valueOf(java.lang.String)
-androidx.compose.ui.contentcapture.ContentCaptureEventType: androidx.compose.ui.contentcapture.ContentCaptureEventType valueOf(java.lang.String)
-androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setMandatorySystemGestureInsets(androidx.core.graphics.Insets)
-androidx.activity.Api34Impl: float touchX(android.window.BackEvent)
-androidx.compose.animation.core.PreconditionsKt: void throwIllegalArgumentException(java.lang.String)
-androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.IndirectPointerInputDragCycleDetector$DragDetectionState$AwaitDown$AwaitTouchSlop[] values()
-androidx.compose.ui.platform.AndroidComposeViewVerificationHelperMethodsN: void setPointerIcon(android.view.View,androidx.compose.ui.input.pointer.PointerIcon)
-androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPreCreated(android.app.Activity,android.os.Bundle)
-androidx.compose.ui.autofill.AutofillType: androidx.compose.ui.autofill.AutofillType[] values()
-androidx.compose.ui.unit.InlineClassHelperKt: void throwIllegalStateException(java.lang.String)
-androidx.core.view.WindowInsetsCompat$BuilderImpl20: androidx.core.view.WindowInsetsCompat build()
-androidx.core.view.ViewCompat$Api21Impl: void setOnApplyWindowInsetsListener(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
-androidx.startup.InitializationProvider: InitializationProvider()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.TextToolbar getTextToolbar()
-com.hydra.app.viewmodel.DashboardViewModel: DashboardViewModel(android.app.Application)
-kotlin.text.RegexOption: kotlin.text.RegexOption[] values()
-kotlin.DeprecationLevel: kotlin.DeprecationLevel valueOf(java.lang.String)
-androidx.datastore.preferences.protobuf.ProtoSyntax: androidx.datastore.preferences.protobuf.ProtoSyntax[] values()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.WindowInfo getWindowInfo()
-androidx.window.reflection.Consumer2: void accept(java.lang.Object)
-kotlinx.coroutines.selects.TrySelectDetailedResult: kotlinx.coroutines.selects.TrySelectDetailedResult[] values()
-androidx.compose.runtime.collection.MutableVectorKt: void throwNegativeIndexException(int)
-androidx.core.view.WindowInsetsCompat$BuilderImpl20: WindowInsetsCompat$BuilderImpl20(androidx.core.view.WindowInsetsCompat)
-androidx.compose.ui.platform.ComposeView: java.lang.CharSequence getAccessibilityClassName()
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getSystemWindowInsets()
-androidx.activity.OnBackPressedDispatcher$Api34Impl: android.window.OnBackInvokedCallback createOnBackAnimationCallback(kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function1,kotlin.jvm.functions.Function0,kotlin.jvm.functions.Function0)
-androidx.compose.ui.text.style.ResolvedTextDirection: androidx.compose.ui.text.style.ResolvedTextDirection[] values()
-androidx.compose.foundation.text.Handle: androidx.compose.foundation.text.Handle[] values()
-androidx.compose.ui.window.PopupLayout: boolean getShouldCreateCompositionOnAttachedToWindow()
-androidx.compose.ui.platform.AndroidComposeView: int getImportantForAutofill()
-androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostStarted(android.app.Activity)
-androidx.compose.foundation.text.selection.SelectionHandleAnchor: androidx.compose.foundation.text.selection.SelectionHandleAnchor valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.graphics.GraphicsContext getGraphicsContext()
-androidx.compose.ui.platform.AndroidComposeViewStartDragAndDropN: boolean startDragAndDrop(android.view.View,androidx.compose.ui.draganddrop.DragAndDropTransferData,androidx.compose.ui.draganddrop.ComposeDragShadowBuilder)
-androidx.core.view.WindowInsetsCompat$Impl28: WindowInsetsCompat$Impl28(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl28)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidAccessibilityManager getAccessibilityManager()
-androidx.core.view.WindowInsetsCompat$Impl28: androidx.core.view.DisplayCutoutCompat getDisplayCutout()
-androidx.compose.runtime.InvalidationResult: androidx.compose.runtime.InvalidationResult[] values()
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getRootStableInsets()
-androidx.core.view.WindowInsetsCompat$Impl20: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
-androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.node.NodeMeasuringIntrinsics$IntrinsicWidthHeight[] values()
-androidx.compose.foundation.internal.InlineClassHelperKt: java.lang.Void throwIllegalArgumentExceptionForNullCheck(java.lang.String)
-androidx.compose.material3.SliderComponents: androidx.compose.material3.SliderComponents[] values()
-androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState: androidx.compose.foundation.text.contextmenu.modifier.ToolbarHandlerState[] values()
-androidx.lifecycle.Lifecycle$Event: androidx.lifecycle.Lifecycle$Event valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.font.FontFamily$Resolver getFontFamilyResolver()
-androidx.core.view.ViewCompat$Api21Impl$1: ViewCompat$Api21Impl$1(android.view.View,androidx.core.view.OnApplyWindowInsetsListener)
-com.hydra.app.ui.screens.OnboardingStep: com.hydra.app.ui.screens.OnboardingStep[] values()
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void setStableInsets(androidx.core.graphics.Insets)
-androidx.core.view.ViewCompat$Api29Impl: android.view.View$AccessibilityDelegate getAccessibilityDelegate(android.view.View)
-androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: long getMeasureIteration()
-androidx.compose.runtime.collection.MutableVectorKt: void throwOutOfRangeException(int,int)
-androidx.compose.ui.node.LookaheadPassDelegate$PlacedState: androidx.compose.ui.node.LookaheadPassDelegate$PlacedState[] values()
-androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight valueOf(java.lang.String)
-androidx.compose.material3.SwipeToDismissBoxValue: androidx.compose.material3.SwipeToDismissBoxValue[] values()
-androidx.compose.ui.platform.AbstractComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setStableInsets(androidx.core.graphics.Insets)
-androidx.compose.material3.SnackbarDuration: androidx.compose.material3.SnackbarDuration[] values()
-androidx.compose.runtime.retain.impl.PreconditionsKt: void throwIllegalStateException(java.lang.String)
-androidx.compose.ui.node.LayoutNode$UsageByParent: androidx.compose.ui.node.LayoutNode$UsageByParent[] values()
-androidx.compose.material3.SwipeToDismissBoxValue: androidx.compose.material3.SwipeToDismissBoxValue valueOf(java.lang.String)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$BuilderImpl34: void setInsets(int,androidx.core.graphics.Insets)
-androidx.compose.ui.unit.LayoutDirection: androidx.compose.ui.unit.LayoutDirection valueOf(java.lang.String)
-androidx.compose.foundation.text.HandleState: androidx.compose.foundation.text.HandleState[] values()
-androidx.compose.ui.platform.AndroidComposeView: boolean getHasPendingMeasureOrLayout()
-kotlin.DeprecationLevel: kotlin.DeprecationLevel[] values()
-androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems[] values()
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
-androidx.graphics.path.PathIteratorPreApi34Impl: void destroyInternalPathIterator(long)
-androidx.compose.ui.graphics.layer.ViewLayer: androidx.compose.ui.graphics.CanvasHolder getCanvasHolder()
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: void setSystemWindowInsets(androidx.core.graphics.Insets)
-com.hydra.app.model.ReminderState: com.hydra.app.model.ReminderState valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: void getRoot$annotations()
-androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass[] values()
-androidx.tracing.TraceApi29Impl: boolean isEnabled()
-kotlin.coroutines.intrinsics.CoroutineSingletons: kotlin.coroutines.intrinsics.CoroutineSingletons valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillTree getAutofillTree()
-androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke: androidx.datastore.preferences.protobuf.GeneratedMessageLite$MethodToInvoke[] values()
-androidx.work.NetworkType: androidx.work.NetworkType[] values()
-androidx.core.view.WindowInsetsCompat$Impl29: WindowInsetsCompat$Impl29(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
-androidx.compose.material3.LayoutId: androidx.compose.material3.LayoutId valueOf(java.lang.String)
-androidx.lifecycle.LifecycleDispatcher$DispatcherActivityCallback: LifecycleDispatcher$DispatcherActivityCallback()
-androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy[] values()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPostCreated(android.app.Activity,android.os.Bundle)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.AndroidDragAndDropManager getDragAndDropManager()
-androidx.compose.foundation.text.selection.CrossStatus: androidx.compose.foundation.text.selection.CrossStatus[] values()
-androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus: androidx.compose.ui.contentcapture.AndroidContentCaptureManager$TranslateStatus valueOf(java.lang.String)
-androidx.compose.ui.platform.Api35Impl: void setRequestedFrameRate(android.view.View,float)
-com.hydra.app.model.ReminderReason: com.hydra.app.model.ReminderReason[] values()
-kotlinx.coroutines.android.AndroidDispatcherFactory: AndroidDispatcherFactory()
-android.support.v4.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
-androidx.work.OutOfQuotaPolicy: androidx.work.OutOfQuotaPolicy[] values()
-androidx.core.app.RemoteActionCompatParcelizer: RemoteActionCompatParcelizer()
-androidx.compose.ui.platform.AndroidComposeView: void getShowLayoutBounds$annotations()
-androidx.compose.ui.input.pointer.PointerEventPass: androidx.compose.ui.input.pointer.PointerEventPass valueOf(java.lang.String)
-androidx.compose.ui.node.LayoutNode$LayoutState: androidx.compose.ui.node.LayoutNode$LayoutState[] values()
-androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,android.view.WindowInsets)
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void addRearDisplayPresentationStatusListener(androidx.window.extensions.core.util.function.Consumer)
-androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy: androidx.compose.ui.input.pointer.util.VelocityTracker1D$Strategy valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidCompositionLocals_androidKt: androidx.compose.runtime.ProvidableCompositionLocal getLocalLifecycleOwner()
-androidx.compose.material.ripple.RippleHostView: void setRippleState$lambda$1(androidx.compose.material.ripple.RippleHostView)
-androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicMinMax valueOf(java.lang.String)
-androidx.core.graphics.drawable.IconCompatParcelizer: IconCompatParcelizer()
-androidx.window.area.reflectionguard.WindowAreaComponentApi3Requirements: void removeRearDisplayPresentationStatusListener(androidx.window.extensions.core.util.function.Consumer)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.layout.Placeable$PlacementScope getPlacementScope()
-androidx.compose.ui.platform.AndroidComposeView: android.view.View getView()
-androidx.core.view.WindowInsetsCompat$Impl21: androidx.core.view.WindowInsetsCompat consumeStableInsets()
-androidx.compose.ui.window.PopupLayout: android.view.WindowManager$LayoutParams getParams$ui()
-androidx.compose.ui.window.PopupLayout: androidx.compose.ui.layout.LayoutCoordinates getParentLayoutCoordinates()
-androidx.compose.ui.node.LookaheadPassDelegate$PlacedState: androidx.compose.ui.node.LookaheadPassDelegate$PlacedState valueOf(java.lang.String)
-androidx.compose.material3.tokens.TypographyKeyTokens: androidx.compose.material3.tokens.TypographyKeyTokens valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl28: boolean equals(java.lang.Object)
-androidx.compose.ui.graphics.layer.ViewLayer: android.view.View getOwnerView()
-androidx.compose.ui.layout.IntrinsicMinMax: androidx.compose.ui.layout.IntrinsicMinMax[] values()
-androidx.work.Worker: Worker(android.content.Context,androidx.work.WorkerParameters)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityDestroyed(android.app.Activity)
-androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase valueOf(java.lang.String)
-androidx.compose.material3.tokens.ColorSchemeKeyTokens: androidx.compose.material3.tokens.ColorSchemeKeyTokens[] values()
-androidx.compose.ui.graphics.AndroidPath_androidKt: void throwIllegalStateException(java.lang.String)
-androidx.core.view.ViewCompat$Api28Impl: java.lang.CharSequence getAccessibilityPaneTitle(android.view.View)
-androidx.compose.ui.window.PopupLayout: void setParentLayoutCoordinates(androidx.compose.ui.layout.LayoutCoordinates)
-androidx.compose.ui.platform.AndroidComposeView: void setLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
-kotlin.LazyThreadSafetyMode: kotlin.LazyThreadSafetyMode[] values()
-androidx.compose.ui.window.PopupLayout: void setParentLayoutDirection(androidx.compose.ui.unit.LayoutDirection)
-androidx.core.view.WindowInsetsCompat$Impl: void copyWindowDataInto(androidx.core.view.WindowInsetsCompat)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityPreStopped(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$Impl: void copyRootViewBounds(android.view.View)
-androidx.core.view.WindowInsetsCompat$Impl30: androidx.core.graphics.Insets getInsetsIgnoringVisibility(int)
-androidx.compose.ui.text.internal.InlineClassHelperKt: java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
-androidx.compose.ui.window.PopupLayout: kotlin.jvm.functions.Function2 getContent()
+androidx.lifecycle.ProcessLifecycleOwner$attach$1: void onActivityPaused(android.app.Activity)
+androidx.work.impl.background.systemalarm.RescheduleReceiver: RescheduleReceiver()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AndroidAutofillManager get_autofillManager$ui()
+androidx.core.view.WindowInsetsCompat$Impl34: androidx.core.graphics.Insets getInsets(int)
 androidx.core.graphics.drawable.IconCompatParcelizer: androidx.core.graphics.drawable.IconCompat read(androidx.versionedparcelable.VersionedParcel)
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStarted(android.app.Activity)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.OwnerSnapshotObserver getSnapshotObserver()
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int)
-androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction: androidx.compose.ui.node.TraversableNode$Companion$TraverseDescendantsAction[] values()
-androidx.compose.ui.text.internal.InlineClassHelperKt: java.lang.Void throwIllegalArgumentExceptionForNullCheck(java.lang.String)
-androidx.compose.ui.graphics.layer.ViewLayer: void setInvalidated(boolean)
-androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver: ConstraintProxyUpdateReceiver()
-androidx.room.RoomDatabase$JournalMode: androidx.room.RoomDatabase$JournalMode[] values()
-androidx.compose.foundation.layout.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
-androidx.compose.ui.platform.AbstractComposeView: boolean getHasComposition()
-androidx.core.view.WindowInsetsCompat$BuilderImpl: WindowInsetsCompat$BuilderImpl(androidx.core.view.WindowInsetsCompat)
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: androidx.core.view.WindowInsetsCompat build()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.ViewConfiguration getViewConfiguration()
-androidx.navigation.NavControllerViewModel: NavControllerViewModel()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.input.indirect.IndirectPointerEventPrimaryDirectionalMotionAxis getPrimaryDirectionalMotionAxisOverride-dqNNBbU$ui()
-androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType valueOf(java.lang.String)
-androidx.datastore.preferences.protobuf.JavaType: androidx.datastore.preferences.protobuf.JavaType valueOf(java.lang.String)
-androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl[] values()
-com.hydra.app.ui.screens.OnboardingStep: com.hydra.app.ui.screens.OnboardingStep valueOf(java.lang.String)
-androidx.compose.animation.core.AnimationEndReason: androidx.compose.animation.core.AnimationEndReason[] values()
-androidx.compose.foundation.internal.InlineClassHelperKt: java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
-androidx.compose.ui.platform.AbstractComposeView: void setShowLayoutBounds(boolean)
-androidx.compose.ui.platform.TextToolbarStatus: androidx.compose.ui.platform.TextToolbarStatus valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.Autofill getAutofill()
-androidx.core.view.WindowInsetsCompat$BuilderImpl29: WindowInsetsCompat$BuilderImpl29(androidx.core.view.WindowInsetsCompat)
-androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState[] values()
-androidx.work.impl.foreground.SystemForegroundService: SystemForegroundService()
-androidx.lifecycle.SavedStateHandlesVM: SavedStateHandlesVM()
-androidx.concurrent.futures.DirectExecutor: androidx.concurrent.futures.DirectExecutor valueOf(java.lang.String)
-androidx.compose.ui.platform.AbstractComposeView: void setViewCompositionStrategy(androidx.compose.ui.platform.ViewCompositionStrategy)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.Density getDensity()
-androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop: androidx.compose.foundation.gestures.DragDetectionState$AwaitDown$AwaitTouchSlop valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.collection.IntObjectMap getLayoutNodes()
-androidx.compose.ui.platform.AndroidComposeView: void setFontFamilyResolver(androidx.compose.ui.text.font.FontFamily$Resolver)
-androidx.core.view.ViewCompat$Api28Impl: boolean isAccessibilityHeading(android.view.View)
-androidx.compose.ui.platform.AbstractComposeView: void getDisposeViewCompositionStrategy$annotations()
-androidx.compose.material3.ScaffoldLayoutContent: androidx.compose.material3.ScaffoldLayoutContent valueOf(java.lang.String)
-androidx.compose.ui.window.Api21Impl: int getMaxDialogHeightExcludingSystemBarInsets(android.view.Window)
-androidx.navigation.serialization.RouteBuilder$ParamType: androidx.navigation.serialization.RouteBuilder$ParamType[] values()
-androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl21: boolean isConsumed()
-androidx.work.ExistingWorkPolicy: androidx.work.ExistingWorkPolicy valueOf(java.lang.String)
-androidx.compose.ui.platform.ComposeView: void setContent(kotlin.jvm.functions.Function2)
-androidx.core.view.WindowInsetsCompat$Impl30: boolean isVisible(int)
-androidx.compose.ui.window.PopupLayout: boolean getCanCalculatePosition()
-androidx.compose.ui.platform.AndroidComposeView: void setCoroutineContext(kotlin.coroutines.CoroutineContext)
-androidx.work.impl.WorkDatabase: WorkDatabase()
-androidx.work.impl.workers.DiagnosticsWorker: DiagnosticsWorker(android.content.Context,androidx.work.WorkerParameters)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners get_viewTreeOwners()
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat inset(int,int,int,int)
-androidx.compose.foundation.MutatePriority: androidx.compose.foundation.MutatePriority[] values()
-androidx.compose.material.ripple.RippleHostView: void setRippleState(boolean)
-kotlinx.coroutines.android.AndroidExceptionPreHandler: AndroidExceptionPreHandler()
-androidx.window.reflection.Predicate2: boolean test(java.lang.Object)
-androidx.core.view.WindowInsetsCompat$Impl20: void setRootWindowInsets(androidx.core.view.WindowInsetsCompat)
-androidx.core.view.WindowInsetsCompat$Impl: int hashCode()
-androidx.compose.ui.platform.AbstractComposeView: void setTransitionGroup(boolean)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.runtime.retain.RetainedValuesStore getRetainedValuesStore()
+androidx.compose.ui.platform.MotionEventVerifierApi29: boolean isValidMotionEvent(android.view.MotionEvent,int)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.TextToolbar getTextToolbar()
+androidx.core.view.WindowInsetsCompat$Impl21: WindowInsetsCompat$Impl21(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl21)
 androidx.datastore.preferences.protobuf.Writer$FieldOrder: androidx.datastore.preferences.protobuf.Writer$FieldOrder[] values()
+androidx.compose.ui.graphics.layer.ViewLayer: void setInvalidated(boolean)
+androidx.compose.ui.window.PopupLayout: void setParentLayoutCoordinates(androidx.compose.ui.layout.LayoutCoordinates)
+androidx.window.reflection.Consumer2: void accept(java.lang.Object)
+androidx.work.impl.diagnostics.DiagnosticsReceiver: DiagnosticsReceiver()
+androidx.window.reflection.Predicate2: boolean test(java.lang.Object)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillTree getAutofillTree()
+androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
+androidx.compose.ui.window.PopupLayout: kotlin.jvm.functions.Function2 getContent()
+androidx.compose.ui.window.PopupLayout: void setTestTag(java.lang.String)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.platform.AndroidComposeView$ViewTreeOwners get_viewTreeOwners()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.draganddrop.AndroidDragAndDropManager getDragAndDropManager()
+androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getInsets(int)
+androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase[] values()
 androidx.core.view.WindowInsetsCompat$Impl20: void copyRootViewBounds(android.view.View)
 androidx.core.view.WindowInsetsCompat$TypeImpl34: int toPlatformType(int)
-androidx.work.impl.background.systemalarm.RescheduleReceiver: RescheduleReceiver()
-androidx.compose.ui.platform.ComposeView: boolean getShouldCreateCompositionOnAttachedToWindow()
-androidx.compose.ui.text.internal.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityStopped(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$BuilderImpl20: void setStableInsets(androidx.core.graphics.Insets)
-androidx.activity.OnBackPressedDispatcher$Api33Impl: void registerOnBackInvokedCallback(java.lang.Object,int,java.lang.Object)
-kotlinx.coroutines.flow.SharingCommand: kotlinx.coroutines.flow.SharingCommand[] values()
-androidx.compose.ui.platform.AndroidComposeView: boolean getScrollCaptureInProgress$ui()
-androidx.compose.ui.layout.IntrinsicWidthHeight: androidx.compose.ui.layout.IntrinsicWidthHeight[] values()
-androidx.compose.ui.window.PopupLayout: void setTestTag(java.lang.String)
-androidx.compose.foundation.layout.IntrinsicSize: androidx.compose.foundation.layout.IntrinsicSize[] values()
-androidx.compose.ui.platform.Api30Impl: boolean isShowingLayoutBounds(android.view.View)
-kotlin.text.RegexOption: kotlin.text.RegexOption valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.graphics.Insets getMandatorySystemGestureInsets()
-androidx.compose.ui.platform.AndroidComposeView: android.view.View findViewByAccessibilityIdTraversal(int)
-androidx.compose.ui.graphics.InlineClassHelperKt: void throwIllegalArgumentException(java.lang.String)
-androidx.compose.ui.window.PopupLayout: androidx.compose.ui.window.PopupPositionProvider getPositionProvider()
-androidx.core.view.WindowInsetsCompat$Impl20: void setSystemUiVisibility(int)
-androidx.compose.animation.EnterExitState: androidx.compose.animation.EnterExitState valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.autofill.AutofillManager getAutofillManager()
-androidx.core.view.WindowInsetsCompat$Impl20: void setOverriddenInsets(androidx.core.graphics.Insets[])
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.modifier.ModifierLocalManager getModifierLocalManager()
-androidx.navigation.compose.BackStackEntryIdViewModel: BackStackEntryIdViewModel(androidx.lifecycle.SavedStateHandle)
-androidx.lifecycle.EmptyActivityLifecycleCallbacks: void onActivityCreated(android.app.Activity,android.os.Bundle)
-androidx.profileinstaller.FileSectionType: androidx.profileinstaller.FileSectionType[] values()
-androidx.compose.ui.focus.FocusStateImpl: androidx.compose.ui.focus.FocusStateImpl valueOf(java.lang.String)
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getInsets(int,boolean)
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityResumed(android.app.Activity)
-com.hydra.app.navigation.HydraRoute: com.hydra.app.navigation.HydraRoute valueOf(java.lang.String)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.geometry.Rect getEmbeddedViewFocusRect()
-androidx.lifecycle.ProcessLifecycleOwner$attach$1$onActivityPreCreated$1: void onActivityPostResumed(android.app.Activity)
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.text.input.TextInputService getTextInputService()
-androidx.work.DirectExecutor: androidx.work.DirectExecutor[] values()
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void setSystemGestureInsets(androidx.core.graphics.Insets)
-androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy: ConstraintProxy$NetworkStateProxy()
-androidx.core.view.WindowInsetsCompat$TypeImpl30: int toPlatformType(int)
-androidx.core.app.RemoteActionCompatParcelizer: void write(androidx.core.app.RemoteActionCompat,androidx.versionedparcelable.VersionedParcel)
-androidx.core.view.ViewCompat$Api21Impl: void callCompatInsetAnimationCallback(android.view.WindowInsets,android.view.View)
-androidx.core.view.WindowInsetsCompat$Impl20: androidx.core.graphics.Insets getSystemWindowInsets()
-androidx.core.view.WindowInsetsCompat$Impl: androidx.core.view.WindowInsetsCompat consumeDisplayCutout()
-androidx.compose.foundation.internal.InlineClassHelperKt: void throwIndexOutOfBoundsException(java.lang.String)
-androidx.activity.EdgeToEdgeApi26: void setUp(androidx.activity.SystemBarStyle,androidx.activity.SystemBarStyle,android.view.Window,android.view.View,boolean,boolean)
-androidx.compose.ui.platform.AndroidComposeView: void setUncaughtExceptionHandler$ui(androidx.compose.ui.node.RootForTest$UncaughtExceptionHandler)
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.node.RootForTest$UncaughtExceptionHandler getUncaughtExceptionHandler$ui()
+androidx.activity.Api34Impl: float progress(android.window.BackEvent)
 androidx.core.view.WindowInsetsCompat$Impl30: WindowInsetsCompat$Impl30(androidx.core.view.WindowInsetsCompat,androidx.core.view.WindowInsetsCompat$Impl30)
-androidx.datastore.preferences.PreferencesProto$Value$ValueCase: androidx.datastore.preferences.PreferencesProto$Value$ValueCase[] values()
-androidx.compose.foundation.text.TextContextMenuItems: androidx.compose.foundation.text.TextContextMenuItems valueOf(java.lang.String)
-kotlinx.coroutines.channels.BufferOverflow: kotlinx.coroutines.channels.BufferOverflow valueOf(java.lang.String)
-androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight: androidx.compose.ui.layout.MeasuringIntrinsics$IntrinsicWidthHeight[] values()
-androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.unit.LayoutDirection getLayoutDirection()
-androidx.work.WorkManagerInitializer: WorkManagerInitializer()
-androidx.lifecycle.ReportFragment$LifecycleCallbacks: void registerIn(android.app.Activity)
-androidx.core.view.WindowInsetsCompat$BuilderImpl: void applyInsetTypes()
-androidx.compose.ui.text.AnnotationType: androidx.compose.ui.text.AnnotationType[] values()
-androidx.core.view.WindowInsetsCompat$Impl: boolean isRound()
-androidx.compose.ui.input.pointer.PointerInputEventHandler: java.lang.Object invoke(androidx.compose.ui.input.pointer.PointerInputScope,kotlin.coroutines.Continuation)
-androidx.core.view.WindowInsetsCompat$BuilderImpl34: WindowInsetsCompat$BuilderImpl34()
-androidx.compose.ui.platform.AndroidViewsHandler: java.util.HashMap getLayoutNodeToHolder()
-androidx.work.ExistingWorkPolicy: androidx.work.ExistingWorkPolicy[] values()
-androidx.compose.ui.contentcapture.ContentCaptureEventType: androidx.compose.ui.contentcapture.ContentCaptureEventType[] values()
-androidx.compose.ui.window.PopupLayout: androidx.compose.ui.platform.AbstractComposeView getSubCompositionView()
-androidx.compose.ui.internal.InlineClassHelperKt: java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
-androidx.compose.ui.graphics.layer.ViewLayer: boolean getCanUseCompositingLayer$ui_graphics()
+androidx.graphics.path.PathIteratorPreApi34Impl: int internalPathIteratorRawSize(long)
+kotlin.time.DurationUnit: kotlin.time.DurationUnit[] values()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.hapticfeedback.HapticFeedback getHapticFeedBack()
+androidx.compose.ui.platform.AndroidComposeView: androidx.compose.ui.contentcapture.AndroidContentCaptureManager getContentCaptureManager$ui()
+androidx.lifecycle.ReportFragment$LifecycleCallbacks: void onActivityStopped(android.app.Activity)

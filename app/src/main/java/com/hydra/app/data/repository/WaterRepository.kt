@@ -4,17 +4,32 @@ import com.hydra.app.data.room.WaterLogDao
 import com.hydra.app.model.WaterLog
 import com.hydra.app.utils.DateUtils
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.distinctUntilChanged
+import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 
+@OptIn(ExperimentalCoroutinesApi::class)
 class WaterRepository(private val waterLogDao: WaterLogDao) {
 
+    private val currentDayRange = flow {
+        while (true) {
+            emit(DateUtils.todayRange())
+            delay(60_000) // Check every minute
+        }
+    }.distinctUntilChanged()
+
     fun getTodayLogs(): Flow<List<WaterLog>> {
-        val (start, end) = DateUtils.todayRange()
-        return waterLogDao.getLogsForDay(start, end)
+        return currentDayRange.flatMapLatest { (start, end) ->
+            waterLogDao.getLogsForDay(start, end)
+        }
     }
 
     fun getTodayTotal(): Flow<Int> {
-        val (start, end) = DateUtils.todayRange()
-        return waterLogDao.getTotalForDay(start, end)
+        return currentDayRange.flatMapLatest { (start, end) ->
+            waterLogDao.getTotalForDay(start, end)
+        }
     }
 
     fun getAllLogs(): Flow<List<WaterLog>> {

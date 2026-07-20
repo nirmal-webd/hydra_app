@@ -51,6 +51,11 @@ Sometimes we built a feature, realized it was a bad idea, and deleted it. Here i
 - **The Solution:** We deleted the stats card. Instead, we added a clear **Weekly Tracker**. It shows a row of 7 days with simple icons: a green check (goal met), a red X (goal missed), or a grey dash (no data). Below that, we show a large "Fire" 🔥 streak number to motivate you. This makes it instantly obvious how well you are doing this week without needing to read numbers.
   - *Refinement:* We later highlighted the *current* day with a bold text color and a circular border so it stands out. We also changed the logic so the current day doesn't show a discouraging red 'X' in the morning—it shows a forgiving orange 'in progress' dash until the day is actually over!
 
+### 4.6. The Midnight Rollover Bug
+- **What happened:** A user noticed that if the app stayed open in memory past midnight, the dashboard and notification would still show yesterday's water total instead of resetting to 0. 
+- **Why it happened:** The database query was using static "start of day" and "end of day" timestamps calculated *exactly once* when the app launched. Because time passed but the app never completely restarted, the query stayed locked in the past.
+- **The Solution:** We updated the `WaterRepository` to use a "ticking" time-stream that recalculates what "today" means every 60 seconds. When midnight strikes, the time-stream rolls over, automatically instructing the database to switch its query to the new day, instantly resetting the UI across the entire app.
+
 ---
 
 ## 5. Going Forward
