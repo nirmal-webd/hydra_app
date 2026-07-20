@@ -29,7 +29,7 @@ class NotificationHelper(private val context: Context) {
         notificationManager.createNotificationChannel(channel)
     }
 
-    fun showReminderNotification(reminderId: Long, title: String, message: String) {
+    fun showReminderNotification(reminderId: Long, title: String, message: String, snoozeDurationMins: Int) {
         val contentIntent = PendingIntent.getActivity(
             context, 0,
             Intent(context, MainActivity::class.java),
@@ -39,8 +39,13 @@ class NotificationHelper(private val context: Context) {
         // "Drank Water" action
         val drankIntent = broadcastPendingIntent(NotificationActionReceiver.ACTION_ADD_250ML, 10)
 
-        // Snooze 10 min action (shown in notification, more via expanded)
-        val snooze10Intent = broadcastPendingIntent(NotificationActionReceiver.ACTION_SNOOZE_10, 11)
+        // Snooze action
+        val snoozeAction = when (snoozeDurationMins) {
+            5 -> NotificationActionReceiver.ACTION_SNOOZE_5
+            15 -> NotificationActionReceiver.ACTION_SNOOZE_15
+            else -> NotificationActionReceiver.ACTION_SNOOZE_10
+        }
+        val snoozeIntent = broadcastPendingIntent(snoozeAction, 11)
 
         // "Not Now" / Dismiss
         val dismissIntent = broadcastPendingIntent(NotificationActionReceiver.ACTION_DISMISS, 12)
@@ -64,7 +69,7 @@ class NotificationHelper(private val context: Context) {
             .setAutoCancel(false)  // Don't dismiss on tap — user must respond
             .addAction(0, "💧 250ml", drankIntent)
             .addAction(0, "✏️ Custom", customPendingIntent)
-            .addAction(0, "⏰ 10 min", snooze10Intent)
+            .addAction(0, "⏰ $snoozeDurationMins min", snoozeIntent)
             .build()
 
         notificationManager.notify(NOTIFICATION_ID_REMINDER, notification)

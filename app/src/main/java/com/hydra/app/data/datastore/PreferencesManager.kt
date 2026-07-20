@@ -19,6 +19,7 @@ class PreferencesManager(private val context: Context) {
     private object Keys {
         val DAILY_GOAL_ML = intPreferencesKey("daily_goal_ml")
         val COOLDOWN_MINUTES = intPreferencesKey("cooldown_minutes")
+        val SNOOZE_MINUTES = intPreferencesKey("snooze_minutes")
         val APP_DURATION_MINUTES = intPreferencesKey("app_duration_minutes")
         val QUIET_HOURS_START = stringPreferencesKey("quiet_hours_start")
         val QUIET_HOURS_END = stringPreferencesKey("quiet_hours_end")
@@ -32,6 +33,7 @@ class PreferencesManager(private val context: Context) {
     object Defaults {
         const val DAILY_GOAL_ML = 2000
         const val COOLDOWN_MINUTES = 30
+        const val SNOOZE_MINUTES = 10
         const val APP_DURATION_MINUTES = 15
         const val QUIET_HOURS_START = "22:00"
         const val QUIET_HOURS_END = "07:00"
@@ -48,6 +50,10 @@ class PreferencesManager(private val context: Context) {
 
     val cooldownMinutes: Flow<Int> = context.dataStore.data.map { prefs ->
         prefs[Keys.COOLDOWN_MINUTES] ?: Defaults.COOLDOWN_MINUTES
+    }
+
+    val snoozeMinutes: Flow<Int> = context.dataStore.data.map { prefs ->
+        prefs[Keys.SNOOZE_MINUTES] ?: Defaults.SNOOZE_MINUTES
     }
 
     val appDurationMinutes: Flow<Int> = context.dataStore.data.map { prefs ->
@@ -88,6 +94,10 @@ class PreferencesManager(private val context: Context) {
 
     suspend fun setCooldownMinutes(value: Int) {
         context.dataStore.edit { it[Keys.COOLDOWN_MINUTES] = value }
+    }
+
+    suspend fun setSnoozeMinutes(value: Int) {
+        context.dataStore.edit { it[Keys.SNOOZE_MINUTES] = value }
     }
 
     suspend fun setAppDurationMinutes(value: Int) {

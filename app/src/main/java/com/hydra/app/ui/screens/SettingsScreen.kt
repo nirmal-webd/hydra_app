@@ -52,6 +52,9 @@ import kotlin.math.roundToInt
 private val cooldownOptions = listOf(30, 60, 90, 120)
 private val cooldownLabels = listOf("30 min", "1 hour", "1.5 hr", "2 hr")
 
+private val snoozeOptions = listOf(5, 10, 15)
+private val snoozeLabels = listOf("5 min", "10 min", "15 min")
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
@@ -137,6 +140,33 @@ fun SettingsScreen(
                         selected = state.cooldownMinutes == minutes,
                         onClick = { viewModel.setCooldown(minutes) },
                         label = { Text(cooldownLabels[index]) }
+                    )
+                }
+            }
+        }
+
+        // ── Snooze Duration ─────────────────────────────────────────
+        SettingsCard(
+            title = "Snooze Duration",
+            icon = Icons.Filled.AccessTime
+        ) {
+            Text(
+                text = "How long to snooze the notification",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+            Spacer(Modifier.height(12.dp))
+            Row(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .horizontalScroll(rememberScrollState())
+            ) {
+                snoozeOptions.forEachIndexed { index, minutes ->
+                    FilterChip(
+                        selected = state.snoozeMinutes == minutes,
+                        onClick = { viewModel.setSnoozeMinutes(minutes) },
+                        label = { Text(snoozeLabels[index]) }
                     )
                 }
             }

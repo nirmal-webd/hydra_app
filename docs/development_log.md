@@ -58,7 +58,8 @@ Sometimes we built a feature, realized it was a bad idea, and deleted it. Here i
 
 ### 4.7. Refining Notification Actions
 - **What happened:** We realized that having a "Skip" button on the sticky notification created a weird state where the reminder just waited in the background until the very next time the user unlocked their phone.
-- **The Solution:** We entirely removed the "Skip" button! Now, the notification strictly offers three paths: "💧 250ml", "✏️ Custom" (which opens the app to log a specific amount), and "⏰ 10 min" (Snooze). This reinforces the core loop: you must either hydrate now, tell us exactly how much you hydrated, or explicitly ask for more time.
+- **The Solution:** We entirely removed the "Skip" button! Now, the notification strictly offers three paths: "💧 250ml", "✏️ Custom" (which opens the app to log a specific amount), and "⏰ [time] min" (Snooze). This reinforces the core loop: you must either hydrate now, tell us exactly how much you hydrated, or explicitly ask for more time.
+- **Snooze Customization:** We added a new "Snooze Duration" setting in the app settings so users can choose between 5, 10, or 15 minutes for their snooze interval. The notification's snooze button now dynamically reflects their chosen duration.
 
 ---
 

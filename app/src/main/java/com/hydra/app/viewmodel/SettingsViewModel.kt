@@ -13,6 +13,7 @@ import kotlinx.coroutines.launch
 data class SettingsState(
     val dailyGoalMl: Int = 2000,
     val cooldownMinutes: Int = 60,
+    val snoozeMinutes: Int = 10,
     val quietHoursStart: String = "22:00",
     val quietHoursEnd: String = "07:00",
     val remindersEnabled: Boolean = true,
@@ -25,13 +26,14 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
     private val prefs = app.preferencesManager
 
     val settingsState: StateFlow<SettingsState> = combine(
-        combine(prefs.dailyGoalMl, prefs.cooldownMinutes, ::Pair),
+        combine(prefs.dailyGoalMl, prefs.cooldownMinutes, prefs.snoozeMinutes, ::Triple),
         combine(prefs.quietHoursStart, prefs.quietHoursEnd, ::Pair),
         combine(prefs.unlockRemindersEnabled, prefs.reminderStyle, ::Pair)
-    ) { (goal, cooldown), (qStart, qEnd), (reminders, style) ->
+    ) { (goal, cooldown, snooze), (qStart, qEnd), (reminders, style) ->
         SettingsState(
             dailyGoalMl = goal,
             cooldownMinutes = cooldown,
+            snoozeMinutes = snooze,
             quietHoursStart = qStart,
             quietHoursEnd = qEnd,
             remindersEnabled = reminders,
@@ -53,6 +55,10 @@ class SettingsViewModel(application: Application) : AndroidViewModel(application
 
     fun setCooldown(minutes: Int) {
         viewModelScope.launch { prefs.setCooldownMinutes(minutes) }
+    }
+
+    fun setSnoozeMinutes(minutes: Int) {
+        viewModelScope.launch { prefs.setSnoozeMinutes(minutes) }
     }
 
     fun setQuietHoursStart(time: String) {

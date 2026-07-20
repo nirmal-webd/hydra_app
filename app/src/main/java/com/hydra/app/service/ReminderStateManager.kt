@@ -106,7 +106,8 @@ class ReminderStateManager(
                 stateStore.save(result.state, result.metadata)
 
                 // 2. Execute side effects
-                result.effects.forEach { executeEffect(it, result.metadata) }
+                val snoozeMinutes = preferencesManager.snoozeMinutes.first()
+                result.effects.forEach { executeEffect(it, result.metadata, snoozeMinutes) }
 
                 // 3. Write audit log to Room
                 logTransition(event, result.state, result.metadata)
@@ -120,7 +121,7 @@ class ReminderStateManager(
         return com.hydra.app.utils.DateUtils.isInQuietHours(qStart, qEnd)
     }
 
-    private suspend fun executeEffect(effect: ReminderEffect, metadata: com.hydra.app.model.ReminderMetadata) {
+    private suspend fun executeEffect(effect: ReminderEffect, metadata: com.hydra.app.model.ReminderMetadata, snoozeDurationMins: Int) {
         when (effect) {
             is ReminderEffect.ShowNotification -> {
                 val reminderId = reminderRepository.logReminder(
@@ -134,7 +135,8 @@ class ReminderStateManager(
                 notificationHelper.showReminderNotification(
                     reminderId = reminderId,
                     title = "Time to hydrate! 💧",
-                    message = buildReminderMessage(metadata)
+                    message = buildReminderMessage(metadata),
+                    snoozeDurationMins = snoozeDurationMins
                 )
             }
 
@@ -207,10 +209,12 @@ class ReminderStateManager(
                 ReminderState.SHOWING -> {
                     // Notification may have been dismissed by system — re-show if still SHOWING
                     val meta2 = stateStore.getCurrentMetadata()
+                    val snoozeMins = preferencesManager.snoozeMinutes.first()
                     notificationHelper.showReminderNotification(
                         reminderId = -1L,
                         title = "Time to hydrate! 💧",
-                        message = buildReminderMessage(meta2)
+                        message = buildReminderMessage(meta2),
+                        snoozeDurationMins = snoozeMins
                     )
                 }
             }
