@@ -56,6 +56,10 @@ Sometimes we built a feature, realized it was a bad idea, and deleted it. Here i
 - **Why it happened:** The database query was using static "start of day" and "end of day" timestamps calculated *exactly once* when the app launched. Because time passed but the app never completely restarted, the query stayed locked in the past.
 - **The Solution:** We updated the `WaterRepository` to use a "ticking" time-stream that recalculates what "today" means every 60 seconds. When midnight strikes, the time-stream rolls over, automatically instructing the database to switch its query to the new day, instantly resetting the UI across the entire app.
 
+### 4.7. Refining Notification Actions
+- **What happened:** We realized that having a "Skip" button on the sticky notification created a weird state where the reminder just waited in the background until the very next time the user unlocked their phone.
+- **The Solution:** We entirely removed the "Skip" button! Now, the notification strictly offers three paths: "💧 250ml", "✏️ Custom" (which opens the app to log a specific amount), and "⏰ 10 min" (Snooze). This reinforces the core loop: you must either hydrate now, tell us exactly how much you hydrated, or explicitly ask for more time.
+
 ---
 
 ## 5. Going Forward

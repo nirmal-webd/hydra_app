@@ -1,4 +1,4 @@
-#Mon Jul 20 01:47:13 IST 2026
+#Tue Jul 21 02:32:41 IST 2026
 base.0=/home/nirmal/AndroidStudioProjects/Hydra/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -63,8 +63,8 @@ class NotificationHelper(private val context: Context) {
             .setOngoing(true) // Sticky notification
             .setAutoCancel(false)  // Don't dismiss on tap — user must respond
             .addAction(0, "💧 250ml", drankIntent)
+            .addAction(0, "✏️ Custom", customPendingIntent)
             .addAction(0, "⏰ 10 min", snooze10Intent)
-            .addAction(0, "🚫 Skip", dismissIntent)
             .build()
 
         notificationManager.notify(NOTIFICATION_ID_REMINDER, notification)
