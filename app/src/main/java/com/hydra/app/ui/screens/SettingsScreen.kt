@@ -272,7 +272,47 @@ fun SettingsScreen(
             }
         }
 
-        // Developer Options removed for production
+        // ── Developer Options ───────────────────────────────────────
+        val fsmState by viewModel.fsmState.collectAsState()
+        val meta by viewModel.fsmMetadata.collectAsState()
+        var now by remember { mutableStateOf(System.currentTimeMillis()) }
+
+        androidx.compose.runtime.LaunchedEffect(Unit) {
+            while(true) {
+                kotlinx.coroutines.delay(1000)
+                now = System.currentTimeMillis()
+            }
+        }
+
+        SettingsCard(
+            title = "Developer Options",
+            icon = androidx.compose.material.icons.Icons.Filled.Build
+        ) {
+            Text(
+                text = "Engine State: ${fsmState.name}",
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(Modifier.height(8.dp))
+            Text("Goal Reached: ${meta.goalReached}", style = MaterialTheme.typography.bodySmall)
+            Text("Consumed: ${meta.dailyWaterConsumed} / ${meta.dailyGoal}", style = MaterialTheme.typography.bodySmall)
+            Text("Snooze Count: ${meta.snoozeCount}", style = MaterialTheme.typography.bodySmall)
+            
+            Spacer(Modifier.height(8.dp))
+            when (fsmState) {
+                com.hydra.app.model.ReminderState.COOLDOWN -> {
+                    val diff = (meta.cooldownEndsAt - now).coerceAtLeast(0)
+                    Text("Cooldown ends in: ${diff / 1000} seconds", style = MaterialTheme.typography.bodySmall)
+                }
+                com.hydra.app.model.ReminderState.SNOOZED -> {
+                    val diff = (meta.snoozeEndsAt - now).coerceAtLeast(0)
+                    Text("Snooze ends in: ${diff / 1000} seconds", style = MaterialTheme.typography.bodySmall)
+                }
+                else -> {
+                    Text("Waiting for event...", style = MaterialTheme.typography.bodySmall)
+                }
+            }
+        }
 
         Spacer(Modifier.height(16.dp))
     }
