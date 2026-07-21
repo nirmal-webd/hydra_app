@@ -13,9 +13,20 @@ import com.hydra.app.model.ReminderEvent
  */
 class UnlockReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        if (intent.action == Intent.ACTION_USER_PRESENT || intent.action == Intent.ACTION_SCREEN_ON) {
-            val app = context.applicationContext as HydraApp
-            app.reminderStateManager.dispatch(ReminderEvent.PhoneUnlocked)
+        val app = context.applicationContext as HydraApp
+        when (intent.action) {
+            Intent.ACTION_USER_PRESENT -> {
+                app.reminderStateManager.dispatch(ReminderEvent.PhoneUnlocked)
+            }
+            Intent.ACTION_SCREEN_ON -> {
+                val km = context.getSystemService(Context.KEYGUARD_SERVICE) as android.app.KeyguardManager
+                if (!km.isKeyguardLocked) {
+                    app.reminderStateManager.dispatch(ReminderEvent.PhoneUnlocked)
+                }
+            }
+            Intent.ACTION_SCREEN_OFF -> {
+                app.reminderStateManager.dispatch(ReminderEvent.ScreenTurnedOff)
+            }
         }
     }
 }

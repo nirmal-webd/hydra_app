@@ -9,6 +9,7 @@ enum class ReminderReason {
     SNOOZE_EXPIRED,       // Snooze timer ran out
     SNOOZE_LIMIT,         // 3rd consecutive snooze — reset to PENDING
     USER_DISMISSED,       // User tapped "Not Now"
+    QUIET_HOURS,          // Quiet hours started
     PHONE_UNLOCK,         // Reserved for unlock-triggered reminders (future)
     SOCIAL_APP_USAGE      // Future: detected extended social app session
 }

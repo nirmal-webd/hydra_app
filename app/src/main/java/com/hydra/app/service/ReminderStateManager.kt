@@ -55,11 +55,13 @@ class ReminderStateManager(
         // Alarm actions
         const val ACTION_COOLDOWN_EXPIRED = "com.hydra.app.ACTION_COOLDOWN_EXPIRED"
         const val ACTION_SNOOZE_EXPIRED = "com.hydra.app.ACTION_SNOOZE_EXPIRED"
+        const val ACTION_AUTO_SNOOZE_EXPIRED = "com.hydra.app.ACTION_AUTO_SNOOZE_EXPIRED"
         const val ACTION_DAY_RESET = "com.hydra.app.ACTION_DAY_RESET"
 
         const val ALARM_REQUEST_COOLDOWN = 1001
         const val ALARM_REQUEST_SNOOZE = 1002
         const val ALARM_REQUEST_DAY_RESET = 1003
+        const val ALARM_REQUEST_AUTO_SNOOZE = 1004
     }
 
     init {
@@ -72,10 +74,27 @@ class ReminderStateManager(
                 val meta = stateStore.getCurrentMetadata()
                 val now = System.currentTimeMillis()
                 
+                val snoozeMinutes = preferencesManager.snoozeMinutes.first()
+                val dynamicSnoozeMs = snoozeMinutes * 60 * 1000L
+                
                 if (state == ReminderState.COOLDOWN && meta.cooldownEndsAt in 1..now) {
                     dispatch(ReminderEvent.CooldownExpired)
                 } else if (state == ReminderState.SNOOZED && meta.snoozeEndsAt in 1..now) {
                     dispatch(ReminderEvent.SnoozeExpired(0))
+                } else if (state == ReminderState.SHOWING && meta.lastReminderShownAt > 0 && now >= meta.lastReminderShownAt + dynamicSnoozeMs) {
+                    dispatch(ReminderEvent.AutoSnoozeExpired)
+                }
+                
+                // Edge case: Quiet hours started while waiting for response
+                if ((state == ReminderState.SHOWING || state == ReminderState.SNOOZED) && isQuietHoursNow()) {
+                    dispatch(ReminderEvent.QuietHoursStarted)
+                }
+                
+                // Edge case: Quiet hours ended while in PENDING, and device is already unlocked
+                if (state == ReminderState.PENDING && !isQuietHoursNow() && isDeviceUnlocked()) {
+                    if (meta.reminderReason == com.hydra.app.model.ReminderReason.QUIET_HOURS) {
+                        dispatch(ReminderEvent.QuietHoursEnded)
+                    }
                 }
             }
         }
@@ -93,20 +112,23 @@ class ReminderStateManager(
                 val cooldownMinutes = preferencesManager.cooldownMinutes.first()
                 val dynamicCooldownMs = cooldownMinutes * 60 * 1000L
 
+                val snoozeMinutes = preferencesManager.snoozeMinutes.first()
+                val dynamicSnoozeMs = snoozeMinutes * 60 * 1000L
+
                 val result = ReminderReducer.reduce(
                     state = currentState,
                     metadata = currentMeta,
                     event = event,
                     isDeviceUnlocked = isUnlocked,
                     inQuietHours = isQuietHoursNow(),
-                    cooldownDurationMs = dynamicCooldownMs
+                    cooldownDurationMs = dynamicCooldownMs,
+                    snoozeDurationMs = dynamicSnoozeMs
                 )
 
                 // 1. Persist new state + metadata
                 stateStore.save(result.state, result.metadata)
 
                 // 2. Execute side effects
-                val snoozeMinutes = preferencesManager.snoozeMinutes.first()
                 result.effects.forEach { executeEffect(it, result.metadata, snoozeMinutes) }
 
                 // 3. Write audit log to Room
@@ -162,9 +184,19 @@ class ReminderStateManager(
                 )
             }
 
+            is ReminderEffect.StartAutoSnoozeTimer -> {
+                cancelAlarm(ALARM_REQUEST_AUTO_SNOOZE)
+                scheduleAlarm(
+                    action = ACTION_AUTO_SNOOZE_EXPIRED,
+                    triggerAtMs = System.currentTimeMillis() + effect.durationMs,
+                    requestCode = ALARM_REQUEST_AUTO_SNOOZE
+                )
+            }
+
             is ReminderEffect.CancelAllTimers -> {
                 cancelAlarm(ALARM_REQUEST_COOLDOWN)
                 cancelAlarm(ALARM_REQUEST_SNOOZE)
+                cancelAlarm(ALARM_REQUEST_AUTO_SNOOZE)
             }
 
             is ReminderEffect.LogWater -> {
@@ -216,6 +248,15 @@ class ReminderStateManager(
                         message = buildReminderMessage(meta2),
                         snoozeDurationMins = snoozeMins
                     )
+                    
+                    // Restore Auto-snooze timer
+                    val snoozeMs = snoozeMins * 60 * 1000L
+                    val autoSnoozeEndsAt = meta2.lastReminderShownAt + snoozeMs
+                    if (autoSnoozeEndsAt > now) {
+                        scheduleAlarm(ACTION_AUTO_SNOOZE_EXPIRED, autoSnoozeEndsAt, ALARM_REQUEST_AUTO_SNOOZE)
+                    } else if (meta2.lastReminderShownAt > 0) {
+                        dispatch(ReminderEvent.AutoSnoozeExpired)
+                    }
                 }
             }
 
@@ -309,6 +350,7 @@ class ReminderStateManager(
         ReminderReason.SNOOZE_EXPIRED -> ReminderType.UNLOCK
         ReminderReason.SNOOZE_LIMIT -> ReminderType.UNLOCK
         ReminderReason.USER_DISMISSED -> ReminderType.UNLOCK
+        ReminderReason.QUIET_HOURS -> ReminderType.UNLOCK
         ReminderReason.PHONE_UNLOCK -> ReminderType.UNLOCK
         ReminderReason.SOCIAL_APP_USAGE -> ReminderType.APP_USAGE
     }

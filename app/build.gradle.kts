@@ -6,16 +6,12 @@ plugins {
 
 android {
     namespace = "com.hydra.app"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.hydra.app"
         minSdk = 26
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -28,6 +24,8 @@ android {
             storePassword = "hydra123"
             keyAlias = "release"
             keyPassword = "hydra123"
+            enableV1Signing = true
+            enableV2Signing = true
         }
     }
 

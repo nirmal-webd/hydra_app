@@ -150,6 +150,18 @@ private fun HydraMainContent(
     val currentDestination = navBackStackEntry?.destination
     
     val showBottomBar = currentDestination?.route != HydraRoute.ONBOARDING.route
+    
+    androidx.compose.runtime.LaunchedEffect(showCustomDialog) {
+        if (showCustomDialog && currentDestination?.route != HydraRoute.DASHBOARD.route) {
+            navController.navigate(HydraRoute.DASHBOARD.route) {
+                popUpTo(navController.graph.findStartDestination().id) {
+                    saveState = true
+                }
+                launchSingleTop = true
+                restoreState = true
+            }
+        }
+    }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),

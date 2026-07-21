@@ -65,6 +65,7 @@ class ReminderForegroundService : Service() {
         val filter = android.content.IntentFilter().apply {
             addAction(android.content.Intent.ACTION_USER_PRESENT)
             addAction(android.content.Intent.ACTION_SCREEN_ON)
+            addAction(android.content.Intent.ACTION_SCREEN_OFF)
         }
         registerReceiver(unlockReceiver, filter)
     }

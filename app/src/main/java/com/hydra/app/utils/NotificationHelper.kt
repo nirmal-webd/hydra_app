@@ -47,8 +47,8 @@ class NotificationHelper(private val context: Context) {
         }
         val snoozeIntent = broadcastPendingIntent(snoozeAction, 11)
 
-        // "Not Now" / Dismiss
         val dismissIntent = broadcastPendingIntent(NotificationActionReceiver.ACTION_DISMISS, 12)
+        val swipeIntent = broadcastPendingIntent(NotificationActionReceiver.ACTION_SWIPE_DISMISS, 14)
 
         // Custom amount (opens app)
         val customIntent = Intent(context, MainActivity::class.java).apply {
@@ -66,11 +66,14 @@ class NotificationHelper(private val context: Context) {
             .setContentText(message)
             .setContentIntent(contentIntent)
             .setOngoing(true) // Sticky notification
-            .setAutoCancel(false)  // Don't dismiss on tap — user must respond
+            .setAutoCancel(false)  // Don't dismiss on tap
+            .setDeleteIntent(swipeIntent) // Recreate if swiped
             .addAction(0, "💧 250ml", drankIntent)
             .addAction(0, "✏️ Custom", customPendingIntent)
             .addAction(0, "⏰ $snoozeDurationMins min", snoozeIntent)
             .build()
+            
+        notification.flags = notification.flags or android.app.Notification.FLAG_NO_CLEAR
 
         notificationManager.notify(NOTIFICATION_ID_REMINDER, notification)
     }

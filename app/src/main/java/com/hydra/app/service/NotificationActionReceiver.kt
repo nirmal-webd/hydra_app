@@ -26,6 +26,7 @@ class NotificationActionReceiver : BroadcastReceiver() {
             ACTION_SNOOZE_15 -> manager.dispatch(ReminderEvent.ReminderSnoozed(15))
             ACTION_SNOOZE_30 -> manager.dispatch(ReminderEvent.ReminderSnoozed(30))
             ACTION_DISMISS -> manager.dispatch(ReminderEvent.ReminderDismissed)
+            ACTION_SWIPE_DISMISS -> manager.dispatch(ReminderEvent.ReminderSwiped)
         }
     }
 
@@ -36,6 +37,7 @@ class NotificationActionReceiver : BroadcastReceiver() {
         const val ACTION_SNOOZE_15 = "com.hydra.app.ACTION_SNOOZE_15"
         const val ACTION_SNOOZE_30 = "com.hydra.app.ACTION_SNOOZE_30"
         const val ACTION_DISMISS = "com.hydra.app.ACTION_DISMISS"
+        const val ACTION_SWIPE_DISMISS = "com.hydra.app.ACTION_SWIPE_DISMISS"
         const val ACTION_SNOOZE = "com.hydra.app.ACTION_SNOOZE" // legacy compat
         const val EXTRA_REMINDER_ID = "extra_reminder_id"
     }

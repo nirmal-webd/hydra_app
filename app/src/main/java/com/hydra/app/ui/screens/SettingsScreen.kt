@@ -49,8 +49,8 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.hydra.app.viewmodel.SettingsViewModel
 import kotlin.math.roundToInt
 
-private val cooldownOptions = listOf(30, 60, 90, 120)
-private val cooldownLabels = listOf("30 min", "1 hour", "1.5 hr", "2 hr")
+private val cooldownOptions = listOf(1, 30, 60, 90, 120)
+private val cooldownLabels = listOf("1 min", "30 min", "1 hour", "1.5 hr", "2 hr")
 
 private val snoozeOptions = listOf(5, 10, 15)
 private val snoozeLabels = listOf("5 min", "10 min", "15 min")

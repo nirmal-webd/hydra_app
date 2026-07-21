@@ -14,15 +14,18 @@ sealed class ReminderEvent {
     // Timer callbacks
     object CooldownExpired : ReminderEvent()
     data class SnoozeExpired(val snoozeDurationMinutes: Int) : ReminderEvent()
+    object AutoSnoozeExpired : ReminderEvent()
 
     // Device events
     object PhoneUnlocked : ReminderEvent()
+    object ScreenTurnedOff : ReminderEvent()
     data class AppUsageDetected(val appPackage: String) : ReminderEvent()
+    object QuietHoursStarted : ReminderEvent()
+    object QuietHoursEnded : ReminderEvent()
 
     // Notification actions (user response)
     object ReminderAccepted : ReminderEvent()     // "Drank Water"
     data class ReminderSnoozed(val durationMinutes: Int) : ReminderEvent()
     object ReminderDismissed : ReminderEvent()    // "Not Now"
+    object ReminderSwiped : ReminderEvent()       // notification swipe-away
 }
-
-

@@ -30,6 +30,7 @@ sealed class ReminderEffect {
     object CancelNotification : ReminderEffect()
     data class StartCooldownTimer(val durationMs: Long) : ReminderEffect()
     data class StartSnoozeTimer(val durationMs: Long) : ReminderEffect()
+    data class StartAutoSnoozeTimer(val durationMs: Long) : ReminderEffect()
     object CancelAllTimers : ReminderEffect()
     data class LogWater(val amountMl: Int, val source: String) : ReminderEffect()
 }
@@ -51,6 +52,7 @@ object ReminderReducer {
         isDeviceUnlocked: Boolean,
         inQuietHours: Boolean,
         cooldownDurationMs: Long,
+        snoozeDurationMs: Long,
         now: Long = System.currentTimeMillis()
     ): TransitionResult {
 
@@ -127,17 +129,52 @@ object ReminderReducer {
             )
         }
 
+        if (event is ReminderEvent.SettingsChanged) {
+            if (inQuietHours) {
+                return TransitionResult(
+                    state = ReminderState.PENDING,
+                    metadata = metadata.copy(
+                        pendingReminder = true,
+                        reminderReason = ReminderReason.QUIET_HOURS,
+                        snoozeCount = 0
+                    ),
+                    effects = listOf(
+                        ReminderEffect.CancelNotification,
+                        ReminderEffect.CancelAllTimers
+                    )
+                )
+            } else {
+                val newCooldownEndsAt = if (metadata.goalReached) 0L else now + cooldownDurationMs
+                val effects = mutableListOf<ReminderEffect>(
+                    ReminderEffect.CancelNotification,
+                    ReminderEffect.CancelAllTimers
+                )
+                if (!metadata.goalReached) {
+                    effects.add(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
+                }
+                return TransitionResult(
+                    state = ReminderState.COOLDOWN,
+                    metadata = metadata.copy(
+                        pendingReminder = false,
+                        cooldownEndsAt = newCooldownEndsAt,
+                        snoozeCount = 0
+                    ),
+                    effects = effects
+                )
+            }
+        }
+
         // ─── STATE-SPECIFIC TRANSITIONS ───────────────────────────────────────
 
         return when (state) {
 
-            ReminderState.COOLDOWN -> reduceCooldown(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, now)
+            ReminderState.COOLDOWN -> reduceCooldown(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, snoozeDurationMs, now)
 
-            ReminderState.PENDING -> reducePending(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, now)
+            ReminderState.PENDING -> reducePending(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, snoozeDurationMs, now)
 
-            ReminderState.SHOWING -> reduceShowing(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, now)
+            ReminderState.SHOWING -> reduceShowing(metadata, event, isDeviceUnlocked, inQuietHours, cooldownDurationMs, snoozeDurationMs, now)
 
-            ReminderState.SNOOZED -> reduceSnoozed(metadata, event, isDeviceUnlocked, inQuietHours, now)
+            ReminderState.SNOOZED -> reduceSnoozed(metadata, event, isDeviceUnlocked, inQuietHours, snoozeDurationMs, now)
         }
     }
 
@@ -149,6 +186,7 @@ object ReminderReducer {
         isDeviceUnlocked: Boolean,
         inQuietHours: Boolean,
         cooldownDurationMs: Long,
+        snoozeDurationMs: Long,
         now: Long
     ): TransitionResult {
         return when (event) {
@@ -171,7 +209,10 @@ object ReminderReducer {
                                 lastReminderShownAt = now,
                                 reminderReason = ReminderReason.COOLDOWN_COMPLETE
                             ),
-                            effects = listOf(ReminderEffect.ShowNotification)
+                            effects = listOf(
+                                ReminderEffect.ShowNotification,
+                                ReminderEffect.StartAutoSnoozeTimer(snoozeDurationMs)
+                            )
                         )
                     }
                     else -> {
@@ -200,6 +241,7 @@ object ReminderReducer {
         isDeviceUnlocked: Boolean,
         inQuietHours: Boolean,
         cooldownDurationMs: Long,
+        snoozeDurationMs: Long,
         now: Long
     ): TransitionResult {
         return when (event) {
@@ -220,7 +262,7 @@ object ReminderReducer {
                         // Phone unlocked but it's quiet hours — stay in PENDING
                         noOp(ReminderState.PENDING, metadata)
                     }
-                    else -> {
+                    metadata.pendingReminder -> {
                         // Unlocked with pending reminder → show it
                         TransitionResult(
                             state = ReminderState.SHOWING,
@@ -228,10 +270,28 @@ object ReminderReducer {
                                 pendingReminder = false,
                                 lastReminderShownAt = now
                             ),
-                            effects = listOf(ReminderEffect.ShowNotification)
+                            effects = listOf(
+                                ReminderEffect.ShowNotification,
+                                ReminderEffect.StartAutoSnoozeTimer(snoozeDurationMs)
+                            )
                         )
                     }
+                    else -> noOp(ReminderState.PENDING, metadata)
                 }
+            }
+
+            is ReminderEvent.QuietHoursEnded -> {
+                TransitionResult(
+                    state = ReminderState.SHOWING,
+                    metadata = metadata.copy(
+                        pendingReminder = false,
+                        lastReminderShownAt = now
+                    ),
+                    effects = listOf(
+                        ReminderEffect.ShowNotification,
+                        ReminderEffect.StartAutoSnoozeTimer(snoozeDurationMs)
+                    )
+                )
             }
             is ReminderEvent.AppUsageDetected -> {
                 when {
@@ -258,36 +318,15 @@ object ReminderReducer {
                                 appPackage = event.appPackage,
                                 lastReminderShownAt = now
                             ),
-                            effects = listOf(ReminderEffect.ShowNotification)
+                            effects = listOf(
+                                ReminderEffect.ShowNotification,
+                                ReminderEffect.StartAutoSnoozeTimer(snoozeDurationMs)
+                            )
                         )
                     }
                 }
             }
-            is ReminderEvent.SettingsChanged -> {
-                when {
-                    metadata.goalReached -> {
-                        TransitionResult(
-                            state = ReminderState.COOLDOWN,
-                            metadata = metadata.copy(
-                                pendingReminder = false,
-                                cooldownEndsAt = now + cooldownDurationMs
-                            ),
-                            effects = listOf(ReminderEffect.StartCooldownTimer(cooldownDurationMs))
-                        )
-                    }
-                    isDeviceUnlocked && !inQuietHours -> {
-                        TransitionResult(
-                            state = ReminderState.SHOWING,
-                            metadata = metadata.copy(
-                                pendingReminder = false,
-                                lastReminderShownAt = now
-                            ),
-                            effects = listOf(ReminderEffect.ShowNotification)
-                        )
-                    }
-                    else -> noOp(ReminderState.PENDING, metadata)
-                }
-            }
+
             else -> noOp(ReminderState.PENDING, metadata)
         }
     }
@@ -300,6 +339,7 @@ object ReminderReducer {
         isDeviceUnlocked: Boolean,
         inQuietHours: Boolean,
         cooldownDurationMs: Long,
+        snoozeDurationMs: Long,
         now: Long
     ): TransitionResult {
         return when (event) {
@@ -365,14 +405,86 @@ object ReminderReducer {
             }
 
             is ReminderEvent.ReminderDismissed -> {
-                // "Not Now" — wait until next unlock, do not accumulate
+                // "Not Now" — restart the cooldown
+                TransitionResult(
+                    state = ReminderState.COOLDOWN,
+                    metadata = metadata.copy(
+                        pendingReminder = false,
+                        cooldownEndsAt = now + cooldownDurationMs
+                    ),
+                    effects = listOf(
+                        ReminderEffect.CancelNotification,
+                        ReminderEffect.StartCooldownTimer(cooldownDurationMs)
+                    )
+                )
+            }
+            
+            is ReminderEvent.ReminderSwiped -> {
+                // Instantly re-show the notification to make it completely sticky
+                TransitionResult(
+                    state = ReminderState.SHOWING,
+                    metadata = metadata,
+                    effects = listOf(
+                        ReminderEffect.ShowNotification,
+                        ReminderEffect.StartAutoSnoozeTimer(snoozeDurationMs)
+                    )
+                )
+            }
+
+            is ReminderEvent.AutoSnoozeExpired -> {
+                val newSnoozeCount = metadata.snoozeCount + 1
+                if (newSnoozeCount < MAX_SNOOZE_COUNT) {
+                    TransitionResult(
+                        state = ReminderState.SHOWING,
+                        metadata = metadata.copy(
+                            snoozeCount = newSnoozeCount,
+                            lastReminderShownAt = now
+                        ),
+                        effects = listOf(
+                            ReminderEffect.CancelNotification,
+                            ReminderEffect.ShowNotification,
+                            ReminderEffect.StartAutoSnoozeTimer(snoozeDurationMs)
+                        )
+                    )
+                } else {
+                    TransitionResult(
+                        state = ReminderState.PENDING,
+                        metadata = metadata.copy(
+                            snoozeCount = 0,
+                            pendingReminder = true,
+                            reminderReason = ReminderReason.SNOOZE_LIMIT
+                        ),
+                        effects = listOf(ReminderEffect.CancelNotification)
+                    )
+                }
+            }
+
+            is ReminderEvent.QuietHoursStarted -> {
                 TransitionResult(
                     state = ReminderState.PENDING,
                     metadata = metadata.copy(
                         pendingReminder = true,
-                        reminderReason = ReminderReason.USER_DISMISSED
+                        reminderReason = ReminderReason.QUIET_HOURS,
+                        snoozeCount = 0
                     ),
-                    effects = listOf(ReminderEffect.CancelNotification)
+                    effects = listOf(
+                        ReminderEffect.CancelNotification,
+                        ReminderEffect.CancelAllTimers
+                    )
+                )
+            }
+
+            is ReminderEvent.ScreenTurnedOff -> {
+                TransitionResult(
+                    state = ReminderState.PENDING,
+                    metadata = metadata.copy(
+                        pendingReminder = true,
+                        snoozeCount = 0
+                    ),
+                    effects = listOf(
+                        ReminderEffect.CancelNotification,
+                        ReminderEffect.CancelAllTimers
+                    )
                 )
             }
 
@@ -388,6 +500,7 @@ object ReminderReducer {
         event: ReminderEvent,
         isDeviceUnlocked: Boolean,
         inQuietHours: Boolean,
+        snoozeDurationMs: Long,
         now: Long
     ): TransitionResult {
         return when (event) {
@@ -412,6 +525,21 @@ object ReminderReducer {
                     )
                 }
             }
+            is ReminderEvent.QuietHoursStarted -> {
+                TransitionResult(
+                    state = ReminderState.PENDING,
+                    metadata = metadata.copy(
+                        pendingReminder = true,
+                        reminderReason = ReminderReason.QUIET_HOURS,
+                        snoozeCount = 0
+                    ),
+                    effects = listOf(
+                        ReminderEffect.CancelNotification,
+                        ReminderEffect.CancelAllTimers
+                    )
+                )
+            }
+
             is ReminderEvent.PhoneUnlocked -> noOp(ReminderState.SNOOZED, metadata) // snooze timer still running
             else -> noOp(ReminderState.SNOOZED, metadata)
         }

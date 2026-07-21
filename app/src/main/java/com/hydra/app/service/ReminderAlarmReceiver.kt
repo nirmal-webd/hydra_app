@@ -23,6 +23,9 @@ class ReminderAlarmReceiver : BroadcastReceiver() {
                 // Duration doesn't matter here — snooze already ran
                 manager.dispatch(ReminderEvent.SnoozeExpired(0))
             }
+            ReminderStateManager.ACTION_AUTO_SNOOZE_EXPIRED -> {
+                manager.dispatch(ReminderEvent.AutoSnoozeExpired)
+            }
             ReminderStateManager.ACTION_DAY_RESET -> {
                 manager.dispatch(ReminderEvent.DayReset)
             }
