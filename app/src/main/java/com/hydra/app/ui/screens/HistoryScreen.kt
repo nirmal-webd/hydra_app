@@ -97,11 +97,9 @@ fun HistoryScreen(
                             viewModel.deleteLog(log)
                             scope.launch {
                                 snackbarHostState.showSnackbar(
-                                    message = "Entry removed",
-                                    actionLabel = "Undo",
+                                    message = "Log deleted",
                                     duration = SnackbarDuration.Short
                                 )
-                                // Undo not implemented for MVP
                             }
                         }
                     )
@@ -141,10 +139,12 @@ private fun ExpandableDayGroup(
         ) {
             Column {
                 group.logs.forEach { log ->
-                    SwipeToDismissLogItem(
-                        log = log,
-                        onDismissed = { onDeleteLog(log) }
-                    )
+                    androidx.compose.runtime.key(log.id) {
+                        SwipeToDismissLogItem(
+                            log = log,
+                            onDismissed = { onDeleteLog(log) }
+                        )
+                    }
                 }
                 Spacer(modifier = Modifier.height(8.dp))
             }
@@ -234,48 +234,62 @@ private fun SwipeToDismissLogItem(
     log: WaterLog,
     onDismissed: () -> Unit
 ) {
+    var isDeleted by remember { mutableStateOf(false) }
     val dismissState = rememberSwipeToDismissBoxState()
 
-    // Observe state changes instead of confirmValueChange (deprecated)
     androidx.compose.runtime.LaunchedEffect(dismissState.currentValue) {
         if (dismissState.currentValue == SwipeToDismissBoxValue.EndToStart) {
-            onDismissed()
+            isDeleted = true
         }
     }
 
-    SwipeToDismissBox(
-        state = dismissState,
-        enableDismissFromStartToEnd = false,
-        backgroundContent = {
-            val color by animateColorAsState(
-                targetValue = if (dismissState.targetValue == SwipeToDismissBoxValue.EndToStart)
-                    MaterialTheme.colorScheme.errorContainer
-                else
-                    MaterialTheme.colorScheme.surface,
-                animationSpec = tween(200),
-                label = "swipe_bg"
-            )
-            Box(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .background(color)
-                    .padding(end = 20.dp),
-                contentAlignment = Alignment.CenterEnd
-            ) {
-                Icon(
-                    Icons.Filled.Delete,
-                    contentDescription = "Delete",
-                    tint = MaterialTheme.colorScheme.onErrorContainer
-                )
-            }
-        }
+    AnimatedVisibility(
+        visible = !isDeleted,
+        exit = shrinkVertically(animationSpec = tween(300)) + fadeOut(animationSpec = tween(300))
     ) {
-        WaterLogItem(log = log)
+        SwipeToDismissBox(
+            state = dismissState,
+            enableDismissFromStartToEnd = false,
+            backgroundContent = {
+                val color by animateColorAsState(
+                    targetValue = if (dismissState.targetValue == SwipeToDismissBoxValue.EndToStart)
+                        MaterialTheme.colorScheme.errorContainer
+                    else
+                        MaterialTheme.colorScheme.surface,
+                    animationSpec = tween(200),
+                    label = "swipe_bg"
+                )
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .background(color)
+                        .padding(end = 20.dp),
+                    contentAlignment = Alignment.CenterEnd
+                ) {
+                    Icon(
+                        Icons.Filled.Delete,
+                        contentDescription = "Delete",
+                        tint = MaterialTheme.colorScheme.onErrorContainer
+                    )
+                }
+            }
+        ) {
+            WaterLogItem(log = log, onDeleteClick = {
+                isDeleted = true
+            })
+        }
+    }
+
+    androidx.compose.runtime.LaunchedEffect(isDeleted) {
+        if (isDeleted) {
+            kotlinx.coroutines.delay(300)
+            onDismissed()
+        }
     }
 }
 
 @Composable
-private fun WaterLogItem(log: WaterLog) {
+private fun WaterLogItem(log: WaterLog, onDeleteClick: () -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -313,11 +327,25 @@ private fun WaterLogItem(log: WaterLog) {
                     )
                 }
             }
-            Text(
-                text = formatTime(log.timestamp),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(
+                    text = formatTime(log.timestamp),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Spacer(Modifier.width(8.dp))
+                androidx.compose.material3.IconButton(
+                    onClick = onDeleteClick,
+                    modifier = Modifier.size(32.dp)
+                ) {
+                    Icon(
+                        Icons.Filled.Delete,
+                        contentDescription = "Delete log",
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.size(16.dp)
+                    )
+                }
+            }
         }
     }
 }
